@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">    <!--CSS-->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">    <!--FAVICON-->
+    <title>Psico-Online | Psicología 100% Online al alcance de un click | Solicitar Turno</title>    <!--TITULO DE LA PAGE-->
+</head>
+<body>
+                                <!--HEADER-->
+    <header class="encabezado">   
+        <div class="contenedorlogo-h1">
+                    <img src="../img/logotipo.png" alt="logotype">
+                    <h1>Psico-Online</h1>
+        </div>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="menu"> <img src="../img/menu.svg" alt="menu"></label>
+        <nav class="navigation">
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./conoceme.html">CONOCEME</a></li>
+                <li><a href="#">PRESTACIONES</a>
+                    <ul>
+                        <li><a href="./psicooncologia.html">Psicooncología</a></li>
+                        <li><a href="./tcc-individual.html">TCC Individual</a></li>
+                    </ul>
+                </li>
+                <li><a href="./solicitar-turno.html">SOLICITAR TURNO</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="turnos">
+            <div class="contenedor-turnos">
+                <div class="solicitar-turno">
+                    <h2>Solicitar Turno</h2>
+                    <input class="formularios" type="text" name="nombres" placeholder="Ingrese su nombre">
+                    <input class="formularios" type="text" name="apellidos" placeholder="Ingrese su apellido">
+                    <input class="formularios" type="number" name="dni" placeholder="Ingrese su documento" maxlength="8" required minlength="8">
+                    <input class="formularios" type="email" name="mail" placeholder="Ingrese su correo">
+                    <input class="formularios" type="password" placeholder="contraseña">
+                    <input class="formularios" type="number" placeholder="Teléfono">
+                    <h3>Selecciona tu país</h3>
+                    <select class="paises">
+                        <option selected>Argentina</option>
+                        <option>Uruguay</option>
+                        <option>Paraguay</option>
+                        <option>Chile</option>
+                        <option>Otro</option>
+                    </select>
+                    <h3>Escoge el día</h3>
+                    <input class="date" type="date" id="fecha">
+                    <h3>Selecciona prestación</h3>
+                    <select class="servicios">
+                        <option selected>Psicooncología</option>
+                        <option>TCC individual</option>
+                    </select>
+                    <h4 class="terminos-condiciones">Términos y condiciones</h4>
+                    <label>
+                        <input type="checkbox"> Acepto términos y condiciones
+                    </label>
+                    <h4 class="agrega-comentarios">Agrega comentarios</h4>
+                    <textarea id="coments"  cols="40" rows="3" placeholder="Comenta Aquí"></textarea>
+                    <input class="boton" type="submit" value="Enviar Turno" required>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    
+                                    <!--FOOTER-->
+    <footer>
+        <div class="pie-pagina">
+            <div class="logo-pie">
+                <img src="../img/logotipo.png" alt="logotype">
+                <h2>Psico-Online</h2>
+            </div>
+            <div class="redes">
+                <a href="https://twitter.com/" target="_blank"><img src="../img/twitter.png" alt="Logo Twitter"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Logo Instagram"></a>
+                <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Logo Facebook"></a>
+                <a href="" target="_blank"><img src="../img/linkedin.png" alt="logo linkedin"></a>
+            </div>
+        </div>
+        <span class="leyenda">
+            <p>© 2023 - Psico-Online - Todos los derechos reservados | Created by Sebastián T. Diaz</p>
+        </span>
+    </footer>
+</body>
+</html>

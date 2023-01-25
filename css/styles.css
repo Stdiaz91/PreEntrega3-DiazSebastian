@@ -1,0 +1,3069 @@
+
+/*----------------------- FUENTES PARA LOS TEXTOS--------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/*----------------------- RESET--------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------------- BODY--------------------------------*/
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+                                /*INDEX*/
+
+/*----------------------- HEADER--------------------------------*/
+
+    .encabezado{
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 11vh;
+        background-color: rgb(1, 1, 1);
+        padding: 0px 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+    }
+    .encabezado .contenedorlogo-h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .encabezado .contenedorlogo-h1 img{
+        width: 65px;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
+        padding-right: 10px;
+    }
+    .encabezado .contenedorlogo-h1 img:hover{
+        filter: invert(98%) sepia(77%) saturate(3270%) hue-rotate(198deg) brightness(82%) contrast(88%);
+    }
+    .encabezado .contenedorlogo-h1 h1{
+        color: white;
+        font-size: 25px;
+        cursor: default;
+    }
+    .encabezado .contenedorlogo-h1 h1:hover{
+        color: #a581b1;
+    }
+    .encabezado .navigation ul{
+        list-style: none;
+    }
+    .encabezado .navigation ul li{
+        float: left;
+        position: relative;
+    }
+    .encabezado .navigation ul li a{
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        transition: all 0.4s ease;
+    }
+    .encabezado .navigation ul li a:hover{
+        background-color: #9c85a3b6;
+        transform: scale(1.1);
+    }
+    .encabezado .navigation ul li ul{
+        position: absolute;
+        right: 0;
+        width: 300px;
+        background-color: rgba(1, 1, 1, 0.7);
+        display: none;
+    }
+    .encabezado .navigation ul li ul li a{
+        font-size: 15px;
+    }
+    .encabezado .navigation ul li ul li ul{
+        position: absolute;
+        top: 0;
+        right: 300px;
+    }
+    .encabezado .navigation ul li ul li{
+        width: 100%;
+    }
+    .encabezado .navigation ul li:hover > ul{
+        display: initial;
+    }
+    #toggle,
+    .encabezado label{
+        display: none;
+        cursor: pointer;
+    }
+    .encabezado .menu{
+        width: 45px;
+    }
+
+/*-----------------------MAIN--------------------------------*/
+
+main{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+    /*----------------------- BANNER 1--------------------------------*/
+
+.banner-1 .conte{
+    display: flex;
+    height: 80vh;
+    animation: banner-1 5s infinite linear alternate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    position: relative;
+}
+@keyframes banner-1{
+    0%, 50%{
+        background-image: url(../img/mediodepagos.jpg);
+    }
+    51%, 100%{
+        background-image: url(../img/mediodepagos2.jpg);
+    }
+}
+.banner-1 .conte .wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    position: relative;
+}
+.banner-1 .conte .wrap .box{
+    flex-basis: 100%;
+    color: white;
+    text-align: left;
+    align-self: center;
+    position: relative;
+}
+.banner-1 .conte .wrap .box h2{
+    font-size: 30px;
+    line-height: 1.2;
+    padding: 20px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.banner-1 .conte .wrap .box .cards img{
+    width: 90px;
+    height: 65px;
+}
+.banner-1 .conte .wrap .box .botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.banner-1 .conte .wrap .box .botones .btn1{
+    flex-basis: 30%;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+}
+.banner-1 .conte .wrap .box .botones .btn1:hover{
+    background-color: white;
+    color: black;
+    border: solid 2px white;
+}
+.banner-1 .conte .wrap .box .botones .btn2{
+    flex-basis: 30%;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    margin-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: all 0.4s ease;
+}
+.banner-1 .conte .wrap .box .botones .btn2:hover{
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: all 0.4s;
+}
+.banner-1 .conte .wave-1{
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+}
+.banner-1 .conte .wave-2{
+    width: 80%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+}
+
+    /*----------------------- SECTION 1--------------------------------*/
+
+.section-1 .contenedor-section-1{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.section-1 .contenedor-section-1 .titulo1{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #642a73;
+    margin: 60px 0px 40px;
+}
+.section-1 .contenedor-section-1 .bloque-1{
+    display: flex;
+}
+.section-1 .contenedor-section-1 .bloque-1 p{
+    text-align: justify-all;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 6px;
+}
+.section-1 .contenedor-section-1 .bloque-1 img{
+    width: 250px;
+    height: 250px;
+}
+.section-1 .contenedor-section-1 .bloque-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.section-1 .contenedor-section-1 .bloque-2 .psicooncologia{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: hsla(288, 29%, 37%, 0.658);
+    padding-top: 20px;
+    border-radius: 8px;
+}
+.section-1 .contenedor-section-1 .bloque-2 .tcc{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+    background-color: hsla(288, 29%, 37%, 0.658);
+    padding-top: 20px;
+    border-radius: 8px;
+}
+.section-1 .contenedor-section-1 .bloque-2 div img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border: 3px solid #642a73;
+    border-radius: 8px;
+}
+.section-1 .contenedor-section-1 .bloque-2 div a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+.section-1 .contenedor-section-1 .bloque-2 div a:hover{
+    text-decoration: underline;
+    color: #E2E2E2;
+}
+.section-1 .contenedor-section-1 .bloque-2 div p{
+    color: white;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+.section-1 .contenedor-section-1 .comienza-ahora{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 70px;
+    transition: all 0.4s ease;
+}
+.section-1 .contenedor-section-1 .comienza-ahora:hover{
+    transform: scale(1.1);
+}
+.section-1 .contenedor-section-1 .comienza-ahora a{
+    text-decoration: none;
+    background-color: #6e4379;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 5px 5px 10px black;
+    transition: all 0.4s ease;
+}
+.section-1 .contenedor-section-1 .comienza-ahora a:hover{
+    background-color: #a581b1;
+}
+
+    /*----------------------- SECTION 2--------------------------------*/
+
+.section-2 .contenedor-section-2{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.section-2 .contenedor-section-2 .titulo2{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #642a73;
+    margin-bottom: 40px;
+}
+.section-2 .contenedor-section-2 .ilustracion-textos{
+    text-align: center;
+}
+.section-2 .contenedor-section-2 .ilustracion-textos h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.section-2 .contenedor-section-2 .ilustracion-textos h3 span{
+    background-color: hsla(288, 29%, 37%, 0.658);
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+.section-2 .contenedor-section-2 .ilustracion-textos p{
+    font-size: 18px;
+    padding: 0px 0px 30px 15px;
+    text-align: justify-all;
+}
+.section-2 .contenedor-section-2 .ilustracion-textos img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    transition: all 0.4s ease;
+}
+
+    /*----------------------- GALERIA--------------------------------*/
+
+.galeria{
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.galeria h2{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #642a73;
+    margin-bottom: 30px;
+}
+.galeria .grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+}
+.galeria .grid-galeria .grid-item .flex-item{
+    width: 320px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: hsla(288, 29%, 37%, 0.658);
+}
+.galeria .grid-galeria div h3{
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    padding: 10px;
+}
+.galeria .grid-galeria .grid-item .flex-item img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.galeria .grid-galeria div p{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+    /*------------------------------------SECTION 3---------------------------*/
+
+.section-3 .bg-section-3{
+    margin-top: 50px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(285, 24%, 60%, 0.39);
+    backdrop-filter: blur(5px);
+}
+.section-3 .bg-section-3 h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-weight: 100px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    padding: 20px;
+}
+.section-3 .bg-section-3 .contenedor-flex{
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-3 .bg-section-3 .contenedor-flex .flex-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background-color: hsla(0, 2%, 84%, 0.493);
+    box-shadow: 5px 5px 5px rgb(116, 115, 115);
+    border-radius: 15px;
+}
+.section-3 .bg-section-3 .contenedor-flex .flex-div img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.section-3 .bg-section-3 .contenedor-flex .flex-div p{
+    text-align: center;
+    font-size: 18px;
+}
+.section-3 .bg-section-3 .contenedor-flex .flex-div h3{
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: #642a73;
+}
+    /*----------------------- SECTION 4--------------------------------*/
+
+.section-4 .contenedor-section-4{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.section-4 .contenedor-section-4 .contenedor4-1{
+    width: 40%;
+}
+.section-4 .contenedor-section-4 .contenedor4-1 h3{
+    font-size: 40px;
+    text-align: justify-all;
+    color: #4d0686;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 5px #614479;
+}
+.section-4 .contenedor-section-4 .contenedor4-1 p{
+    font-size: 20px;
+    text-align: justify-all;
+    padding-bottom: 40px;
+}
+.section-4 .contenedor-section-4 .contenedor4-1 a{
+    text-decoration: none;
+    background-color: #6e4379;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+    transition: all 0.4s ease;
+}
+.section-4 .contenedor-section-4 .contenedor4-1 a:hover{
+    background-color: hsla(288, 15%, 47%, 0.658);
+}
+.section-4 .contenedor-section-4 .contenedor4-2{
+    width: 40%;
+    background-color: hsla(288, 29%, 37%, 0.658);
+    padding: 15px 0px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1{
+    margin-bottom: 30px;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 h3{
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 h4{
+    font-size: 24px;
+    color: white;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 p{
+    font-weight: bold;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 img{
+    width: 250px;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 h3{
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 h4{
+    font-size: 24px;
+    color: white;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 p{
+    font-weight: bold;
+}
+.section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 img{
+    width: 250px;
+}
+
+    /*----------------------- BANNER 2--------------------------------*/
+
+.banner-2 .conte-2{
+    display: flex;
+    max-width: 100%;
+    height: 80vh;
+    animation: banner-2 5s infinite linear alternate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    position: relative;
+}
+@keyframes banner-2{
+    0%, 50%{
+        background-image: url(../img/banner2.jpg);
+    }
+    51%, 100%{
+        background-image: url(../img/banner2-2.jpg);
+    }
+}
+.banner-2 .conte-2 .wrap-2{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    position: relative;
+}
+.banner-2 .conte-2 .wrap-2 .box-2{
+    flex-basis: 80%;
+    color: white;
+    text-align: left;
+    align-self: center;
+    position: relative;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 span{
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 h2{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding-bottom: 20px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 p{
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    border: 2px solid wheat;
+    background-color: hsla(0, 0%, 0%, 0.623);
+    text-align: center;
+    padding: 10px 6px;
+    border-radius: 5px;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-flow: row wrap;
+    position: relative;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 .botones-2 a{
+    position: relative;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2{
+    flex-basis: 30%;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    color: white;
+    transition: all 0.4s;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2:hover{
+    background-color: white;
+    color: black;
+    border: solid 2px white;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn2-2{
+    flex-basis: 30%;
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    transition: all 0.4s;
+}
+.banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn2-2:hover{
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+.banner-2 .conte-2 .wave-3{
+    width: 70%;
+    height: 100%;
+    left: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+
+}
+.banner-2 .conte-2 .wave-4{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+
+}
+
+/*----------------------- FOOTER--------------------------------*/
+
+footer{
+    background-color: hsla(288, 29%, 37%, 0.658);
+    overflow: hidden;
+}
+footer .pie-pagina{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 3%;
+}
+footer .pie-pagina .logo-pie{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .pie-pagina .logo-pie h2{
+    color: white;
+    font-size: 25px;
+}
+footer .pie-pagina .logo-pie h2:hover{
+    color: #f263e9;
+}
+footer .pie-pagina .logo-pie h2:hover{
+    cursor: default;
+}
+footer .pie-pagina .logo-pie img{
+    width: 65px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
+    margin-right: 10px;
+}
+footer .pie-pagina .logo-pie img:hover{
+    filter: invert(60%) sepia(90%) saturate(1901%) hue-rotate(273deg) brightness(95%) contrast(99%);
+}
+footer .pie-pagina .redes img{
+    width: 50px;
+    padding: 5px;
+    filter: grayscale(70%);
+    transition: all 0.4s ease;
+}
+footer .pie-pagina .redes img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.4);
+}
+footer .leyenda p{
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+                                /*CONOCEME*/
+
+    /*---------------------BANNER 3--------------------*/
+
+.banner-3 .conte-3{
+    display: flex;
+    max-width: 100%;
+    height: 60vh;
+    animation: banner-3 5s infinite linear alternate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    position: relative;
+}
+@keyframes banner-3{
+    0%, 50%{
+        background-image: url(../img/banner-3.jpg)
+    }
+    51%, 100%{
+        background-image: url(../img/banner3-2.jpg)
+    }
+}
+.banner-3 .conte-3 .wrap-3{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+.banner-3 .conte-3 .wrap-3 h2{
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 3px solid white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
+    position: relative;
+}
+.banner-3 .conte-3 .wrap-3 p{
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: oblique;
+}
+.banner-3 .conte-3 .wave-5{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+}
+.banner-3 .conte-3 .wave-6{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+}
+
+        /*---------------------CONTENIDO CONOCEME--------------------*/
+
+.conoceme{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/conoceme.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.conoceme .contenedor-conoceme{
+    padding: 80px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.conoceme .contenedor-conoceme img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 6px solid hsla(286, 17%, 55%, 0.788);
+    border-radius: 50%;
+    filter: grayscale(50%);
+    transition: all 1s ease;
+}
+.conoceme .contenedor-conoceme img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+.conoceme .contenedor-conoceme .contenido-conoceme{
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}
+.contenedor-conoceme .contenido-conoceme p{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+                                /*PSICOONCOLOGIA*/
+
+    /*----------------------- BANNER PSICOONCOLOGÍA--------------------------------*/
+
+.banner-psicooncologia .contenedor-banner-psicoonco{
+    display: flex;
+    max-width: 100%;
+    height: 60vh;
+    animation: banner-psicooncologia 5s infinite linear alternate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    position: relative;
+}
+@keyframes banner-psicooncologia{
+    0%, 50%{
+        background-image: url(../img/banner-psiconco.jpg);
+    }
+    51%, 100%{
+        background-image: url(../img/banner-psiconco2.jpg);
+    }
+}
+.banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+.banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia h2{
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 3px solid hsl(286, 17%, 55%);
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
+    position: relative;
+}
+.banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1{
+    width: 70%;
+    height: 100%;
+    left: 0;
+    fill: hsla(273, 28%, 37%, 0.527);
+    position: absolute;
+}
+.banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+}
+
+    /*---------------------------CONTENIDO PSICOONCOLOGIA-----------------*/
+
+.psicooncologia-main{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/psicooncologia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.servicio-psicooncologia{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+            /*---------------------------PARTE 1------------------------------*/
+
+.servicio-psicooncologia .parte1-onco{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.servicio-psicooncologia .parte1-onco div p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 10px;
+}
+.servicio-psicooncologia .parte1-onco img{
+    width: 50%;
+    height: 50%;
+    border: 5px solid hsl(288, 29%, 37%);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+
+            /*---------------------------PARTE 2------------------------------*/
+
+.servicio-psicooncologia .parte2-onco h2{
+    text-align: center;
+    font-size: 30px;
+    color: #642a73;
+    font-weight: 700;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+.servicio-psicooncologia .parte2-onco p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+            /*---------------------------PARTE 3------------------------------*/
+
+
+.servicio-psicooncologia .parte3-onco h2{
+    text-align: center;
+    font-size: 30px;
+    color: #642a73;
+    font-weight: 700;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+.servicio-psicooncologia .parte3-onco p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
+            /*---------------------------PARTE 4------------------------------*/
+
+
+.servicio-psicooncologia .parte4-onco h2{
+    text-align: center;
+    font-size: 30px;
+    color: #642a73;
+    font-weight: 700;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+.servicio-psicooncologia .parte4-onco h3{
+    font-size: 25px;
+    color: #642a73;
+    padding: 15px;
+}
+.servicio-psicooncologia .parte4-onco p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+.servicio-psicooncologia .parte4-onco img{
+    width: 250px;
+    height: 250px;
+    float: right;
+    animation: img-psicoonco 4s linear infinite;
+}
+@keyframes img-psicoonco {
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+                                /*TCC INDIVIDUAL*/
+
+    /*-----------------------------BANNER TCC---------------------------*/
+
+.banner-tcc .contenedor-banner-tcc{
+    display: flex;
+    max-width: 100%;
+    height: 60vh;
+    animation: banner-tcc 5s infinite linear alternate;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    position: relative;
+}
+@keyframes banner-tcc{
+    0%, 50%{
+        background-image: url(../img/banner-tcc.jpg);
+    }
+    51%, 100%{
+        background-image: url(../img/banner-tcc2.jpg);
+    }
+}
+.banner-tcc .contenedor-banner-tcc .wrap-tcc{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+}
+.banner-tcc .contenedor-banner-tcc .wrap-tcc h2{
+    color: black;
+    font-size: 35px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 3px solid white;
+    padding: 10px 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
+    position: relative;
+}
+.banner-tcc .contenedor-banner-tcc .wrap-tcc p{
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: oblique;
+}
+.banner-tcc .contenedor-banner-tcc .wave-tcc1{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+}
+.banner-tcc .contenedor-banner-tcc .wave-tcc2{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+}
+
+    /*--------------------------------CONTENIDO TCC--------------------------*/
+
+.tcc-main{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/psicoterapiaTCC.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.servicio-tcc{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden
+}
+
+            /*---------------------------PARTE 1------------------------------*/
+
+.servicio-tcc .parte1-tcc{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.servicio-tcc .parte1-tcc div p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 10px;
+}
+.servicio-tcc .parte1-tcc img{
+    width: 40%;
+    height: 50%;
+    border: 5px solid hsl(288, 29%, 37%);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+}
+
+            /*---------------------------PARTE 2------------------------------*/
+
+.servicio-tcc .parte2-tcc h2{
+    text-align: center;
+    font-size: 30px;
+    color: #642a73;
+    font-weight: 700;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+}
+.servicio-tcc .parte2-tcc p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+.servicio-tcc .parte2-tcc img{
+    width: 350px;
+    height: 250px;
+    float: right;
+    animation: img-tcc1 4s linear infinite;
+}
+@keyframes img-tcc1 {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+            /*---------------------------PARTE 3------------------------------*/
+
+.servicio-tcc .parte3-tcc h2{
+    text-align: center;
+    font-size: 30px;
+    color: #642a73;
+    font-weight: 700;
+    padding: 15px;
+    letter-spacing: 2px;
+}
+.servicio-tcc .parte3-tcc p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+.servicio-tcc .parte3-tcc img{
+    width: 350px;
+    height: 250px;
+    float: right;
+    animation: img-tcc2 4s linear infinite;
+}
+@keyframes img-tcc2 {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+            /*---------------------------PARTE 4------------------------------*/
+
+.servicio-tcc .parte4-tcc h2{
+    text-align: center;
+    font-size: 30px;
+    color: #642a73;
+    font-weight: 700;
+    padding: 15px;
+    letter-spacing: 2px;
+}
+.servicio-tcc .parte4-tcc p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+.servicio-tcc .parte4-tcc ul li{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+.servicio-tcc .parte4-tcc img{
+    width: 350px;
+    height: 250px;
+    float: right;
+    animation: img-tcc3 4s linear infinite;
+}
+@keyframes img-tcc3 {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+            /*---------------------------PARTE 5------------------------------*/
+
+.servicio-tcc .parte5-tcc .p5-1{
+    margin-top: 15px;
+    padding: 20px;
+    border: 4px solid white;
+    padding: 10px 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(30px);
+}
+.servicio-tcc .parte5-tcc .p5-1 h3{
+    text-align: center;
+    font-size: 25px;
+    color: #642a73;
+    font-weight: 700;
+    padding: 15px;
+    letter-spacing: 2px;
+}
+.servicio-tcc .parte5-tcc .p5-1 p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    font-style: oblique;
+    color: #6e4379;
+    font-weight: 500;
+}
+.servicio-tcc .parte5-tcc .p5-2{
+    margin-top: 15px;
+}
+
+.servicio-tcc .parte5-tcc .p5-2 ul{
+    padding-left: 5px;
+}
+.servicio-tcc .parte5-tcc .p5-2 ul li span{
+    background-color: hsla(288, 29%, 37%, 0.658);
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+.servicio-tcc .parte5-tcc .p5-3{
+    margin-top: 15px;
+}
+.servicio-tcc .parte5-tcc .p5-3 ul{
+    padding-left: 5px;
+}
+.servicio-tcc .parte5-tcc .p5-3 ul li span{
+    background-color: hsla(288, 29%, 37%, 0.658);
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;
+}
+                                /*SOLICITAR TURNO*/
+
+.turnos{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contenedor-turnos{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.solicitar-turno{
+    margin: auto;
+    width: 400px;
+    background-color: hsla(288, 29%, 37%, 0.589);
+    padding: 50px;
+    border-radius: 5px;
+    color: white;
+}
+.solicitar-turno h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.formularios{
+    width: 100%;
+    background-color: hsla(288, 29%, 37%, 0.863);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: 18px;
+}
+.formularios:hover{
+    box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699);
+}
+.solicitar-turno h3{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0px 10px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.solicitar-turno select{
+    width: 100%;
+    background-color: hsla(288, 29%, 37%, 0.863);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.solicitar-turno select:hover{
+    box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699);
+}
+.turnos .contenedor-turnos .solicitar-turno .date{
+    width: 100%;
+    background-color: hsla(288, 29%, 37%, 0.863);
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.turnos .contenedor-turnos .solicitar-turno .date:hover{
+    box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699);
+}
+.terminos-condiciones{
+    font-size: 22px;
+    margin: 45px 0px 10px;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+.solicitar-turno label{
+    font-size: 18px;
+}
+.agrega-comentarios{
+    font-size: 22px;
+    margin: 20px 0px 10px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+.solicitar-turno textarea{
+    width: 100%;
+    background-color: hsla(288, 29%, 37%, 0.863);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: 15px;
+}
+.turnos .contenedor-turnos .solicitar-turno textarea:hover{
+    box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699);
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: hsla(288, 29%, 37%, 0.863);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: 18px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: hsla(288, 32%, 59%, 0.863);
+    transform: scale(1.1);
+}
+
+                                /*CONTACTO*/
+
+.pagina-contacto{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.pagina-contacto .contenedor-contacto{
+    padding: 40px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.pagina-contacto .contenedor-contacto .enviar-correo h2{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0.1em 0.1em 0.2em white;
+}
+.pagina-contacto .contenedor-contacto .enviar-correo h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.pagina-contacto .contenedor-contacto .enviar-correo h3 span{
+    color: white;
+    background-color: hsla(288, 29%, 37%, 0.89);
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+.pagina-contacto .contenedor-contacto .enviar-correo h3 span a{
+    text-decoration: none;
+    color: white;
+}
+.pagina-contacto .contenedor-contacto .container-campos{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pagina-contacto .contenedor-contacto .container-campos .campos{
+    width: 50%;
+    background-color: hsla(288, 29%, 37%, 0.89);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+.pagina-contacto .contenedor-contacto .container-campos .campos:hover{
+    box-shadow: 4px 4px 4px rgb(182, 137, 190);
+}
+.pagina-contacto .contenedor-contacto .container-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pagina-contacto .contenedor-contacto .container-mensaje h4{
+    margin: 20px 0px 15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    color: #642a73;
+}
+.pagina-contacto .contenedor-contacto .container-mensaje textarea{
+    width: 50%;
+    background-color: hsla(288, 29%, 37%, 0.89);
+    border: 1px solid white;
+    margin-bottom: 15px;
+    transition: all 0.4s ease;
+}
+.pagina-contacto .contenedor-contacto .container-mensaje textarea:hover{
+    box-shadow: 4px 4px 4px rgb(182, 137, 190);
+}
+.pagina-contacto .contenedor-contacto .container-mensaje input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 20%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #642a73;
+    color: white;
+    font-size: 15px;
+    box-shadow: 0.1em 0.1em 0.2em rgb(51, 51, 51);
+    transition: all 0.4s ease;
+}
+.pagina-contacto .contenedor-contacto .container-mensaje input:hover{
+    background-color: hsla(288, 32%, 59%, 0.863);
+    transform: scale(1.1);
+}
+.pagina-contacto .contenedor-contacto .iframe{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.pagina-contacto .contenedor-contacto .iframe h2{
+    color: #642a73;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.pagina-contacto .contenedor-contacto .iframe iframe{
+    filter: brightness(50%);
+    border: 3px solid #642a73;
+    box-shadow: 0.1em 0.1em 0.2em rgb(51, 51, 51);
+    transition: all 2s ease;
+}
+.pagina-contacto .contenedor-contacto .iframe iframe:hover{
+    filter: brightness(100%);
+}
+
+                                /*BLOG*/
+
+.page-blog{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/blog-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+    /*---------------------HEADER---------------------*/
+
+.encabezado .contenedorlogo-h1 h1 span{
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 35px;
+    animation: text-h1 2s linear infinite;
+}
+@keyframes text-h1 {
+    0%, 50%{
+        color: white;
+    }
+    51%, 100%{
+        color: #a581b1;
+    }
+}
+
+    /*---------------CONTENIDO BLOG---------------*/
+
+.blog{
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.blog h2{
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #642a73;
+    margin-bottom: 40px;
+}
+.blog .grid-blog{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    /* grid-template-rows: repeat(3,1fr); */
+    gap: 20px;
+    padding: 20px;
+}
+.blog .grid-blog div .flex-blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    filter: grayscale(70%);
+}
+.blog .grid-blog div .flex-blog:hover{
+    filter: opacity(1);
+    transform: scale(1.04);
+}
+.blog .grid-blog div div{
+    box-shadow: 2px 2px 5px black;
+    position: relative;
+    border-radius: 10px;
+}
+.blog .grid-blog div div img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.blog .grid-blog div div a{
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    bottom: 0;
+    width: 100%;
+    line-height: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/*---------------------------------------------------------------------------------------------------------*/
+
+    /*---------------------------------RESPONSIVE-------------------------------------------*/
+
+    @media(max-width:470px){ 
+
+        /*--------------------INDEX-----------------------*/
+    
+                /*HEADER*/
+        
+        .encabezado .menu img{
+            width: 17vw;
+            padding-left: 15px;
+        }
+        .encabezado{
+            justify-content: space-between;
+            padding-left: 15px;
+            height: 12vh;
+        }
+        .contenedorlogo-h1 img{
+            width: 15vw;
+        }
+        .contenedorlogo-h1 h1{
+            font-size: 6vw;
+        }
+        #toggle:checked ~ .navigation{
+            display: block;
+            background-color: black;
+        }
+    
+                /*BANNER 1*/
+
+        .banner-1 .conte{
+            height: 65vh;
+        }
+        .banner-1 .conte .wrap .box h2{
+            text-align: center;
+        }
+        .banner-1 .conte .wrap .box .cards{
+            display: flex;
+            justify-content: center;
+        }
+        .banner-1 .conte .wrap .box .cards img{
+            padding: 10px;
+            width: 32vw;
+            height: 15vh;
+        }
+        .banner-1 .conte .wrap .box .botones{
+            flex-direction: row;
+        }
+        .banner-1 .conte .wrap .box .botones a{
+            padding: 2vh 4vw 2vh 4vw;
+            margin: 0 auto;
+        }
+    
+                /*SECTION 1*/
+
+        .section-1 .contenedor-section-1 h2{
+            font-size: 7vw;
+            margin-top: 10px;
+        }
+        .section-1 .contenedor-section-1 .bloque-1{
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-1 .contenedor-section-1 .bloque-1 .bl1-txt{
+            padding: 5px 0px 20px;
+        }
+        .section-1 .contenedor-section-1 .bloque-1 div p{
+            font-size: 5vw;
+        }
+        .section-1 .contenedor-section-1 .bloque-1 .bl1-img img{
+            width: 60vw;
+            height: 60vw;
+            padding-bottom: 15px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2{
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .psicooncologia{
+            background-color: hsla(288, 29%, 37%, 0.658);
+            width: 100%;
+            
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .psicooncologia p{
+            text-align: justify-all;
+            color: white;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
+            width: 70vw;
+            height: 30vh;
+            object-fit: cover;
+            margin: 0 auto;       
+            margin-bottom: 10px;
+            border: 3px solid #642a73;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a{
+            text-align: left;
+            color: white;
+            font-size: 25px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .tcc{
+            background-color: hsla(288, 29%, 37%, 0.658);
+            width: 100%;
+            margin-top: 10px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .tcc p{
+            text-align: justify-all;
+            color: white;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .tcc img{
+            width: 70vw;
+            height: 30vh;
+            object-fit: cover;
+            margin: 0 auto;       
+            margin-bottom: 10px;
+            border: 3px solid #642a73;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .tcc a{
+            text-align: left;
+            color: white;
+            font-size: 25px;
+        }
+
+                /*SECTION 2*/
+
+        .section-2 .contenedor-section-2 .titulo2{
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        .section-2 .contenedor-section-2 .ilustracion-textos h3{
+            text-align: center;
+        }
+        .section-2 .contenedor-section-2 .ilustracion-textos p{
+            text-align: center;
+        }
+
+                /*GALERIA*/
+        
+        .galeria{
+            padding-top: 5px;
+        }
+        .galeria .h2{
+            padding: 10px;
+            font-size: 30px;
+        }
+        .galeria .grid-galeria{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,1fr);
+            margin: 0 auto;
+        }
+        .galeria .grid-galeria .grid-item .flex-item{
+            width: 100%;
+            height: 95%;
+            padding: 5px;
+            justify-content: center;
+        }
+        .galeria .grid-galeria .grid-item .flex-item img{
+            width: 70vw;
+            height: 30vh;
+            object-fit: cover;
+        }
+        .galeria .grid-galeria .grid-item .flex-item h3{
+            font-size: 23px;
+            padding: 10px;
+        }
+        .galeria .grid-galeria .grid-item .flex-item p{
+            font-size: 18px;
+        }
+                /*Section 3*/
+
+        .section-3 .bg-section-3{
+            height: 100%;
+        }
+        .section-3 .bg-section-3 h2{
+            text-align: center;
+            font-size: 7vw;
+            padding: 10px;
+        }
+        .section-3 .bg-section-3 .contenedor-flex{
+            flex-direction: column;
+            padding-top: 15px;
+        }
+        .section-3 .bg-section-3 .contenedor-flex .flex-div{
+            justify-content: center;
+            width: 85vw;
+            height: 40vh;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .section-3 .bg-section-3 .contenedor-flex .flex-div h3{
+            font-size: 7vw;
+        }
+        .section-3 .bg-section-3 .contenedor-flex .flex-div p{
+            font-size: 5vw;
+        }
+
+                /*SECTION 4*/
+
+        .section-4 .contenedor-section-4{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-1{
+            width: 100%;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-1 h3{
+            font-size: 8vw;
+            text-align: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-1 p{
+            text-align: center;
+            font-size: 5vw;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-1 a{
+            margin-left: 25vw;
+            padding: 3vh 5vw;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2{
+            width: 100%;
+            margin-top: 35px;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div h3{
+            text-align: center;
+            font-size: 25px;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div h4{
+            text-align: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div p{
+            text-align: center;
+            font-size: 5vw;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div{
+            display: flex;
+            flex-direction: column;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div img{
+            margin: 0 auto;
+            width: 60vw;
+        }
+
+                /*BANNER 2*/
+
+        .banner-2 .conte-2 .wrap-2{
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 h2{
+            text-align: center;
+            font-size: 9vw;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 p{
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 span{
+            display: block;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            padding: 2vh 4vw 2vh 4vw;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2{
+            margin-bottom: 10px;
+        }
+
+                /*FOOTER*/
+
+        footer .pie-pagina .logo-pie img{
+            width: 15vw;
+        }
+        footer .pie-pagina .logo-pie h2{
+            font-size: 6vw;
+        }
+        footer .pie-pagina .redes{
+            display: flex;
+        }
+        footer .pie-pagina .redes img{
+            width: 10vw;
+        }
+        footer .leyenda p{
+            font-size: 5vw;
+            padding-top: 15px;
+        }
+
+        /*--------------------CONOCEME-----------------------*/
+
+                /*BANNER 3*/
+
+        .banner-3 .conte-3{
+            height: 45vh;
+        }
+        .banner-3 .conte-3 .wrap-3{
+            padding: 0px 15px;
+        }
+        .banner-3 .conte-3 .wrap-3 h2{
+            font-size: 25px;
+            color: white;
+            border: none;
+            backdrop-filter: blur(1.5px);
+        }
+        .banner-3 .conte-3 .wave-5{
+            fill: none;
+        }
+        .banner-3 .conte-3 .wave-6{
+            fill: none;
+        }
+
+                /*CONTENIDO CONOCEME*/
+
+        .conoceme .contenedor-conoceme{
+            flex-direction: column-reverse;
+        }
+        .conoceme .contenedor-conoceme .contenido-conoceme{
+            width: 100%;
+        }
+        .contenedor-conoceme .contenido-conoceme p{
+            font-size: 20px;
+            width: 100%;
+        }
+        .conoceme .contenedor-conoceme img{
+            width: 250px;
+            height: 250px;
+            margin-bottom: 20px;
+            filter: none;
+        }
+        .conoceme .contenedor-conoceme img:hover{
+            transform: none;
+            filter: none;
+        }
+
+        /*--------------------PSICOONCOLOGIA-----------------------*/
+
+                /*BANNER PSICOONCOLOGIA*/
+
+        .banner-psicooncologia .contenedor-banner-psicoonco{
+            height: 45vh;
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
+            padding: 0px 15px;
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia h2{
+            font-size: 25px;
+            color: black;
+            border: none;
+            backdrop-filter: blur(1.5px);
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1{
+            fill: none;
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2{
+            fill: none;
+        }
+
+                /*CONTENIDO PSICOONCOLOGIA*/
+
+        .servicio-psicooncologia{
+            padding: 15px 0px;
+        }
+        .servicio-psicooncologia .parte1-onco{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-psicooncologia .parte1-onco img{
+            width: 80vw;
+            height: 25vh;
+            object-fit: cover;
+        }
+        .servicio-psicooncologia .parte4-onco{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-psicooncologia .parte4-onco img{
+            float: none;
+        }
+
+        /*--------------------TCC INDIVIDUAL-----------------------*/
+
+                /*BANNER TCC*/
+
+        .banner-tcc .contenedor-banner-tcc{
+            height: 45vh;
+        }
+        .banner-tcc .contenedor-banner-tcc .wrap-tcc{
+            padding: 0px 15px;
+        }
+        .banner-tcc .contenedor-banner-tcc .wrap-tcc h2{
+            font-size: 25px;
+            color: white;
+            border: none;
+            backdrop-filter: blur(1.5px);
+        }
+        .banner-tcc .contenedor-banner-tcc .wave-tcc1{
+            fill: none
+        }
+        .banner-tcc .contenedor-banner-tcc .wave-tcc2{
+            fill: none
+        }
+
+                /*CONTENIDO TCC*/
+        
+        .servicio-tcc{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            padding: 15px 0px;
+        }
+        .servicio-tcc .parte1-tcc{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-tcc .parte1-tcc img{
+            width: 80vw;
+            height: 25vh;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .servicio-tcc .parte2-tcc img{
+            width: 80vw;
+            height: 25vh;
+        }
+        .servicio-tcc div{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-tcc .parte3-tcc img{
+            width: 80vw;
+            height: 25vh;
+        }
+        .servicio-tcc .parte4-tcc img{
+            width: 80vw;
+            height: 25vh;
+        }
+
+        /*--------------------SOLICITAR TURNO-----------------------*/
+
+        .turnos .contenedor-turnos .solicitar-turno{
+            width: 100%;
+        }
+        .turnos .contenedor-turnos .solicitar-turno h2{
+            font-size: 28px;
+        }
+        .turnos .contenedor-turnos .solicitar-turno h3{
+            font-size: 20px;
+        }
+        .turnos .contenedor-turnos .solicitar-turno h4{
+            font-size: 18px;
+        }
+
+        /*--------------------CONTACTO-----------------------*/
+        
+        .pagina-contacto .contenedor-contacto{
+            display: flex;
+            flex-direction: column;
+        }
+        .pagina-contacto .contenedor-contacto .enviar-correo h3{
+            text-align: center;
+        }
+        .pagina-contacto .contenedor-contacto .enviar-correo h3 span{
+            display: block;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .pagina-contacto .contenedor-contacto .enviar-correo h3 span a{
+            color: #642a73;
+            font-size: 21px;
+            font-weight: 700;
+        }
+        .pagina-contacto .contenedor-contacto .container-campos .campos{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .pagina-contacto .contenedor-contacto .container-mensaje textarea{
+            width: 100%;
+            padding: 15px;
+        }
+        .pagina-contacto .contenedor-contacto .container-mensaje input{
+            width: 70%;
+        }
+        .pagina-contacto .contenedor-contacto .iframe{
+            align-items: center;
+        }
+        .pagina-contacto .contenedor-contacto .iframe iframe{
+            width: 250px;
+            height: 200px;
+        }
+
+        /*-----------------------BLOG-------------------------*/
+
+        .encabezado .contenedorlogo-h1 h1{
+            font-size: 7vw;
+        }    
+        .encabezado .contenedorlogo-h1 h1 span{
+            font-size: 25px;
+        }
+    }
+
+    @media(max-width:767px) and (min-width:471px){
+
+        /*--------------------INDEX-----------------------*/
+
+                /*HEADER*/
+        
+        .encabezado .menu img{
+            width: 15vw;
+            padding-left: 15px;
+        }
+        .encabezado{
+            justify-content: space-between;
+            padding-left: 15px;
+            height: 17vh;
+        }
+        .contenedorlogo-h1 img{
+            width: 15vw;
+        }
+        .contenedorlogo-h1 h1{
+            font-size: 6vw;
+        }
+        #toggle:checked ~ .navigation{
+            display: block;
+            background-color: black;
+        }
+    
+                /*BANNER 1*/
+
+        .banner-1 .conte{
+            height: 60vh;
+        }
+        .banner-1 .conte .wrap .box h2{
+            text-align: center;
+        }
+        .banner-1 .conte .wrap .box .cards{
+            display: flex;
+            justify-content: center;
+        }
+        .banner-1 .conte .wrap .box .cards img{
+            padding: 10px;
+            width: 18vw;
+            height: 12vh;
+        }
+        .banner-1 .conte .wrap .box .botones{
+            flex-direction: row;
+        }
+        .banner-1 .conte .wrap .box .botones a{
+            padding: 2vh 4vw 2vh 4vw;
+            margin: 0 auto;
+        }
+    
+                /*SECTION 1*/
+
+        .section-1 .contenedor-section-1 h2{
+            font-size: 6vw;
+            margin-top: 10px;
+        }
+        .section-1 .contenedor-section-1 .bloque-1{
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-1 .contenedor-section-1 .bloque-1 .bloque-1 .bl1-txt{
+            padding: 5px 0px 20px;
+        }
+        .section-1 .contenedor-section-1 .bloque-1 div p{
+            font-size: 4vw;
+        }
+        .section-1 .contenedor-section-1 .bloque-1 .bl1-img img{
+            width: 50vw;
+            height: 50vw;
+            padding-bottom: 15px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2{
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .psicooncologia{
+            background-color: hsla(288, 29%, 37%, 0.658);
+            width: 100%;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .psicooncologia p{
+            text-align: justify-all;
+            color: white;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
+            width: 70vw;
+            height: 30vh;
+            object-fit: cover;
+            margin: 0 auto;       
+            margin-bottom: 10px;
+            border: 3px solid #642a73;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .tcc{
+            background-color: hsla(288, 29%, 37%, 0.658);
+            width: 100%;
+            margin-top: 10px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .tcc p{
+            text-align: justify-all;
+            color: white;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .tcc img{
+            width: 70vw;
+            height: 30vh;
+            object-fit: cover;
+            margin: 0 auto;       
+            margin-bottom: 10px;
+            border: 3px solid #642a73;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 .tcc a{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+                /*SECTION 2*/
+
+        .section-2 .contenedor-section-2 .titulo2{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        .section-2 .contenedor-section-2 .ilustracion-textos h3{
+            text-align: center;
+        }
+        .section-2 .contenedor-section-2 .ilustracion-textos p{
+            text-align: center;
+        }
+                /*GALERIA*/
+        
+        .galeria{
+            padding-top: 5px;
+        }
+        .galeria .h2{
+            padding: 10px;
+            font-size: 30px;
+        }
+        .galeria .grid-galeria{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 5px;
+        }
+        .galeria .grid-galeria .grid-item .flex-item{
+            width: 42vw;
+            height: 100%;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .galeria .grid-galeria .grid-item .flex-item img{
+            width: 32vw;
+            height: 20vh;
+            object-fit: cover;
+        }
+        .galeria .grid-galeria .grid-item .flex-item h3{
+            font-size: 18px;
+            padding: 15px;
+        }
+        .galeria .grid-galeria .grid-item .flex-item p{
+            font-size: 16px;
+        }
+                /*SECTION 3*/
+
+        .section-3 .bg-section-3{
+            height: 100%;
+        }
+        .section-3 .bg-section-3 h2{
+            text-align: center;
+            font-size: 5vw;
+            padding: 10px;
+        }
+        .section-3 .bg-section-3 .contenedor-flex{
+            flex-direction: row;
+            padding-top: 15px;
+        }
+        .section-3 .bg-section-3 .contenedor-flex .flex-div{
+            width: 85vw;
+            height: 48vh;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            margin-right: 10px;
+        }
+        .section-3 .bg-section-3 .contenedor-flex .flex-div h3{
+            font-size: 3vw;
+        }
+        .section-3 .bg-section-3 .contenedor-flex .flex-div p{
+            font-size: 3vw;
+        }
+                /*SECTION 4*/
+
+        .section-4 .contenedor-section-4{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-1{
+            width: 100%;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-1 h3{
+            font-size: 6vw;
+            text-align: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-1 p{
+            text-align: center;
+            font-size: 4vw;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-1 a{
+            margin-left: 25vw;
+            padding: 3vh 5vw;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2{
+            width: 100%;
+            margin-top: 35px;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div h3{
+            text-align: center;
+            font-size: 25px;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div h4{
+            text-align: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div{
+            display: flex;
+            flex-direction: column;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div img{
+            margin: 0 auto;
+            width: 50vw;
+        }
+                /*BANNER 2*/
+
+        .banner-2 .conte-2 .wrap-2{
+            flex-direction: column;
+            justify-content: center; 
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 h2{
+            text-align: center;
+            font-size: 8vw;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 p{
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 span{
+            display: block;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+            padding: 2vh 4vw 2vh 4vw;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2{
+            margin-bottom: 10px;
+        }
+                /*FOOTER*/
+        footer .pie-pagina .logo-pie img{
+            width: 10vw;
+        }
+        footer .pie-pagina .logo-pie h2{
+            font-size: 4vw;
+        }
+        footer .pie-pagina .redes{
+            display: flex;
+        }
+        footer .pie-pagina .redes img{
+            width: 7vw;
+        }
+        footer .leyenda p{
+            font-size: 3vw;
+            padding-top: 15px;
+        }
+
+        /*--------------------CONOCEME-----------------------*/
+    
+                /*BANNER 3*/
+    
+        .banner-3 .conte-3{
+            height: 55vh;
+        }
+        .banner-3 .conte-3 .wrap-3{
+            padding: 0px 15px;
+        }
+        .banner-3 .conte-3 .wrap-3 h2{
+            font-size: 25px;
+            color: white;
+            border: none;
+            backdrop-filter: blur(1.5px);
+        }
+        .banner-3 .conte-3 .wave-5{
+            fill: none;
+        }
+        .banner-3 .conte-3 .wave-6{
+            fill: none;
+        }
+
+                /*CONTENIDO CONOCEME*/
+
+        .conoceme .contenedor-conoceme{
+            padding: 50px 0px;
+            flex-direction: column-reverse;
+        }
+        .conoceme .contenedor-conoceme .contenido-conoceme{
+            width: 100%;
+        }
+        .contenedor-conoceme .contenido-conoceme p{
+            font-size: 20px;
+            width: 100%;
+        }
+        .conoceme .contenedor-conoceme img{
+            width: 250px;
+            height: 250px;
+            margin-bottom: 20px;
+            filter: none;
+        }
+        .conoceme .contenedor-conoceme img:hover{
+            transform: none;
+            filter: none;
+        }
+
+        /*--------------------PSICOONCOLOGIA-----------------------*/
+
+                /*BANNER PSICOONCOLOGIA*/
+
+        .banner-psicooncologia .contenedor-banner-psicoonco{
+            height: 55vh;
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
+            padding: 0px 15px;
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia h2{
+            font-size: 25px;
+            color: black;
+            border: none;
+            backdrop-filter: blur(1.5px);
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1{
+            fill: none;
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2{
+            fill: none;
+        }
+
+                /*CONTENIDO PSICOONCOLOGIA*/
+
+        .servicio-psicooncologia{
+            padding: 15px 0px;
+        }
+        .servicio-psicooncologia .parte1-onco{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-psicooncologia .parte1-onco img{
+            width: 60vw;
+            height: 45vh;
+            object-fit: cover;
+        }
+        .servicio-psicooncologia .parte4-onco{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-psicooncologia .parte4-onco img{
+            float: none;
+        }
+
+        /*--------------------TCC INDIVIDUAL-----------------------*/
+
+                /*BANNER TCC*/
+
+        .banner-tcc .contenedor-banner-tcc{
+            height: 55vh;
+        }
+        .banner-tcc .contenedor-banner-tcc .wrap-tcc{
+            padding: 0px 15px;
+        }
+        .banner-tcc .contenedor-banner-tcc .wrap-tcc h2{
+            font-size: 25px;
+            color: rgb(109, 108, 108);
+            border: none;
+            backdrop-filter: blur(1.5px);
+        }
+        .banner-tcc .contenedor-banner-tcc .wave-tcc1{
+            fill: none
+        }
+        .banner-tcc .contenedor-banner-tcc .wave-tcc2{
+            fill: none
+        }
+
+                /*CONTENIDO TCC*/
+        
+        .servicio-tcc{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            padding: 15px 0px;
+        }
+        .servicio-tcc .parte1-tcc{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-tcc .parte1-tcc img{
+            width: 70vw;
+            height: 40vh;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .servicio-tcc .parte2-tcc img{
+            width: 60vw;
+            height: 35vh;
+        }
+        .servicio-tcc div{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-tcc .parte3-tcc img{
+            width: 60vw;
+            height: 35vh;
+        }
+        .servicio-tcc .parte4-tcc img{
+            width: 60vw;
+            height: 35vh;
+        }
+    
+        /*--------------------SOLICITAR TURNO-----------------------*/
+
+        .turnos .contenedor-turnos .solicitar-turno{
+            width: 80%;
+        }
+        .turnos .contenedor-turnos .solicitar-turno h2{
+            font-size: 28px;
+        }
+        .turnos .contenedor-turnos .solicitar-turno h3{
+            font-size: 20px;
+        }
+        .turnos .contenedor-turnos .solicitar-turno h4{
+            font-size: 18px;
+        }
+
+        /*--------------------CONTACTO-----------------------*/
+        
+        .pagina-contacto .contenedor-contacto{
+            display: flex;
+            flex-direction: column;
+        }
+        .pagina-contacto .contenedor-contacto .enviar-correo h3{
+            text-align: center;
+        }
+        .pagina-contacto .contenedor-contacto .enviar-correo h3 span{
+            display: block;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .pagina-contacto .contenedor-contacto .enviar-correo h3 span a{
+            color: #642a73;
+            font-size: 21px;
+            font-weight: 700;
+        }
+        .pagina-contacto .contenedor-contacto .container-campos .campos{
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .pagina-contacto .contenedor-contacto .container-mensaje textarea{
+            width: 80%;
+            padding: 15px;
+        }
+        .pagina-contacto .contenedor-contacto .container-mensaje input{
+            width: 40%;
+        }
+        .pagina-contacto .contenedor-contacto .iframe{
+            align-items: center;
+        }
+        .pagina-contacto .contenedor-contacto .iframe iframe{
+            width: 60vw;
+            height: 60vh;
+        }
+    }
+
+    @media(max-width:850px) and (min-width:768px){
+
+        /*--------------------INDEX----------------------*/
+
+                /*HEADER*/
+
+        .encabezado{
+            justify-content: space-between;
+            padding-left: 15px;
+            height: 12vh;
+        }
+        .contenedorlogo-h1 img{
+            width: 10vw;
+        }
+        .contenedorlogo-h1 h1{
+            font-size: 4vw;
+        }
+
+                /*BANNER 1*/
+
+        .banner-1 .conte{
+            height: 60vh;
+        }
+        .banner-1 .conte .wrap .box .cards{
+            display: flex;
+            justify-content: center;
+        }
+        .banner-1 .conte .wrap .box .cards img{
+            padding: 10px;
+            width: 16vw;
+            height: 13vh;
+        }
+        .banner-1 .conte .wrap .box .botones a{
+            padding: 2vh 3vw 2vh 3vw;
+            margin: 0 auto;
+        }
+
+                /*SECTION 1*/
+        
+        .section-1 .contenedor-section-1 .bloque-2{
+            justify-content: space-evenly;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 div img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+                /*GALERIA*/
+        
+        .galeria{
+            padding-top: 5px;
+        }
+        .galeria .grid-galeria{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 5px;
+        }
+        .galeria .grid-galeria .grid-item .flex-item{
+            width: 42vw;
+            height: 100%;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .galeria .grid-galeria .grid-item .flex-item img{
+            width: 32vw;
+            height: 20vh;
+            object-fit: cover;
+        }
+        .galeria .grid-galeria .grid-item .flex-item h3{
+            font-size: 20px;
+            padding: 15px;
+        }
+        .galeria .grid-galeria .grid-item .flex-item p{
+            font-size: 18px;
+        }
+
+                /*SECTION 3*/
+        
+        .section-3 .bg-section-3 .contenedor-flex .flex-div{
+            margin: 0 auto;
+            width: 220px;
+            height: 250px;
+        }
+
+                /*SECTION 4*/
+        
+        .section-4 .contenedor-section-4 .contenedor4-1{
+            margin-right: 20px;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div h3{
+            text-align: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div h4{
+            text-align: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div p{
+            text-align: center;
+            padding: 0px 3px;
+        }
+
+                /*BANNER 2*/
+        
+        .banner-2 .conte-2{
+            height: 55vh;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2{
+            margin: 0 auto;
+        }
+
+        /*--------------------CONOCEME-----------------------*/
+    
+                /*BANNER 3*/
+    
+        .banner-3 .conte-3{
+            height: 60vh;
+        }
+        .banner-3 .conte-3 .wrap-3{
+            padding: 0px 15px;
+        }
+        .banner-3 .conte-3 .wrap-3 h2{
+            color: white;
+        }
+
+                /*CONTENIDO CONOCEME*/
+
+        .conoceme .contenedor-conoceme{
+            padding: 50px 0px;
+        }
+        .conoceme .contenedor-conoceme .contenido-conoceme{
+            width: 50%;
+        }
+        .conoceme .contenedor-conoceme .contenido-conoceme p{
+            font-size: 20px;
+            width: 100%;
+        }
+        .conoceme .contenedor-conoceme img{
+            filter: none;
+        }
+        .conoceme .contenedor-conoceme img:hover{
+            transform: none;
+            filter: none;
+        }
+        
+        /*--------------------PSICOONCOLOGIA-----------------------*/
+
+                /*BANNER PSICOONCOLOGIA*/
+
+        .banner-psicooncologia .contenedor-banner-psicoonco{
+            height: 60vh;
+        }
+        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
+            padding: 0px 15px;
+        }
+
+                /*CONTENIDO PSICOONCOLOGIA*/
+
+        .servicio-psicooncologia{
+            padding: 15px 0px;
+        }
+
+        /*--------------------TCC INDIVIDUAL-----------------------*/
+
+                /*BANNER TCC*/
+
+        .banner-tcc .contenedor-banner-tcc{
+            height: 65vh;
+        }
+        .banner-tcc .contenedor-banner-tcc .wrap-tcc{
+            padding: 0px 15px;
+        }
+
+                /*CONTENIDO TCC*/
+        
+        .servicio-tcc .parte1-tcc{
+            display: flex;
+            flex-direction: column;
+        }
+        .servicio-tcc .parte1-tcc img{
+            width: 60vw;
+            height: 40vh;
+            object-fit: cover;
+            margin: 20px 0px;
+        }
+
+        /*------------------CONTACTO----------------------*/
+
+        .pagina-contacto .contenedor-contacto .enviar-correo h3 span{
+            display: block;
+            text-align: center;
+            background: none;
+        }
+        .pagina-contacto .contenedor-contacto .enviar-correo h3 span a{
+            color: #642a73;
+            font-weight: 700;
+        }
+    }
+
+    @media(max-width:1100px) and (min-width:851px){
+
+        /*---------------------------INDEX--------------------------*/
+
+                /*HEADER*/
+
+        .encabezado{
+            justify-content: space-between;
+            padding-left: 15px;
+            height: 17vh;
+        }
+        .contenedorlogo-h1 img{
+            width: 10vw;
+        }
+        .contenedorlogo-h1 h1{
+            font-size: 4vw;
+        }
+
+                /*BANNER 1*/
+
+        .banner-1 .conte{
+            height: 60vh;
+        }
+        .banner-1 .conte .wrap .box .cards{
+            display: flex;
+            justify-content: center;
+        }
+        .banner-1 .conte .wrap .box .cards img{
+            padding: 10px;
+            width: 16vw;
+            height: 13vh;
+        }
+        .banner-1 .conte .wrap .box .botones a{
+            padding: 2vh 3vw 2vh 3vw;
+            margin: 0 auto;
+        }
+
+                /*SECTION 1*/
+        
+        .section-1 .contenedor-section-1 .bloque-2{
+            justify-content: space-evenly;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 div{
+            align-items: center;
+        }
+        .section-1 .contenedor-section-1 .bloque-2 div img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+                /*GALERIA*/
+
+        .galeria{
+            padding-top: 5px;
+        }
+        .galeria .grid-galeria{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 5px;
+        }
+        .galeria .grid-galeria .grid-item .flex-item{
+            width: 42vw;
+            height: 100%;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .galeria .grid-galeria .grid-item .flex-item img{
+            width: 32vw;
+            height: 20vh;
+            object-fit: cover;
+        }
+        .galeria .grid-galeria .grid-item .flex-item h3{
+            font-size: 20px;
+            padding: 15px;
+        }
+        .galeria .grid-galeria .grid-item .flex-item p{
+            font-size: 18px;
+        }
+
+                /*SECTION 3*/
+        
+        .section-3 .bg-section-3 .contenedor-flex .flex-div{
+            margin: 0 auto;
+            width: 220px;
+            height: 250px;
+        }
+
+                /*SECTION 4*/
+        
+        .section-4 .contenedor-section-4 .contenedor4-1{
+            margin-right: 20px;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div h3{
+            text-align: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div h4{
+            text-align: center;
+        }
+        .section-4 .contenedor-section-4 .contenedor4-2 div p{
+            text-align: center;
+            padding: 0px 3px;
+        }
+
+                /*BANNER 2*/
+        
+        .banner-2 .conte-2{
+            height: 55vh;
+        }
+        .banner-2 .conte-2 .wrap-2 .box-2{
+            margin: 0 auto;
+        }
+
+        /*-----------CONOCEME------------------*/
+
+                /*BANNER 3*/
+
+        .banner-3 .conte-3 .wrap-3{
+            padding: 0px 20px;
+        }
+
+                /*CONTENIDO CONOCEME*/
+
+        .conoceme .contenedor-conoceme .contenido-conoceme{
+            width: 50%;
+        }
+        .conoceme .contenedor-conoceme img{
+            filter: none;
+        }
+        .conoceme .contenedor-conoceme img:hover{
+            transform: none;
+            filter: none;
+        }
+
+        /*----------------PSICOONCOLOGIA-------------*/
+
+                /*BANNER PSICOONCOLOGIA*/
+
+        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
+            padding: 0px 20px;
+        }
+
+        /*---------------TCC INDIVIDUAL---------------*/
+
+                /*BANNER TCC*/
+
+        .banner-tcc .contenedor-banner-tcc .wrap-tcc{
+        padding: 0px 20px;
+        }
+
+    }
+    @media(max-width:1120px){
+
+        /*------------------INDEX----------------*/
+
+                /*HEADER*/
+
+        .encabezado label{
+            display: initial;
+        }
+        .encabezado{
+            padding: 20px 10%;
+        }
+        .encabezado .navigation{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: rgba(1, 1, 1, 0.7);
+            display: none;
+        }
+        .encabezado .navigation ul li{
+            width: 100%;
+        }
+        .encabezado .navigation ul li a{
+            padding: 8px 30px 8px 10%;
+        }
+        .encabezado .navigation ul li ul{
+            position: relative;
+            width: 100%;
+            left: 0;
+        }
+        .encabezado .navigation ul li ul li{
+            background-color: rgba(1, 1, 1, 0.7);
+        }
+        .encabezado .navigation ul li ul li ul{
+            position: relative;
+            width: 100%;
+            left: 0;
+        }
+        #toggle:checked ~ .navigation{
+            display: block;
+        }
+    }
