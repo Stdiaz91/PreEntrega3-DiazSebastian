@@ -668,7 +668,6 @@ main{
     left: 0;
     fill: hsla(273, 28%, 37%, 0.521);
     position: absolute;
-
 }
 .banner-2 .conte-2 .wave-4{
     width: 100%;
@@ -676,7 +675,21 @@ main{
     right: 0;
     fill: hsla(273, 28%, 37%, 0.521);
     position: absolute;
+}
 
+    /*----------------------- BOTON WHATSAPP--------------------------------*/
+
+.whatsapp{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.whatsapp img{
+    width: 60px;
+    filter: opacity(0.5);
+}
+.whatsapp img:hover{
+    filter: opacity(1);
 }
 
 /*----------------------- FOOTER--------------------------------*/
@@ -799,7 +812,7 @@ footer .leyenda p{
     position: absolute;
 }
 
-        /*---------------------CONTENIDO CONOCEME--------------------*/
+    /*---------------------CONTENIDO CONOCEME--------------------*/
 
 .conoceme{
     background: hsl(313, 35%, 69%);
@@ -1665,10 +1678,10 @@ footer .leyenda p{
             padding-left: 15px;
             height: 12vh;
         }
-        .contenedorlogo-h1 img{
+        .encabezado .contenedorlogo-h1 img{
             width: 15vw;
         }
-        .contenedorlogo-h1 h1{
+        .encabezado .contenedorlogo-h1 h1{
             font-size: 6vw;
         }
         #toggle:checked ~ .navigation{
@@ -1929,6 +1942,13 @@ footer .leyenda p{
             margin-bottom: 10px;
         }
 
+                /*BOTON WHATSAPP*/
+
+        .whatsapp img{
+        width: 50px;
+        filter: opacity(0.5);
+        }
+
                 /*FOOTER*/
 
         footer .pie-pagina .logo-pie img{
@@ -2177,10 +2197,10 @@ footer .leyenda p{
             padding-left: 15px;
             height: 17vh;
         }
-        .contenedorlogo-h1 img{
+        .encabezado .contenedorlogo-h1 img{
             width: 15vw;
         }
-        .contenedorlogo-h1 h1{
+        .encabezado .contenedorlogo-h1 h1{
             font-size: 6vw;
         }
         #toggle:checked ~ .navigation{
@@ -2672,10 +2692,10 @@ footer .leyenda p{
             padding-left: 15px;
             height: 12vh;
         }
-        .contenedorlogo-h1 img{
+        .encabezado .contenedorlogo-h1 img{
             width: 10vw;
         }
-        .contenedorlogo-h1 h1{
+        .encabezado .contenedorlogo-h1 h1{
             font-size: 4vw;
         }
 
