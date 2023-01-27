@@ -222,6 +222,9 @@ main{
 
     /*----------------------- SECTION 1--------------------------------*/
 
+.section-1{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 .section-1 .contenedor-section-1{
     padding: 40px 0;
     width: 90%;
@@ -230,6 +233,7 @@ main{
     overflow: hidden;
 }
 .section-1 .contenedor-section-1 .titulo1{
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-size: 30px;
     letter-spacing: 2px;
@@ -241,6 +245,8 @@ main{
     display: flex;
 }
 .section-1 .contenedor-section-1 .bloque-1 p{
+    font-family: 'Source Sans Pro', sans-serif;
+
     text-align: justify-all;
     font-size: 18px;
     font-weight: 600;
@@ -324,6 +330,9 @@ main{
 
     /*----------------------- SECTION 2--------------------------------*/
 
+.section-2{
+    font-family: 'Source Sans Pro', sans-serif;
+}
 .section-2 .contenedor-section-2{
     padding: 40px 0;
     width: 90%;
@@ -362,12 +371,6 @@ main{
     font-size: 18px;
     padding: 0px 0px 30px 15px;
     text-align: justify-all;
-}
-.section-2 .contenedor-section-2 .ilustracion-textos img{
-    width: 50px;
-    height: 50px;
-    float: right;
-    transition: all 0.4s ease;
 }
 
     /*----------------------- GALERIA--------------------------------*/
@@ -716,18 +719,12 @@ footer .pie-pagina .logo-pie h2{
     font-size: 25px;
 }
 footer .pie-pagina .logo-pie h2:hover{
-    color: #f263e9;
-}
-footer .pie-pagina .logo-pie h2:hover{
     cursor: default;
 }
 footer .pie-pagina .logo-pie img{
     width: 65px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
     margin-right: 10px;
-}
-footer .pie-pagina .logo-pie img:hover{
-    filter: invert(60%) sepia(90%) saturate(1901%) hue-rotate(273deg) brightness(95%) contrast(99%);
 }
 footer .pie-pagina .redes img{
     width: 50px;
@@ -1023,10 +1020,14 @@ footer .leyenda p{
     line-height: 1.5;
     padding-bottom: 15px;
 }
-.servicio-psicooncologia .parte4-onco img{
-    width: 250px;
-    height: 250px;
-    float: right;
+.servicio-psicooncologia .parte4-onco ul li .subparte4{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.servicio-psicooncologia .parte4-onco .subparte4 img{
+    width: 200px;
+    height: 200px;
     animation: img-psicoonco 4s linear infinite;
 }
 @keyframes img-psicoonco {
@@ -1159,17 +1160,20 @@ footer .leyenda p{
     padding-bottom: 15px;
     letter-spacing: 2px;
 }
-.servicio-tcc .parte2-tcc p{
+.servicio-tcc .parte2-tcc .txt-img-tcc2{
+    display: flex;
+    align-items: center;
+}
+.servicio-tcc .parte2-tcc .txt-img-tcc2 .txt-tcc2 p{
     text-align: justify all;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
     padding-bottom: 15px;
 }
-.servicio-tcc .parte2-tcc img{
+.servicio-tcc .parte2-tcc .txt-img-tcc2 .img-tcc2 img{
     width: 350px;
     height: 250px;
-    float: right;
     animation: img-tcc1 4s linear infinite;
 }
 @keyframes img-tcc1 {
@@ -1194,17 +1198,20 @@ footer .leyenda p{
     padding: 15px;
     letter-spacing: 2px;
 }
-.servicio-tcc .parte3-tcc p{
+.servicio-tcc .parte3-tcc .txt-img-tcc3{
+    display: flex;
+    align-items: center;
+}
+.servicio-tcc .parte3-tcc .txt-img-tcc3 .txt-tcc3 p{
     text-align: justify all;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
     padding-bottom: 15px;
 }
-.servicio-tcc .parte3-tcc img{
+.servicio-tcc .parte3-tcc .txt-img-tcc3 .img-tcc3 img{
     width: 350px;
     height: 250px;
-    float: right;
     animation: img-tcc2 4s linear infinite;
 }
 @keyframes img-tcc2 {
@@ -1229,24 +1236,20 @@ footer .leyenda p{
     padding: 15px;
     letter-spacing: 2px;
 }
-.servicio-tcc .parte4-tcc p{
+.servicio-tcc .parte4-tcc .txt-img-tcc4{
+    display: flex;
+    align-items: center;
+}
+.servicio-tcc .parte4-tcc .txt-img-tcc4 .txt-tcc4 p{
     text-align: justify all;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.5;
     padding-bottom: 15px;
 }
-.servicio-tcc .parte4-tcc ul li{
-    text-align: justify all;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.5;
-    padding-bottom: 15px;
-}
-.servicio-tcc .parte4-tcc img{
+.servicio-tcc .parte4-tcc .txt-img-tcc4 .img-tcc4 img{
     width: 350px;
     height: 250px;
-    float: right;
     animation: img-tcc3 4s linear infinite;
 }
 @keyframes img-tcc3 {
@@ -1260,6 +1263,14 @@ footer .leyenda p{
         transform: translateY(10px);
     }
 }
+.servicio-tcc .parte4-tcc ul li{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
+
 
             /*---------------------------PARTE 5------------------------------*/
 
@@ -1292,7 +1303,13 @@ footer .leyenda p{
 .servicio-tcc .parte5-tcc .p5-2{
     margin-top: 15px;
 }
-
+.servicio-tcc .parte5-tcc .p5-2 p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
+}
 .servicio-tcc .parte5-tcc .p5-2 ul{
     padding-left: 5px;
 }
@@ -1310,6 +1327,13 @@ footer .leyenda p{
 }
 .servicio-tcc .parte5-tcc .p5-3{
     margin-top: 15px;
+}
+.servicio-tcc .parte5-tcc .p5-3 p{
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px;
 }
 .servicio-tcc .parte5-tcc .p5-3 ul{
     padding-left: 5px;
@@ -1447,6 +1471,29 @@ footer .leyenda p{
     transform: scale(1.1);
 }
 
+
+.turnos .contenedor-turnos .boton-coll{
+    width: 100%;
+    margin-top: 25px;
+}
+.boton-coll p .boton-p{
+    display: block;
+    width: 100%;
+    background-color: hsla(288, 29%, 37%, 0.863);
+    padding: 10px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+}
+.boton-coll .collapse .card{
+    background-color: rgba(132, 99, 138, 0.699);
+    
+}
+
                                 /*CONTACTO*/
 
 .pagina-contacto{
@@ -1581,23 +1628,6 @@ footer .leyenda p{
     background-position: center;
     background-attachment: fixed;
 }
-    /*---------------------HEADER---------------------*/
-
-.encabezado .contenedorlogo-h1 h1 span{
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    font-size: 35px;
-    animation: text-h1 2s linear infinite;
-}
-@keyframes text-h1 {
-    0%, 50%{
-        color: white;
-    }
-    51%, 100%{
-        color: #a581b1;
-    }
-}
-
     /*---------------CONTENIDO BLOG---------------*/
 
 .blog{
@@ -1670,19 +1700,24 @@ footer .leyenda p{
                 /*HEADER*/
         
         .encabezado .menu img{
-            width: 17vw;
+            width: 70px;
+            /* width: 17vw; */
             padding-left: 15px;
         }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
-            height: 12vh;
+            /* height: 12vh; */
+            height: 80px;
         }
         .encabezado .contenedorlogo-h1 img{
-            width: 15vw;
+            /* width: 15vw; */
+            width: 60px;
         }
         .encabezado .contenedorlogo-h1 h1{
-            font-size: 6vw;
+            /* font-size: 6vw; */
+            /* font-size: 20px; */
+            display: none;
         }
         #toggle:checked ~ .navigation{
             display: block;
@@ -2051,12 +2086,9 @@ footer .leyenda p{
             height: 25vh;
             object-fit: cover;
         }
-        .servicio-psicooncologia .parte4-onco{
-            display: flex;
+        .servicio-psicooncologia .parte4-onco ul li .subparte4{
             flex-direction: column;
-        }
-        .servicio-psicooncologia .parte4-onco img{
-            float: none;
+            width: 100%;
         }
 
         /*--------------------TCC INDIVIDUAL-----------------------*/
@@ -2171,15 +2203,6 @@ footer .leyenda p{
             width: 250px;
             height: 200px;
         }
-
-        /*-----------------------BLOG-------------------------*/
-
-        .encabezado .contenedorlogo-h1 h1{
-            font-size: 7vw;
-        }    
-        .encabezado .contenedorlogo-h1 h1 span{
-            font-size: 25px;
-        }
     }
 
     @media(max-width:767px) and (min-width:471px){
@@ -2189,19 +2212,20 @@ footer .leyenda p{
                 /*HEADER*/
         
         .encabezado .menu img{
-            width: 15vw;
+            width: 70px;
+            /* width: 15vw; */
             padding-left: 15px;
         }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
-            height: 17vh;
+            height: 80px;
         }
         .encabezado .contenedorlogo-h1 img{
-            width: 15vw;
+            width: 60px;
         }
         .encabezado .contenedorlogo-h1 h1{
-            font-size: 6vw;
+            display: none;
         }
         #toggle:checked ~ .navigation{
             display: block;
@@ -2559,12 +2583,10 @@ footer .leyenda p{
             height: 45vh;
             object-fit: cover;
         }
-        .servicio-psicooncologia .parte4-onco{
-            display: flex;
+        .servicio-psicooncologia .parte4-onco ul li .subparte4{
             flex-direction: column;
-        }
-        .servicio-psicooncologia .parte4-onco img{
-            float: none;
+            align-items: flex-start;
+            width: 100%;
         }
 
         /*--------------------TCC INDIVIDUAL-----------------------*/
@@ -2687,16 +2709,21 @@ footer .leyenda p{
 
                 /*HEADER*/
 
+        .encabezado .menu img{
+            width: 70px;
+            /* width: 15vw; */
+            padding-left: 15px;
+        }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
-            height: 12vh;
+            height: 80px;
         }
         .encabezado .contenedorlogo-h1 img{
-            width: 10vw;
+            width: 60px;
         }
         .encabezado .contenedorlogo-h1 h1{
-            font-size: 4vw;
+            display: none;
         }
 
                 /*BANNER 1*/
@@ -2892,16 +2919,21 @@ footer .leyenda p{
 
                 /*HEADER*/
 
+        .encabezado .menu img{
+            width: 70px;
+            /* width: 15vw; */
+            padding-left: 15px;
+        }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
-            height: 17vh;
+            height: 80px;
         }
         .contenedorlogo-h1 img{
-            width: 10vw;
+            width: 60px;
         }
         .contenedorlogo-h1 h1{
-            font-size: 4vw;
+            display: none;
         }
 
                 /*BANNER 1*/
@@ -3050,6 +3082,11 @@ footer .leyenda p{
 
                 /*HEADER*/
 
+        .encabezado .menu img{
+            width: 70px;
+            /* width: 15vw; */
+            padding-left: 15px;
+        }        
         .encabezado label{
             display: initial;
         }
