@@ -16,7 +16,7 @@
 /*----------------------- BODY--------------------------------*/
 
 body{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif !important;
 }
 
                                 /*INDEX*/
@@ -50,6 +50,7 @@ body{
         filter: invert(98%) sepia(77%) saturate(3270%) hue-rotate(198deg) brightness(82%) contrast(88%);
     }
     .encabezado .contenedorlogo-h1 h1{
+        font-family: 'Source Sans Pro', sans-serif;
         color: white;
         font-size: 25px;
         cursor: default;
@@ -330,9 +331,6 @@ main{
 
     /*----------------------- SECTION 2--------------------------------*/
 
-.section-2{
-    font-family: 'Source Sans Pro', sans-serif;
-}
 .section-2 .contenedor-section-2{
     padding: 40px 0;
     width: 90%;
@@ -1471,8 +1469,8 @@ footer .leyenda p{
     transform: scale(1.1);
 }
 
-
-.turnos .contenedor-turnos .boton-coll{
+                    /*CÓDIGO DE BOOTSTRAP, MODIFICADO A MI NECESIDAD*/
+/* .turnos .contenedor-turnos .boton-coll{
     width: 100%;
     margin-top: 25px;
 }
@@ -1491,8 +1489,7 @@ footer .leyenda p{
 }
 .boton-coll .collapse .card{
     background-color: rgba(132, 99, 138, 0.699);
-    
-}
+} */
 
                                 /*CONTACTO*/
 
