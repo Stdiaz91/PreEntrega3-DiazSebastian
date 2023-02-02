@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">    <!--CSS-->
                     <!--CSS BOOTSTRAP V 5.0.2-->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">    <!--CSS-->
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">    <!--FAVICON-->
     <title>Psico-Online | Psicología 100% Online al alcance de un click | Solicitar Turno</title>    <!--TITULO DE LA PAGE-->
 </head>
@@ -61,28 +61,31 @@
                         <option selected>Psicooncología</option>
                         <option>TCC individual</option>
                     </select>
-                    <h4 class="terminos-condiciones">Términos y condiciones</h4>
-                            <!--CÓDIGO BOOTSTRAP-->
-                    <!-- <div class="boton-coll">
+                    <h3 class="terminos-condiciones">Encuadre</h3>
+                            <!------------CÓDIGO BOOTSTRAP / BOTÓN COLLAPSE-------->
+                    <div class="boton-coll">
                         <p>
                             <a class="boton-p" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                Leer Términos y condiciones
+                                Leer Encuadre
                             </a>
                         </p>
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
-                                <p>Lorem ipsum dolor sit amet consectetur.</p>
-                                <p>Lorem ipsum dolor sit amet.</p>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                <p><span>1</span> La sesión individual, actualmente, tiene un costo de 2000 pesos ARS y la grupal 1800 pesos ARS. Con posibilidad de ajuste cada 3 a 6 meses.</p>
+                                <p><span>2</span> Los encuentros podrán ser semanales o quincenales, depediendo de caso particular.</p>
+                                <p><span>3</span> La cancelación del turno debe realizarse con 24hs de anticipación, caso contrario se cobrará el 50% de la sesión.</p>
+                                <p><span>4</span> En caso de ausencia injustificada y sin previo aviso por un período de 3 sesiones consecutivas, se dará por finalizado el tratamiento.</p>
+
                             </div>
                         </div>
-                    </div> -->
+                    </div>
+                            <!------------------------------------->
                     <label>
-                        <input type="checkbox"> Acepto términos y condiciones
+                        <input type="checkbox"> Aceptar
                     </label>
                     <h4 class="agrega-comentarios">Agrega comentarios</h4>
                     <textarea id="coments"  cols="40" rows="3" placeholder="Comenta Aquí"></textarea>
-                    <input class="boton" type="submit" value="Enviar Turno" required>
+                    <input class="boton" type="submit" value="ENVIAR" required>
                 </div>
             </div>
         </section>

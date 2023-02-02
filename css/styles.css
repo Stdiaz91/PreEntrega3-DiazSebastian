@@ -1,11 +1,11 @@
 
-/*----------------------- FUENTES PARA LOS TEXTOS--------------------------------*/
+/*!----------------------- FUENTES PARA LOS TEXTOS--------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-/*----------------------- RESET--------------------------------*/
+/*!----------------------- RESET--------------------------------*/
 
 *{
     margin: 0;
@@ -13,22 +13,22 @@
     box-sizing: border-box;
 }
 
-/*----------------------- BODY--------------------------------*/
+/*!----------------------- BODY--------------------------------*/
 
 body{
-    font-family: 'Source Sans Pro', sans-serif !important;
+    font-family: Source Sans Pro, sans-serif !important;
 }
 
                                 /*INDEX*/
 
-/*----------------------- HEADER--------------------------------*/
+/*!----------------------- HEADER--------------------------------*/
 
     .encabezado{
         position: sticky;
         top: 0;
         right: 0;
         left: 0;
-        height: 11vh;
+        height: 64.5px;
         background-color: rgb(1, 1, 1);
         padding: 0px 10%;
         display: flex;
@@ -42,7 +42,7 @@ body{
         align-items: center;
     }
     .encabezado .contenedorlogo-h1 img{
-        width: 65px;
+        width: 64px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
         padding-right: 10px;
     }
@@ -50,9 +50,11 @@ body{
         filter: invert(98%) sepia(77%) saturate(3270%) hue-rotate(198deg) brightness(82%) contrast(88%);
     }
     .encabezado .contenedorlogo-h1 h1{
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
         color: white;
         font-size: 25px;
+        margin-bottom: 0px;
+        font-weight: 700;
         cursor: default;
     }
     .encabezado .contenedorlogo-h1 h1:hover{
@@ -66,6 +68,7 @@ body{
         position: relative;
     }
     .encabezado .navigation ul li a{
+        font-family: 'Source Sans Pro', sans-serif !important;
         font-size: 15px;
         color: white;
         text-decoration: none;
@@ -75,17 +78,18 @@ body{
     }
     .encabezado .navigation ul li a:hover{
         background-color: #9c85a3b6;
-        transform: scale(1.1);
     }
     .encabezado .navigation ul li ul{
         position: absolute;
         right: 0;
         width: 300px;
-        background-color: rgba(1, 1, 1, 0.7);
+        padding-left: 0px;
+        background-color: rgba(1, 1, 1, 0.781);
         display: none;
     }
     .encabezado .navigation ul li ul li a{
-        font-size: 15px;
+        font-family: 'Source Sans Pro', sans-serif !important;
+        font-size: 16px;
     }
     .encabezado .navigation ul li ul li ul{
         position: absolute;
@@ -107,7 +111,7 @@ body{
         width: 45px;
     }
 
-/*-----------------------MAIN--------------------------------*/
+/*!-----------------------MAIN--------------------------------*/
 
 main{
     background: hsl(313, 35%, 69%);
@@ -123,7 +127,7 @@ main{
 
 .banner-1 .conte{
     display: flex;
-    height: 80vh;
+    height: 65vh;
     animation: banner-1 5s infinite linear alternate;
     background-repeat: no-repeat;
     background-size: cover;
@@ -156,14 +160,17 @@ main{
     position: relative;
 }
 .banner-1 .conte .wrap .box h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     line-height: 1.2;
+    font-weight: 700;
     padding: 20px;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
 .banner-1 .conte .wrap .box .cards img{
-    width: 90px;
-    height: 65px;
+    padding: 5px;
+    width: 110px;
+    height: 85px;
 }
 .banner-1 .conte .wrap .box .botones{
     display: flex;
@@ -234,8 +241,9 @@ main{
     overflow: hidden;
 }
 .section-1 .contenedor-section-1 .titulo1{
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
     text-align: center;
+    font-weight: 600;
     font-size: 30px;
     letter-spacing: 2px;
     font-weight: 700;
@@ -246,10 +254,8 @@ main{
     display: flex;
 }
 .section-1 .contenedor-section-1 .bloque-1 p{
-    font-family: 'Source Sans Pro', sans-serif;
-
     text-align: justify-all;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     padding: 6px;
 }
@@ -331,6 +337,9 @@ main{
 
     /*----------------------- SECTION 2--------------------------------*/
 
+.section-2{
+    font-family: Source Sans Pro, sans-serif;
+}
 .section-2 .contenedor-section-2{
     padding: 40px 0;
     width: 90%;
@@ -339,10 +348,11 @@ main{
     overflow: hidden;
 }
 .section-2 .contenedor-section-2 .titulo2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
     text-align: center;
     font-size: 30px;
     letter-spacing: 2px;
-    font-weight: 700;
+    font-weight: 600;
     color: #642a73;
     margin-bottom: 40px;
 }
@@ -350,7 +360,8 @@ main{
     text-align: center;
 }
 .section-2 .contenedor-section-2 .ilustracion-textos h3{
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 22px;
     margin-bottom: 15px;
 }
 .section-2 .contenedor-section-2 .ilustracion-textos h3 span{
@@ -366,7 +377,7 @@ main{
     margin-right: 5px;
 }
 .section-2 .contenedor-section-2 .ilustracion-textos p{
-    font-size: 18px;
+    font-size: 20px;
     padding: 0px 0px 30px 15px;
     text-align: justify-all;
 }
@@ -374,6 +385,7 @@ main{
     /*----------------------- GALERIA--------------------------------*/
 
 .galeria{
+    font-family: Source Sans Pro, sans-serif;
     padding: 20px 0;
     width: 90%;
     max-width: 1000px;
@@ -381,10 +393,11 @@ main{
     overflow: hidden;
 }
 .galeria h2{
-    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-weight: 600;
     font-size: 30px;
+    text-align: center;
     letter-spacing: 2px;
-    font-weight: 700;
     color: #642a73;
     margin-bottom: 30px;
 }
@@ -395,7 +408,7 @@ main{
     gap: 15px;
 }
 .galeria .grid-galeria .grid-item .flex-item{
-    width: 320px;
+    width: 300px;
     height: 320px;
     display: flex;
     flex-direction: column;
@@ -407,7 +420,6 @@ main{
 .galeria .grid-galeria div h3{
     color: white;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: underline;
     padding: 10px;
 }
@@ -418,6 +430,7 @@ main{
     border-radius: 10px;
 }
 .galeria .grid-galeria div p{
+    font-size: 18px;
     text-align: center;
     color: white;
     padding: 10px;
@@ -457,7 +470,7 @@ main{
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 250px;
+    height: 265px;
     background-color: hsla(0, 2%, 84%, 0.493);
     box-shadow: 5px 5px 5px rgb(116, 115, 115);
     border-radius: 15px;
@@ -469,12 +482,13 @@ main{
 }
 .section-3 .bg-section-3 .contenedor-flex .flex-div p{
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 .section-3 .bg-section-3 .contenedor-flex .flex-div h3{
     text-align: center;
     padding: 15px;
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 700;
     color: #642a73;
 }
     /*----------------------- SECTION 4--------------------------------*/
@@ -494,12 +508,13 @@ main{
 .section-4 .contenedor-section-4 .contenedor4-1 h3{
     font-size: 40px;
     text-align: justify-all;
+    font-weight: 600;
     color: #4d0686;
     padding-bottom: 15px;
     text-shadow: 2px 2px 5px #614479;
 }
 .section-4 .contenedor-section-4 .contenedor4-1 p{
-    font-size: 20px;
+    font-size: 22px;
     text-align: justify-all;
     padding-bottom: 40px;
 }
@@ -539,6 +554,7 @@ main{
 }
 .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 p{
     font-weight: bold;
+    font-size: 20px;
 }
 .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 img{
     width: 250px;
@@ -555,6 +571,7 @@ main{
 }
 .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 p{
     font-weight: bold;
+    font-size: 20px;
 }
 .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 img{
     width: 250px;
@@ -565,7 +582,7 @@ main{
 .banner-2 .conte-2{
     display: flex;
     max-width: 100%;
-    height: 80vh;
+    height: 65vh;
     animation: banner-2 5s infinite linear alternate;
     background-repeat: no-repeat;
     background-size: cover;
@@ -697,6 +714,7 @@ main{
 
 footer{
     background-color: hsla(288, 29%, 37%, 0.658);
+    height: 110px;
     overflow: hidden;
 }
 footer .pie-pagina{
@@ -713,8 +731,10 @@ footer .pie-pagina .logo-pie{
     align-items: center;
 }
 footer .pie-pagina .logo-pie h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
     color: white;
     font-size: 25px;
+    font-weight: 700;
 }
 footer .pie-pagina .logo-pie h2:hover{
     cursor: default;
@@ -740,7 +760,7 @@ footer .leyenda p{
     padding-bottom: 20px;
 }
 
-                                /*CONOCEME*/
+                                /*!CONOCEME*/
 
     /*---------------------BANNER 3--------------------*/
 
@@ -775,6 +795,7 @@ footer .leyenda p{
     color: black;
     font-size: 35px;
     font-style: italic;
+    font-weight: 700;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 3px solid white;
     padding: 10px 5px;
@@ -857,7 +878,7 @@ footer .leyenda p{
     margin: 0 auto;
 }
 
-                                /*PSICOONCOLOGIA*/
+                                /*!PSICOONCOLOGIA*/
 
     /*----------------------- BANNER PSICOONCOLOGÍA--------------------------------*/
 
@@ -892,6 +913,7 @@ footer .leyenda p{
     color: black;
     font-size: 35px;
     font-style: italic;
+    font-weight: 700;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 3px solid hsl(286, 17%, 55%);
     padding: 10px 5px;
@@ -1039,7 +1061,7 @@ footer .leyenda p{
         transform: translateX(10px);
     }
 }
-                                /*TCC INDIVIDUAL*/
+                                /*!TCC INDIVIDUAL*/
 
     /*-----------------------------BANNER TCC---------------------------*/
 
@@ -1074,6 +1096,7 @@ footer .leyenda p{
     color: black;
     font-size: 35px;
     font-style: italic;
+    font-weight: 700;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: 3px solid white;
     padding: 10px 5px;
@@ -1348,7 +1371,7 @@ footer .leyenda p{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
     margin-right: 5px;
 }
-                                /*SOLICITAR TURNO*/
+                                /*!SOLICITAR TURNO*/
 
 .turnos{
     background: hsl(313, 35%, 69%);
@@ -1375,6 +1398,8 @@ footer .leyenda p{
     color: white;
 }
 .solicitar-turno h2{
+    font-family: 'Source Sans Pro', serif;
+    font-weight: 700;
     font-size: 35px;
     margin-bottom: 20px;
     text-align: center;
@@ -1468,9 +1493,8 @@ footer .leyenda p{
     background-color: hsla(288, 32%, 59%, 0.863);
     transform: scale(1.1);
 }
-
-                    /*CÓDIGO DE BOOTSTRAP, MODIFICADO A MI NECESIDAD*/
-/* .turnos .contenedor-turnos .boton-coll{
+                    /*CÓDIGO DE BOOTSTRAP - BOTÓN COLLAPSE*/
+.turnos .contenedor-turnos .boton-coll{
     width: 100%;
     margin-top: 25px;
 }
@@ -1487,11 +1511,19 @@ footer .leyenda p{
     text-align: center;
     text-decoration: none;
 }
+.boton-coll p .boton-p:hover{
+    background-color: hsla(288, 32%, 59%, 0.863);
+}
 .boton-coll .collapse .card{
     background-color: rgba(132, 99, 138, 0.699);
-} */
+}
+.boton-coll .collapse .card p span{
+    font-weight: 700;
+    font-size: 20px;
+}
 
-                                /*CONTACTO*/
+
+                                /*!CONTACTO*/
 
 .pagina-contacto{
     background: hsl(313, 35%, 69%);
@@ -1614,7 +1646,7 @@ footer .leyenda p{
     filter: brightness(100%);
 }
 
-                                /*BLOG*/
+                                /*!BLOG*/
 
 .page-blog{
     background: hsl(313, 35%, 69%);
@@ -1686,34 +1718,29 @@ footer .leyenda p{
     margin-bottom: 12px;
 }
 
-/*---------------------------------------------------------------------------------------------------------*/
+/*!---------------------------------------------------------------------------------------------------------*/
 
-    /*---------------------------------RESPONSIVE-------------------------------------------*/
+    /*!---------------------------------RESPONSIVE-------------------------------------------*/
 
     @media(max-width:470px){ 
 
-        /*--------------------INDEX-----------------------*/
+        /*!--------------------INDEX-----------------------*/
     
                 /*HEADER*/
         
         .encabezado .menu img{
-            width: 70px;
-            /* width: 17vw; */
+            width: 60px;
             padding-left: 15px;
         }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
-            /* height: 12vh; */
-            height: 80px;
+            height: 64.5px;
         }
         .encabezado .contenedorlogo-h1 img{
-            /* width: 15vw; */
-            width: 60px;
+            width: 64px;
         }
         .encabezado .contenedorlogo-h1 h1{
-            /* font-size: 6vw; */
-            /* font-size: 20px; */
             display: none;
         }
         #toggle:checked ~ .navigation{
@@ -1735,11 +1762,12 @@ footer .leyenda p{
         }
         .banner-1 .conte .wrap .box .cards img{
             padding: 10px;
-            width: 32vw;
-            height: 15vh;
+            width: 95px;
+            height: 80px;
         }
         .banner-1 .conte .wrap .box .botones{
             flex-direction: row;
+            justify-content: space-between;
         }
         .banner-1 .conte .wrap .box .botones a{
             padding: 2vh 4vw 2vh 4vw;
@@ -1749,7 +1777,7 @@ footer .leyenda p{
                 /*SECTION 1*/
 
         .section-1 .contenedor-section-1 h2{
-            font-size: 7vw;
+            font-size: 22px;
             margin-top: 10px;
         }
         .section-1 .contenedor-section-1 .bloque-1{
@@ -1760,7 +1788,7 @@ footer .leyenda p{
             padding: 5px 0px 20px;
         }
         .section-1 .contenedor-section-1 .bloque-1 div p{
-            font-size: 5vw;
+            font-size: 18px;
         }
         .section-1 .contenedor-section-1 .bloque-1 .bl1-img img{
             width: 60vw;
@@ -1829,9 +1857,11 @@ footer .leyenda p{
             margin-bottom: 30px;
         }
         .section-2 .contenedor-section-2 .ilustracion-textos h3{
+            font-size: 20px;
             text-align: center;
         }
         .section-2 .contenedor-section-2 .ilustracion-textos p{
+            font-size: 18px;
             text-align: center;
         }
 
@@ -1847,17 +1877,19 @@ footer .leyenda p{
         .galeria .grid-galeria{
             grid-template-columns: 1fr;
             grid-template-rows: repeat(6,1fr);
+        }
+        .galeria .grid-galeria .grid-item{
             margin: 0 auto;
         }
         .galeria .grid-galeria .grid-item .flex-item{
-            width: 100%;
-            height: 95%;
+            width: 300px;
+            height: 370px;
             padding: 5px;
             justify-content: center;
         }
         .galeria .grid-galeria .grid-item .flex-item img{
-            width: 70vw;
-            height: 30vh;
+            width: 270px;
+            height: 220px;
             object-fit: cover;
         }
         .galeria .grid-galeria .grid-item .flex-item h3{
@@ -1874,7 +1906,7 @@ footer .leyenda p{
         }
         .section-3 .bg-section-3 h2{
             text-align: center;
-            font-size: 7vw;
+            font-size: 30px;
             padding: 10px;
         }
         .section-3 .bg-section-3 .contenedor-flex{
@@ -1883,17 +1915,22 @@ footer .leyenda p{
         }
         .section-3 .bg-section-3 .contenedor-flex .flex-div{
             justify-content: center;
-            width: 85vw;
-            height: 40vh;
+            width: 250px;
+            height: 200px;
             margin: 0 auto;
             margin-bottom: 15px;
         }
         .section-3 .bg-section-3 .contenedor-flex .flex-div h3{
-            font-size: 7vw;
+            font-size: 20px;
         }
         .section-3 .bg-section-3 .contenedor-flex .flex-div p{
-            font-size: 5vw;
+            font-size: 18px;
         }
+        .section-3 .bg-section-3 .contenedor-flex .flex-div img{
+            width: 40px;
+            height: 40px;
+        }
+        
 
                 /*SECTION 4*/
 
@@ -1905,12 +1942,12 @@ footer .leyenda p{
             width: 100%;
         }
         .section-4 .contenedor-section-4 .contenedor4-1 h3{
-            font-size: 8vw;
+            font-size: 30px;
             text-align: center;
         }
         .section-4 .contenedor-section-4 .contenedor4-1 p{
             text-align: center;
-            font-size: 5vw;
+            font-size: 20px;
         }
         .section-4 .contenedor-section-4 .contenedor4-1 a{
             margin-left: 25vw;
@@ -1922,14 +1959,15 @@ footer .leyenda p{
         }
         .section-4 .contenedor-section-4 .contenedor4-2 div h3{
             text-align: center;
-            font-size: 25px;
+            font-size: 20px;
         }
         .section-4 .contenedor-section-4 .contenedor4-2 div h4{
             text-align: center;
+            font-size: 20px;
         }
         .section-4 .contenedor-section-4 .contenedor4-2 div p{
             text-align: center;
-            font-size: 5vw;
+            font-size: 18px;
         }
         .section-4 .contenedor-section-4 .contenedor4-2 div{
             display: flex;
@@ -1937,7 +1975,7 @@ footer .leyenda p{
         }
         .section-4 .contenedor-section-4 .contenedor4-2 div img{
             margin: 0 auto;
-            width: 60vw;
+            width: 250px;
         }
 
                 /*BANNER 2*/
@@ -1949,7 +1987,7 @@ footer .leyenda p{
         }
         .banner-2 .conte-2 .wrap-2 .box-2 h2{
             text-align: center;
-            font-size: 9vw;
+            font-size: 28px;
         }
         .banner-2 .conte-2 .wrap-2 .box-2 p{
             text-align: center;
@@ -1984,23 +2022,22 @@ footer .leyenda p{
                 /*FOOTER*/
 
         footer .pie-pagina .logo-pie img{
-            width: 15vw;
+            width: 60px;
         }
         footer .pie-pagina .logo-pie h2{
-            font-size: 6vw;
+            display: none;
         }
         footer .pie-pagina .redes{
             display: flex;
         }
         footer .pie-pagina .redes img{
-            width: 10vw;
+            width: 50px;
         }
         footer .leyenda p{
-            font-size: 5vw;
-            padding-top: 15px;
+            font-size: 15px;
         }
 
-        /*--------------------CONOCEME-----------------------*/
+        /*!--------------------CONOCEME-----------------------*/
 
                 /*BANNER 3*/
 
@@ -2046,7 +2083,7 @@ footer .leyenda p{
             filter: none;
         }
 
-        /*--------------------PSICOONCOLOGIA-----------------------*/
+        /*!--------------------PSICOONCOLOGIA-----------------------*/
 
                 /*BANNER PSICOONCOLOGIA*/
 
@@ -2088,7 +2125,7 @@ footer .leyenda p{
             width: 100%;
         }
 
-        /*--------------------TCC INDIVIDUAL-----------------------*/
+        /*!--------------------TCC INDIVIDUAL-----------------------*/
 
                 /*BANNER TCC*/
 
@@ -2146,7 +2183,7 @@ footer .leyenda p{
             height: 25vh;
         }
 
-        /*--------------------SOLICITAR TURNO-----------------------*/
+        /*!--------------------SOLICITAR TURNO-----------------------*/
 
         .turnos .contenedor-turnos .solicitar-turno{
             width: 100%;
@@ -2161,7 +2198,7 @@ footer .leyenda p{
             font-size: 18px;
         }
 
-        /*--------------------CONTACTO-----------------------*/
+        /*!--------------------CONTACTO-----------------------*/
         
         .pagina-contacto .contenedor-contacto{
             display: flex;
@@ -2204,25 +2241,21 @@ footer .leyenda p{
 
     @media(max-width:767px) and (min-width:471px){
 
-        /*--------------------INDEX-----------------------*/
+        /*!--------------------INDEX-----------------------*/
 
                 /*HEADER*/
         
         .encabezado .menu img{
-            width: 70px;
-            /* width: 15vw; */
+            width: 60px;
             padding-left: 15px;
         }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
-            height: 80px;
+            height: 64.5px;
         }
         .encabezado .contenedorlogo-h1 img{
-            width: 60px;
-        }
-        .encabezado .contenedorlogo-h1 h1{
-            display: none;
+            width: 64px;
         }
         #toggle:checked ~ .navigation{
             display: block;
@@ -2243,8 +2276,8 @@ footer .leyenda p{
         }
         .banner-1 .conte .wrap .box .cards img{
             padding: 10px;
-            width: 18vw;
-            height: 12vh;
+            width: 120px;
+            height: 100px;
         }
         .banner-1 .conte .wrap .box .botones{
             flex-direction: row;
@@ -2257,7 +2290,7 @@ footer .leyenda p{
                 /*SECTION 1*/
 
         .section-1 .contenedor-section-1 h2{
-            font-size: 6vw;
+            font-size: 25px;
             margin-top: 10px;
         }
         .section-1 .contenedor-section-1 .bloque-1{
@@ -2268,11 +2301,11 @@ footer .leyenda p{
             padding: 5px 0px 20px;
         }
         .section-1 .contenedor-section-1 .bloque-1 div p{
-            font-size: 4vw;
+            font-size: 21px;
         }
         .section-1 .contenedor-section-1 .bloque-1 .bl1-img img{
-            width: 50vw;
-            height: 50vw;
+            width: 250px;
+            height: 250px;
             padding-bottom: 15px;
         }
         .section-1 .contenedor-section-1 .bloque-2{
@@ -2282,7 +2315,8 @@ footer .leyenda p{
         }
         .section-1 .contenedor-section-1 .bloque-2 .psicooncologia{
             background-color: hsla(288, 29%, 37%, 0.658);
-            width: 100%;
+            width: 75%;
+            margin: 0 auto;
         }
         .section-1 .contenedor-section-1 .bloque-2 .psicooncologia p{
             text-align: justify-all;
@@ -2291,8 +2325,8 @@ footer .leyenda p{
             padding-bottom: 5px;
         }
         .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
-            width: 70vw;
-            height: 30vh;
+            width: 80%;
+            height: 250px;
             object-fit: cover;
             margin: 0 auto;       
             margin-bottom: 10px;
@@ -2305,7 +2339,8 @@ footer .leyenda p{
         }
         .section-1 .contenedor-section-1 .bloque-2 .tcc{
             background-color: hsla(288, 29%, 37%, 0.658);
-            width: 100%;
+            width: 75%;
+            margin: 0 auto;
             margin-top: 10px;
         }
         .section-1 .contenedor-section-1 .bloque-2 .tcc p{
@@ -2315,8 +2350,8 @@ footer .leyenda p{
             padding-bottom: 5px;
         }
         .section-1 .contenedor-section-1 .bloque-2 .tcc img{
-            width: 70vw;
-            height: 30vh;
+            width: 80%;
+            height: 250px;
             object-fit: cover;
             margin: 0 auto;       
             margin-bottom: 10px;
@@ -2356,15 +2391,15 @@ footer .leyenda p{
             gap: 5px;
         }
         .galeria .grid-galeria .grid-item .flex-item{
-            width: 42vw;
-            height: 100%;
+            width: 90%;
+            height: 88%;
             padding: 5px;
             justify-content: center;
             align-items: center;
             margin: 0 auto;
         }
         .galeria .grid-galeria .grid-item .flex-item img{
-            width: 32vw;
+            width: 90%;
             height: 20vh;
             object-fit: cover;
         }
@@ -2382,7 +2417,7 @@ footer .leyenda p{
         }
         .section-3 .bg-section-3 h2{
             text-align: center;
-            font-size: 5vw;
+            font-size: 30px;
             padding: 10px;
         }
         .section-3 .bg-section-3 .contenedor-flex{
@@ -2412,24 +2447,24 @@ footer .leyenda p{
             width: 100%;
         }
         .section-4 .contenedor-section-4 .contenedor4-1 h3{
-            font-size: 6vw;
+            font-size: 30px;
             text-align: center;
         }
         .section-4 .contenedor-section-4 .contenedor4-1 p{
             text-align: center;
-            font-size: 4vw;
+            font-size: 22px;
         }
         .section-4 .contenedor-section-4 .contenedor4-1 a{
             margin-left: 25vw;
             padding: 3vh 5vw;
         }
         .section-4 .contenedor-section-4 .contenedor4-2{
-            width: 100%;
+            width: 70%;
             margin-top: 35px;
         }
         .section-4 .contenedor-section-4 .contenedor4-2 div h3{
             text-align: center;
-            font-size: 25px;
+            font-size: 20px;
         }
         .section-4 .contenedor-section-4 .contenedor4-2 div h4{
             text-align: center;
@@ -2444,7 +2479,7 @@ footer .leyenda p{
         }
         .section-4 .contenedor-section-4 .contenedor4-2 div img{
             margin: 0 auto;
-            width: 50vw;
+            width: 250px;
         }
                 /*BANNER 2*/
 
@@ -2454,7 +2489,7 @@ footer .leyenda p{
         }
         .banner-2 .conte-2 .wrap-2 .box-2 h2{
             text-align: center;
-            font-size: 8vw;
+            font-size: 28px;
         }
         .banner-2 .conte-2 .wrap-2 .box-2 p{
             text-align: center;
@@ -2479,24 +2514,27 @@ footer .leyenda p{
             margin-bottom: 10px;
         }
                 /*FOOTER*/
+
+        footer{
+            height: 130px;
+        }
         footer .pie-pagina .logo-pie img{
-            width: 10vw;
+            width: 65px;
         }
         footer .pie-pagina .logo-pie h2{
-            font-size: 4vw;
+            font-size: 25px;
         }
         footer .pie-pagina .redes{
             display: flex;
         }
         footer .pie-pagina .redes img{
-            width: 7vw;
+            width: 50px;
         }
         footer .leyenda p{
-            font-size: 3vw;
-            padding-top: 15px;
+            font-size: 16px;
         }
 
-        /*--------------------CONOCEME-----------------------*/
+        /*!--------------------CONOCEME-----------------------*/
     
                 /*BANNER 3*/
     
@@ -2543,7 +2581,7 @@ footer .leyenda p{
             filter: none;
         }
 
-        /*--------------------PSICOONCOLOGIA-----------------------*/
+        /*!--------------------PSICOONCOLOGIA-----------------------*/
 
                 /*BANNER PSICOONCOLOGIA*/
 
@@ -2586,7 +2624,7 @@ footer .leyenda p{
             width: 100%;
         }
 
-        /*--------------------TCC INDIVIDUAL-----------------------*/
+        /*!--------------------TCC INDIVIDUAL-----------------------*/
 
                 /*BANNER TCC*/
 
@@ -2644,7 +2682,7 @@ footer .leyenda p{
             height: 35vh;
         }
     
-        /*--------------------SOLICITAR TURNO-----------------------*/
+        /*!--------------------SOLICITAR TURNO-----------------------*/
 
         .turnos .contenedor-turnos .solicitar-turno{
             width: 80%;
@@ -2659,7 +2697,7 @@ footer .leyenda p{
             font-size: 18px;
         }
 
-        /*--------------------CONTACTO-----------------------*/
+        /*!--------------------CONTACTO-----------------------*/
         
         .pagina-contacto .contenedor-contacto{
             display: flex;
@@ -2702,27 +2740,22 @@ footer .leyenda p{
 
     @media(max-width:850px) and (min-width:768px){
 
-        /*--------------------INDEX----------------------*/
+        /*!--------------------INDEX----------------------*/
 
                 /*HEADER*/
 
         .encabezado .menu img{
-            width: 70px;
-            /* width: 15vw; */
+            width: 60px;
             padding-left: 15px;
         }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
-            height: 80px;
+            height: 64.5px;
         }
         .encabezado .contenedorlogo-h1 img{
-            width: 60px;
+            width: 64px;
         }
-        .encabezado .contenedorlogo-h1 h1{
-            display: none;
-        }
-
                 /*BANNER 1*/
 
         .banner-1 .conte{
@@ -2734,8 +2767,8 @@ footer .leyenda p{
         }
         .banner-1 .conte .wrap .box .cards img{
             padding: 10px;
-            width: 16vw;
-            height: 13vh;
+            width: 120px;
+            height: 100px;
         }
         .banner-1 .conte .wrap .box .botones a{
             padding: 2vh 3vw 2vh 3vw;
@@ -2748,8 +2781,8 @@ footer .leyenda p{
             justify-content: space-evenly;
         }
         .section-1 .contenedor-section-1 .bloque-2 div img{
-            width: 200px;
-            height: 200px;
+            width: 80%;
+            height: 250px;
             object-fit: cover;
         }
 
@@ -2765,7 +2798,7 @@ footer .leyenda p{
         }
         .galeria .grid-galeria .grid-item .flex-item{
             width: 42vw;
-            height: 100%;
+            height: 90%;
             padding: 5px;
             justify-content: center;
             align-items: center;
@@ -2821,8 +2854,17 @@ footer .leyenda p{
         .banner-2 .conte-2 .wrap-2 .box-2{
             margin: 0 auto;
         }
+        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
+            margin-top: 5px;
+        }
 
-        /*--------------------CONOCEME-----------------------*/
+                /*FOOTER*/
+        
+        footer{
+            height: 100px;
+        }
+
+        /*!--------------------CONOCEME-----------------------*/
     
                 /*BANNER 3*/
     
@@ -2856,7 +2898,7 @@ footer .leyenda p{
             filter: none;
         }
         
-        /*--------------------PSICOONCOLOGIA-----------------------*/
+        /*!--------------------PSICOONCOLOGIA-----------------------*/
 
                 /*BANNER PSICOONCOLOGIA*/
 
@@ -2873,7 +2915,7 @@ footer .leyenda p{
             padding: 15px 0px;
         }
 
-        /*--------------------TCC INDIVIDUAL-----------------------*/
+        /*!--------------------TCC INDIVIDUAL-----------------------*/
 
                 /*BANNER TCC*/
 
@@ -2897,7 +2939,7 @@ footer .leyenda p{
             margin: 20px 0px;
         }
 
-        /*------------------CONTACTO----------------------*/
+        /*!------------------CONTACTO----------------------*/
 
         .pagina-contacto .contenedor-contacto .enviar-correo h3 span{
             display: block;
@@ -2912,27 +2954,22 @@ footer .leyenda p{
 
     @media(max-width:1100px) and (min-width:851px){
 
-        /*---------------------------INDEX--------------------------*/
+        /*!---------------------------INDEX--------------------------*/
 
                 /*HEADER*/
 
         .encabezado .menu img{
-            width: 70px;
-            /* width: 15vw; */
+            width: 60px;
             padding-left: 15px;
         }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
-            height: 80px;
+            height: 64.5px;
         }
         .contenedorlogo-h1 img{
-            width: 60px;
+            width: 64px;
         }
-        .contenedorlogo-h1 h1{
-            display: none;
-        }
-
                 /*BANNER 1*/
 
         .banner-1 .conte{
@@ -2944,8 +2981,8 @@ footer .leyenda p{
         }
         .banner-1 .conte .wrap .box .cards img{
             padding: 10px;
-            width: 16vw;
-            height: 13vh;
+            width: 120px;
+            height: 100px;
         }
         .banner-1 .conte .wrap .box .botones a{
             padding: 2vh 3vw 2vh 3vw;
@@ -2961,8 +2998,8 @@ footer .leyenda p{
             align-items: center;
         }
         .section-1 .contenedor-section-1 .bloque-2 div img{
-            width: 200px;
-            height: 200px;
+            width: 80%;
+            height: 250px;
             object-fit: cover;
         }
 
@@ -2974,7 +3011,7 @@ footer .leyenda p{
         .galeria .grid-galeria{
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(3,1fr);
-            gap: 5px;
+            gap: 15px;
         }
         .galeria .grid-galeria .grid-item .flex-item{
             width: 42vw;
@@ -2985,12 +3022,12 @@ footer .leyenda p{
             margin: 0 auto;
         }
         .galeria .grid-galeria .grid-item .flex-item img{
-            width: 32vw;
-            height: 20vh;
+            width: 90%;
+            height: 30vh;
             object-fit: cover;
         }
         .galeria .grid-galeria .grid-item .flex-item h3{
-            font-size: 20px;
+            font-size: 25px;
             padding: 15px;
         }
         .galeria .grid-galeria .grid-item .flex-item p{
@@ -3034,8 +3071,8 @@ footer .leyenda p{
         .banner-2 .conte-2 .wrap-2 .box-2{
             margin: 0 auto;
         }
-
-        /*-----------CONOCEME------------------*/
+        
+        /*!-----------CONOCEME------------------*/
 
                 /*BANNER 3*/
 
@@ -3056,7 +3093,7 @@ footer .leyenda p{
             filter: none;
         }
 
-        /*----------------PSICOONCOLOGIA-------------*/
+        /*!----------------PSICOONCOLOGIA-------------*/
 
                 /*BANNER PSICOONCOLOGIA*/
 
@@ -3064,7 +3101,7 @@ footer .leyenda p{
             padding: 0px 20px;
         }
 
-        /*---------------TCC INDIVIDUAL---------------*/
+        /*!---------------TCC INDIVIDUAL---------------*/
 
                 /*BANNER TCC*/
 
@@ -3073,15 +3110,14 @@ footer .leyenda p{
         }
 
     }
-    @media(max-width:1120px){
+    @media(max-width:1135px){
 
-        /*------------------INDEX----------------*/
+        /*!------------------INDEX----------------*/
 
                 /*HEADER*/
 
         .encabezado .menu img{
-            width: 70px;
-            /* width: 15vw; */
+            width: 60px;
             padding-left: 15px;
         }        
         .encabezado label{
