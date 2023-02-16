@@ -1,0 +1,101 @@
+/*-----------HEADER-------------*/
+
+.encabezado{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 64.5px;
+    background-color: rgb(1, 1, 1);
+    padding: 0px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+
+    .contenedorlogo-h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img{
+            width: 64px;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
+            padding-right: 10px;
+            &:hover{
+                filter: invert(98%) sepia(77%) saturate(3270%) hue-rotate(198deg) brightness(82%) contrast(88%);
+            }
+        }
+
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+            color: white;
+            font-size: nth($font-size, 2);
+            margin-bottom: 0px;
+            font-weight: 700;
+            cursor: default;
+            &:hover{
+                color: nth($colores, 5);
+            }
+        }
+    }
+
+    #toggle{
+        display: none;
+        cursor: pointer;
+    }
+
+    label{
+        display: none;
+        cursor: pointer;
+
+        img{
+            width: 45px;
+        }
+    }
+
+    .navigation{
+        ul{
+            list-style: none;
+
+            li{
+                float: left;
+                position: relative;
+                &:hover > ul{
+                    display: initial;
+                }
+
+                a{
+                    font-family: 'Source Sans Pro', sans-serif !important;
+                    font-size: nth($font-size, 7);
+                    color: white;
+                    text-decoration: none;
+                    padding: 20px;
+                    display: block;
+                    transition: all 0.4s ease;
+                    &:hover{
+                        background-color: #9c85a3b6;
+                    }
+                }
+
+                ul{
+                    position: absolute;
+                    right: 0;
+                    width: 300px;
+                    padding-left: 0px;
+                    background-color: rgba(1, 1, 1, 0.781);
+                    display: none;            
+
+                    li{
+                        width: 100%;
+
+                        a{
+                            font-family: 'Source Sans Pro', sans-serif !important;
+                            font-size: nth($font-size, 6);                    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

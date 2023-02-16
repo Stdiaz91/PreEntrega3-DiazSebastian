@@ -84,30 +84,25 @@ body{
         right: 0;
         width: 300px;
         padding-left: 0px;
-        background-color: rgba(1, 1, 1, 0.781);
+        background-color: rgba(0, 0, 0, 0.856);
         display: none;
+    }
+    .encabezado .navigation ul li ul li{
+        width: 100%;
     }
     .encabezado .navigation ul li ul li a{
         font-family: 'Source Sans Pro', sans-serif !important;
         font-size: 16px;
     }
-    .encabezado .navigation ul li ul li ul{
-        position: absolute;
-        top: 0;
-        right: 300px;
-    }
-    .encabezado .navigation ul li ul li{
-        width: 100%;
-    }
     .encabezado .navigation ul li:hover > ul{
         display: initial;
     }
-    #toggle,
+    .encabezado #toggle,
     .encabezado label{
         display: none;
         cursor: pointer;
     }
-    .encabezado .menu{
+    .encabezado label img{
         width: 45px;
     }
 
@@ -127,6 +122,7 @@ main{
 
 .banner-1 .conte{
     display: flex;
+    max-width: 100%;
     height: 65vh;
     animation: banner-1 5s infinite linear alternate;
     background-repeat: no-repeat;
@@ -230,9 +226,6 @@ main{
 
     /*----------------------- SECTION 1--------------------------------*/
 
-.section-1{
-    font-family: 'Source Sans Pro', sans-serif;
-}
 .section-1 .contenedor-section-1{
     padding: 40px 0;
     width: 90%;
@@ -253,13 +246,13 @@ main{
 .section-1 .contenedor-section-1 .bloque-1{
     display: flex;
 }
-.section-1 .contenedor-section-1 .bloque-1 p{
+.section-1 .contenedor-section-1 .bloque-1 div p{
     text-align: justify-all;
     font-size: 20px;
     font-weight: 600;
     padding: 6px;
 }
-.section-1 .contenedor-section-1 .bloque-1 img{
+.section-1 .contenedor-section-1 .bloque-1 div img{
     width: 250px;
     height: 250px;
 }
@@ -280,7 +273,7 @@ main{
 .section-1 .contenedor-section-1 .bloque-2 .tcc{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 45%;
     background-color: hsla(288, 29%, 37%, 0.658);
     padding-top: 20px;
@@ -337,9 +330,6 @@ main{
 
     /*----------------------- SECTION 2--------------------------------*/
 
-.section-2{
-    font-family: Source Sans Pro, sans-serif;
-}
 .section-2 .contenedor-section-2{
     padding: 40px 0;
     width: 90%;
@@ -417,7 +407,7 @@ main{
     border-radius: 15px;
     background-color: hsla(288, 29%, 37%, 0.658);
 }
-.galeria .grid-galeria div h3{
+.galeria .grid-galeria .grid-item .flex-item h3{
     color: white;
     text-align: center;
     text-decoration: underline;
@@ -429,7 +419,7 @@ main{
     object-fit: cover;
     border-radius: 10px;
 }
-.galeria .grid-galeria div p{
+.galeria .grid-galeria .grid-item .flex-item p{
     font-size: 18px;
     text-align: center;
     color: white;
@@ -528,7 +518,7 @@ main{
     transition: all 0.4s ease;
 }
 .section-4 .contenedor-section-4 .contenedor4-1 a:hover{
-    background-color: hsla(288, 15%, 47%, 0.658);
+    background-color: #a581b1;
 }
 .section-4 .contenedor-section-4 .contenedor4-2{
     width: 40%;
@@ -744,13 +734,13 @@ footer .pie-pagina .logo-pie img{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
     margin-right: 10px;
 }
-footer .pie-pagina .redes img{
+footer .pie-pagina .redes a img{
     width: 50px;
     padding: 5px;
     filter: grayscale(70%);
     transition: all 0.4s ease;
 }
-footer .pie-pagina .redes img:hover{
+footer .pie-pagina .redes a img:hover{
     filter: grayscale(0%);
     transform: scale(1.4);
 }
@@ -853,7 +843,7 @@ footer .leyenda p{
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 6px solid hsla(286, 17%, 55%, 0.788);
+    border: 6px solid hsla(288, 29%, 37%, 0.658);
     border-radius: 50%;
     filter: grayscale(50%);
     transition: all 1s ease;
@@ -915,7 +905,7 @@ footer .leyenda p{
     font-style: italic;
     font-weight: 700;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: 3px solid hsl(286, 17%, 55%);
+    border: 3px solid #a581b1;
     padding: 10px 5px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -934,7 +924,7 @@ footer .leyenda p{
     width: 100%;
     height: 100%;
     right: 0;
-    fill: hsla(273, 28%, 37%, 0.521);
+    fill: hsla(273, 28%, 37%, 0.527);
     position: absolute;
 }
 
@@ -974,7 +964,7 @@ footer .leyenda p{
 .servicio-psicooncologia .parte1-onco img{
     width: 50%;
     height: 50%;
-    border: 5px solid hsl(288, 29%, 37%);
+    border: 5px solid #6e4379;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
     margin-right: 20px;
@@ -1118,14 +1108,14 @@ footer .leyenda p{
     width: 100%;
     height: 100%;
     left: 0;
-    fill: hsla(273, 28%, 37%, 0.521);
+    fill: hsla(273, 28%, 37%, 0.527);
     position: absolute;
 }
 .banner-tcc .contenedor-banner-tcc .wave-tcc2{
     width: 100%;
     height: 100%;
     right: 0;
-    fill: hsla(273, 28%, 37%, 0.521);
+    fill: hsla(273, 28%, 37%, 0.527);
     position: absolute;
 }
 
@@ -1165,7 +1155,7 @@ footer .leyenda p{
 .servicio-tcc .parte1-tcc img{
     width: 40%;
     height: 50%;
-    border: 5px solid hsl(288, 29%, 37%);
+    border: 5px solid #6e4379;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
     margin-right: 20px;
@@ -1382,22 +1372,22 @@ footer .leyenda p{
     background-position: center;
     background-attachment: fixed;
 }
-.contenedor-turnos{
+.turnos .contenedor-turnos{
     padding: 40px 0;
     width: 90%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
 }
-.solicitar-turno{
+.turnos .contenedor-turnos .solicitar-turno{
     margin: auto;
     width: 400px;
-    background-color: hsla(288, 29%, 37%, 0.589);
+    background-color: hsla(288, 29%, 37%, 0.658);
     padding: 50px;
     border-radius: 5px;
     color: white;
 }
-.solicitar-turno h2{
+.turnos .contenedor-turnos .solicitar-turno h2{
     font-family: 'Source Sans Pro', serif;
     font-weight: 700;
     font-size: 35px;
@@ -1405,7 +1395,7 @@ footer .leyenda p{
     text-align: center;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
-.formularios{
+.turnos .contenedor-turnos .solicitar-turno .formularios{
     width: 100%;
     background-color: hsla(288, 29%, 37%, 0.863);
     color: white;
@@ -1415,16 +1405,16 @@ footer .leyenda p{
     border: 1px solid white;
     font-size: 18px;
 }
-.formularios:hover{
+.turnos .contenedor-turnos .solicitar-turno .formularios:hover{
     box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699);
 }
-.solicitar-turno h3{
+.turnos .contenedor-turnos .solicitar-turno h3{
     font-size: 25px;
     text-align: center;
     margin: 20px 0px 10px;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
-.solicitar-turno select{
+.turnos .contenedor-turnos .solicitar-turno select{
     width: 100%;
     background-color: hsla(288, 29%, 37%, 0.863);
     color: white;
@@ -1433,7 +1423,7 @@ footer .leyenda p{
     border-radius: 5px;
     border: 1px solid white;
 }
-.solicitar-turno select:hover{
+.turnos .contenedor-turnos .solicitar-turno select:hover{
     box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699);
 }
 .turnos .contenedor-turnos .solicitar-turno .date{
@@ -1448,20 +1438,20 @@ footer .leyenda p{
 .turnos .contenedor-turnos .solicitar-turno .date:hover{
     box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699);
 }
-.terminos-condiciones{
+.turnos .contenedor-turnos .solicitar-turno .terminos-condiciones{
     font-size: 22px;
     margin: 45px 0px 10px;
     text-shadow: 0.1em 0.1em 0.2em black
 }
-.solicitar-turno label{
+.turnos .contenedor-turnos .solicitar-turno label{
     font-size: 18px;
 }
-.agrega-comentarios{
+.turnos .contenedor-turnos .solicitar-turno .agrega-comentarios{
     font-size: 22px;
     margin: 20px 0px 10px;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
-.solicitar-turno textarea{
+.turnos .contenedor-turnos .solicitar-turno textarea{
     width: 100%;
     background-color: hsla(288, 29%, 37%, 0.863);
     color: white;
@@ -1474,7 +1464,7 @@ footer .leyenda p{
 .turnos .contenedor-turnos .solicitar-turno textarea:hover{
     box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699);
 }
-.boton{
+.turnos .contenedor-turnos .solicitar-turno .boton{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1489,16 +1479,16 @@ footer .leyenda p{
     transition: all 0.4s ease;
     cursor: pointer;
 }
-.boton:hover{
+.turnos .contenedor-turnos .solicitar-turno .boton:hover{
     background-color: hsla(288, 32%, 59%, 0.863);
     transform: scale(1.1);
 }
                     /*CÓDIGO DE BOOTSTRAP - BOTÓN COLLAPSE*/
-.turnos .contenedor-turnos .boton-coll{
+.turnos .contenedor-turnos .solicitar-turno .boton-coll{
     width: 100%;
     margin-top: 25px;
 }
-.boton-coll p .boton-p{
+.turnos .contenedor-turnos .solicitar-turno .boton-coll p .boton-p{
     display: block;
     width: 100%;
     background-color: hsla(288, 29%, 37%, 0.863);
@@ -1511,13 +1501,13 @@ footer .leyenda p{
     text-align: center;
     text-decoration: none;
 }
-.boton-coll p .boton-p:hover{
+.turnos .contenedor-turnos .solicitar-turno .boton-coll p .boton-p:hover{
     background-color: hsla(288, 32%, 59%, 0.863);
 }
-.boton-coll .collapse .card{
+.turnos .contenedor-turnos .solicitar-turno .boton-coll .collapse .card{
     background-color: rgba(132, 99, 138, 0.699);
 }
-.boton-coll .collapse .card p span{
+.turnos .contenedor-turnos .solicitar-turno .boton-coll .collapse .card p span{
     font-weight: 700;
     font-size: 20px;
 }
@@ -1557,7 +1547,7 @@ footer .leyenda p{
 }
 .pagina-contacto .contenedor-contacto .enviar-correo h3 span{
     color: white;
-    background-color: hsla(288, 29%, 37%, 0.89);
+    background-color: hsla(288, 29%, 37%, 0.658);
     padding: 5px 5px;
     border-radius: 5px;
 }
@@ -1573,7 +1563,7 @@ footer .leyenda p{
 }
 .pagina-contacto .contenedor-contacto .container-campos .campos{
     width: 50%;
-    background-color: hsla(288, 29%, 37%, 0.89);
+    background-color: hsla(288, 29%, 37%, 0.863);
     color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 5px;
@@ -1600,7 +1590,7 @@ footer .leyenda p{
 }
 .pagina-contacto .contenedor-contacto .container-mensaje textarea{
     width: 50%;
-    background-color: hsla(288, 29%, 37%, 0.89);
+    background-color: hsla(288, 29%, 37%, 0.863);
     border: 1px solid white;
     margin-bottom: 15px;
     transition: all 0.4s ease;
@@ -1648,7 +1638,7 @@ footer .leyenda p{
 
                                 /*!BLOG*/
 
-.page-blog{
+/* .page-blog{
     background: hsl(313, 35%, 69%);
     background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
     background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/blog-img.jpg);
@@ -1656,7 +1646,7 @@ footer .leyenda p{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
+} */
     /*---------------CONTENIDO BLOG---------------*/
 
 .blog{
@@ -1681,30 +1671,30 @@ footer .leyenda p{
     gap: 20px;
     padding: 20px;
 }
-.blog .grid-blog div .flex-blog{
+.blog .grid-blog .grid-items .flex-blog{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     filter: grayscale(70%);
 }
-.blog .grid-blog div .flex-blog:hover{
+.blog .grid-blog .grid-items .flex-blog:hover{
     filter: opacity(1);
     transform: scale(1.04);
 }
-.blog .grid-blog div div{
+.blog .grid-blog .grid-items .flex-blog{
     box-shadow: 2px 2px 5px black;
     position: relative;
     border-radius: 10px;
 }
-.blog .grid-blog div div img{
+.blog .grid-blog .grid-items .flex-blog img{
     position: relative;
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
-.blog .grid-blog div div a{
+.blog .grid-blog .grid-items .flex-blog a{
     position: absolute;
     text-decoration: none;
     font-size: 20px;
@@ -1728,10 +1718,6 @@ footer .leyenda p{
     
                 /*HEADER*/
         
-        .encabezado .menu img{
-            width: 60px;
-            padding-left: 15px;
-        }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -1745,7 +1731,7 @@ footer .leyenda p{
         }
         #toggle:checked ~ .navigation{
             display: block;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.856);
         }
     
                 /*BANNER 1*/
@@ -1784,13 +1770,13 @@ footer .leyenda p{
             flex-direction: column;
             align-items: center;
         }
-        .section-1 .contenedor-section-1 .bloque-1 .bl1-txt{
+        .section-1 .contenedor-section-1 .bloque-1 div{
             padding: 5px 0px 20px;
         }
         .section-1 .contenedor-section-1 .bloque-1 div p{
             font-size: 18px;
         }
-        .section-1 .contenedor-section-1 .bloque-1 .bl1-img img{
+        .section-1 .contenedor-section-1 .bloque-1 div img{
             width: 60vw;
             height: 60vw;
             padding-bottom: 15px;
@@ -1988,6 +1974,7 @@ footer .leyenda p{
         .banner-2 .conte-2 .wrap-2 .box-2 h2{
             text-align: center;
             font-size: 28px;
+            padding-bottom: 2px;
         }
         .banner-2 .conte-2 .wrap-2 .box-2 p{
             text-align: center;
@@ -1998,15 +1985,20 @@ footer .leyenda p{
         }
         .banner-2 .conte-2 .wrap-2 .box-2 span{
             display: block;
-            font-size: 20px;
-            padding-top: 20px;
+            font-size: 18px;
+            padding-bottom: 2px;
+            padding-top: 2px;
             padding-left: 20px;
         }
         .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
             display: flex;
             flex-direction: column;
-            justify-items: center;
-            padding: 2vh 4vw 2vh 4vw;
+            justify-content: center;
+            /* justify-items: center; */
+            /* align-items: center; */
+            margin-bottom: 10px;
+            margin-top: 2px;
+            padding: 10px 10px;
         }
         .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2{
             margin-bottom: 10px;
@@ -2245,10 +2237,6 @@ footer .leyenda p{
 
                 /*HEADER*/
         
-        .encabezado .menu img{
-            width: 60px;
-            padding-left: 15px;
-        }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -2259,7 +2247,7 @@ footer .leyenda p{
         }
         #toggle:checked ~ .navigation{
             display: block;
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.856);
         }
     
                 /*BANNER 1*/
@@ -2297,13 +2285,13 @@ footer .leyenda p{
             flex-direction: column;
             align-items: center;
         }
-        .section-1 .contenedor-section-1 .bloque-1 .bloque-1 .bl1-txt{
+        .section-1 .contenedor-section-1 .bloque-1 .bloque-1 div{
             padding: 5px 0px 20px;
         }
         .section-1 .contenedor-section-1 .bloque-1 div p{
             font-size: 21px;
         }
-        .section-1 .contenedor-section-1 .bloque-1 .bl1-img img{
+        .section-1 .contenedor-section-1 .bloque-1 div img{
             width: 250px;
             height: 250px;
             padding-bottom: 15px;
@@ -2500,8 +2488,7 @@ footer .leyenda p{
         }
         .banner-2 .conte-2 .wrap-2 .box-2 span{
             display: block;
-            font-size: 20px;
-            padding-top: 20px;
+            font-size: 18px;
             padding-left: 20px;
         }
         .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
@@ -2509,6 +2496,7 @@ footer .leyenda p{
             flex-direction: column;
             margin-left: 5px;
             padding: 2vh 4vw 2vh 4vw;
+            margin-top: 5px;
         }
         .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2{
             margin-bottom: 10px;
@@ -2744,10 +2732,6 @@ footer .leyenda p{
 
                 /*HEADER*/
 
-        .encabezado .menu img{
-            width: 60px;
-            padding-left: 15px;
-        }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -2856,6 +2840,7 @@ footer .leyenda p{
         }
         .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
             margin-top: 5px;
+            justify-content: space-around;
         }
 
                 /*FOOTER*/
@@ -2958,10 +2943,6 @@ footer .leyenda p{
 
                 /*HEADER*/
 
-        .encabezado .menu img{
-            width: 60px;
-            padding-left: 15px;
-        }
         .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -3071,6 +3052,10 @@ footer .leyenda p{
         .banner-2 .conte-2 .wrap-2 .box-2{
             margin: 0 auto;
         }
+        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
+            margin-top: 5px;
+        }
+
         
         /*!-----------CONOCEME------------------*/
 
@@ -3116,10 +3101,6 @@ footer .leyenda p{
 
                 /*HEADER*/
 
-        .encabezado .menu img{
-            width: 60px;
-            padding-left: 15px;
-        }        
         .encabezado label{
             display: initial;
         }
@@ -3131,7 +3112,7 @@ footer .leyenda p{
             top: 100%;
             left: 0;
             right: 0;
-            background-color: rgba(1, 1, 1, 0.7);
+            background-color: rgba(0, 0, 0, 0.856);
             display: none;
         }
         .encabezado .navigation ul li{
@@ -3153,7 +3134,7 @@ footer .leyenda p{
             width: 100%;
             left: 0;
         }
-        #toggle:checked ~ .navigation{
+        .encabezado #toggle:checked ~ .navigation{
             display: block;
         }
     }

@@ -1,0 +1,99 @@
+/*---------------VARIABLES--------------------*/
+
+//* LISTAS
+
+$colores:
+/*1*/#642a73,
+/*2*/#6e4379,
+/*3*/#4d0686,
+/*4*/hsla(288, 29%, 37%, 0.658),
+/*5*/#a581b1,
+/*6*/hsla(273, 28%, 37%, 0.527),
+/*7*/hsla(288, 29%, 37%, 0.863),
+/*8*/rgba(132, 99, 138, 0.699),
+/*9*/hsla(288, 32%, 59%, 0.863);
+
+$font-size:
+/*1*/30px,
+/*2*/25px,
+/*3*/22px,
+/*4*/20px,
+/*5*/18px,
+/*6*/16px,
+/*7*/15px;
+
+//* EXTENDS
+
+%banners{
+    display: flex;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    position: relative;
+}
+
+%wave{
+    height: 100%;
+    fill: hsla(273, 28%, 37%, 0.521);
+    position: absolute;
+}
+
+%botones-banner{
+    flex-basis: 30%;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+%psicooncologia-tcc{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: hsla(288, 29%, 37%, 0.658);
+    padding-top: 20px;
+    border-radius: 8px;
+}
+
+%sections{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+//*MIXIN
+
+@mixin img ($width, $height, $object){
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}
+
+@mixin flex ($display, $direction, $align){
+    display: $display;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin grid ($display, $columns, $gap){
+    display: $display;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+
+@mixin titulos ($text-align, $size, $weight){
+    text-align: $text-align;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+@mixin wrap ($display, $flow, $justify, $position){
+    display: $display;
+    flex-flow: $flow;
+    justify-content: $justify;
+    position: $position;
+}

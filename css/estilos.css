@@ -1,0 +1,2313 @@
+@charset "UTF-8";
+/*-------------GENERALES-----------------*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Source Sans Pro, sans-serif !important; }
+
+/*---------------VARIABLES--------------------*/
+.banner-1 .conte, .banner-2 .conte-2, .banner-3 .conte-3, .banner-psicooncologia .contenedor-banner-psicoonco, .banner-tcc .contenedor-banner-tcc {
+  display: flex;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  overflow: hidden;
+  position: relative; }
+
+.banner-1 .conte .wave-1, .banner-1 .conte .wave-2, .banner-2 .conte-2 .wave-3, .banner-2 .conte-2 .wave-4, .banner-3 .conte-3 .wave-5, .banner-3 .conte-3 .wave-6, .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1, .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2, .banner-tcc .contenedor-banner-tcc .wave-tcc1, .banner-tcc .contenedor-banner-tcc .wave-tcc2 {
+  height: 100%;
+  fill: rgba(97, 68, 121, 0.521);
+  position: absolute; }
+
+.section-1 .contenedor-section-1 .bloque-2 .psicooncologia, .section-1 .contenedor-section-1 .bloque-2 .tcc {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background-color: rgba(111, 67, 122, 0.658);
+  padding-top: 20px;
+  border-radius: 8px; }
+
+.section-1 .contenedor-section-1, .section-2 .contenedor-section-2, .galeria, .section-4 .contenedor-section-4, .conoceme .contenedor-conoceme, .servicio-psicooncologia, .servicio-tcc, .turnos .contenedor-turnos, .pagina-contacto .contenedor-contacto, .blog {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden; }
+
+/*-----------HEADER-------------*/
+.encabezado {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 64.5px;
+  background-color: #010101;
+  padding: 0px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100; }
+  .encabezado .contenedorlogo-h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .encabezado .contenedorlogo-h1 img {
+      width: 64px;
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
+      padding-right: 10px; }
+      .encabezado .contenedorlogo-h1 img:hover {
+        filter: invert(98%) sepia(77%) saturate(3270%) hue-rotate(198deg) brightness(82%) contrast(88%); }
+    .encabezado .contenedorlogo-h1 h1 {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+      color: white;
+      font-size: 25px;
+      margin-bottom: 0px;
+      font-weight: 700;
+      cursor: default; }
+      .encabezado .contenedorlogo-h1 h1:hover {
+        color: #a581b1; }
+  .encabezado #toggle {
+    display: none;
+    cursor: pointer; }
+  .encabezado label {
+    display: none;
+    cursor: pointer; }
+    .encabezado label img {
+      width: 45px; }
+  .encabezado .navigation ul {
+    list-style: none; }
+    .encabezado .navigation ul li {
+      float: left;
+      position: relative; }
+      .encabezado .navigation ul li:hover > ul {
+        display: initial; }
+      .encabezado .navigation ul li a {
+        font-family: 'Source Sans Pro', sans-serif !important;
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+        display: block;
+        transition: all 0.4s ease; }
+        .encabezado .navigation ul li a:hover {
+          background-color: #9c85a3b6; }
+      .encabezado .navigation ul li ul {
+        position: absolute;
+        right: 0;
+        width: 300px;
+        padding-left: 0px;
+        background-color: rgba(1, 1, 1, 0.781);
+        display: none; }
+        .encabezado .navigation ul li ul li {
+          width: 100%; }
+          .encabezado .navigation ul li ul li a {
+            font-family: 'Source Sans Pro', sans-serif !important;
+            font-size: 16px; }
+
+/*-------------------------MAIN-----------------------*/
+/*----*INDEX------*/
+main {
+  background: #cc94c0;
+  background: -webkit-linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.651));
+  background: linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.658)), url(../img/section-1-img.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
+/*----------------------- BANNER 1--------------------------------*/
+.banner-1 .conte {
+  height: 65vh;
+  animation: banner-1 5s infinite linear alternate; }
+
+@keyframes banner-1 {
+  0%, 50% {
+    background-image: url(../img/mediodepagos.jpg); }
+  51%, 100% {
+    background-image: url(../img/mediodepagos2.jpg); } }
+  .banner-1 .conte .wave-1 {
+    width: 80%;
+    top: 0;
+    left: 0; }
+  .banner-1 .conte .wave-2 {
+    width: 80%;
+    bottom: 0;
+    right: 0; }
+  .banner-1 .conte .wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%; }
+    .banner-1 .conte .wrap .box {
+      flex-basis: 100%;
+      color: white;
+      text-align: left;
+      align-self: center;
+      position: relative; }
+      .banner-1 .conte .wrap .box h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 700;
+        padding: 20px;
+        text-shadow: 0.1em 0.1em 0.2em black; }
+      .banner-1 .conte .wrap .box .cards img {
+        padding: 5px;
+        width: 110px;
+        height: 85px; }
+      .banner-1 .conte .wrap .box .botones {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px; }
+        .banner-1 .conte .wrap .box .botones .btn1 {
+          flex-basis: 30%;
+          border: solid 2px;
+          border-radius: 20px;
+          padding: 10px 30px 10px 30px;
+          text-align: center;
+          text-decoration: none;
+          color: white;
+          backdrop-filter: blur(10px);
+          transition: all 0.4s ease; }
+          .banner-1 .conte .wrap .box .botones .btn1:hover {
+            background-color: white;
+            color: black;
+            border: solid 2px white; }
+        .banner-1 .conte .wrap .box .botones .btn2 {
+          flex-basis: 30%;
+          border: solid 2px white;
+          border-radius: 20px;
+          padding: 10px 30px 10px 30px;
+          margin-right: 20px;
+          text-align: center;
+          text-decoration: none;
+          color: black;
+          background-color: white;
+          transition: all 0.4s ease; }
+          .banner-1 .conte .wrap .box .botones .btn2:hover {
+            background-color: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(10px);
+            color: white; }
+
+/*----------------------- SECTION 1--------------------------------*/
+.section-1 .contenedor-section-1 {
+  padding: 40px 0; }
+  .section-1 .contenedor-section-1 .titulo1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    letter-spacing: 2px;
+    color: #642a73;
+    margin: 60px 0px 40px; }
+  .section-1 .contenedor-section-1 .bloque-1 {
+    display: flex; }
+    .section-1 .contenedor-section-1 .bloque-1 div p {
+      text-align: justify-all;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 6px; }
+    .section-1 .contenedor-section-1 .bloque-1 div img {
+      width: 250px;
+      height: 250px; }
+  .section-1 .contenedor-section-1 .bloque-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px; }
+    .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a, .section-1 .contenedor-section-1 .bloque-2 .tcc a {
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+      color: white;
+      padding-bottom: 20px;
+      padding-left: 50px; }
+      .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a:hover, .section-1 .contenedor-section-1 .bloque-2 .tcc a:hover {
+        text-decoration: underline;
+        color: #E2E2E2; }
+    .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img, .section-1 .contenedor-section-1 .bloque-2 .tcc img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      margin-left: 50px;
+      border: 3px solid #642a73;
+      border-radius: 8px; }
+    .section-1 .contenedor-section-1 .bloque-2 .psicooncologia p, .section-1 .contenedor-section-1 .bloque-2 .tcc p {
+      color: white;
+      font-size: 18px;
+      padding-left: 20px;
+      padding-bottom: 15px; }
+  .section-1 .contenedor-section-1 .comienza-ahora {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 70px;
+    transition: all 0.4s ease; }
+    .section-1 .contenedor-section-1 .comienza-ahora:hover {
+      transform: scale(1.1); }
+    .section-1 .contenedor-section-1 .comienza-ahora a {
+      text-decoration: none;
+      background-color: #6e4379;
+      padding: 15px 20px;
+      border-radius: 8px;
+      color: white;
+      box-shadow: 5px 5px 10px black;
+      transition: all 0.4s ease; }
+      .section-1 .contenedor-section-1 .comienza-ahora a:hover {
+        background-color: #a581b1; }
+
+/*----------------------- SECTION 2--------------------------------*/
+.section-2 .contenedor-section-2 {
+  padding: 40px 0; }
+  .section-2 .contenedor-section-2 .titulo2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    letter-spacing: 2px;
+    color: #642a73;
+    margin-bottom: 40px; }
+  .section-2 .contenedor-section-2 .ilustracion-textos {
+    text-align: center; }
+    .section-2 .contenedor-section-2 .ilustracion-textos h3 {
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 15px; }
+      .section-2 .contenedor-section-2 .ilustracion-textos h3 span {
+        background-color: rgba(111, 67, 122, 0.658);
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+        margin-right: 5px; }
+    .section-2 .contenedor-section-2 .ilustracion-textos p {
+      font-size: 20px;
+      padding: 0px 0px 30px 15px;
+      text-align: justify-all; }
+
+/*----------------------- GALERIA--------------------------------*/
+.galeria {
+  padding: 20px 0; }
+  .galeria h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    letter-spacing: 2px;
+    color: #642a73;
+    margin-bottom: 30px; }
+  .galeria .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    grid-template-rows: repeat(2, 1fr); }
+    .galeria .grid-galeria .grid-item .flex-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 300px;
+      height: 320px;
+      padding: 15px;
+      border-radius: 15px;
+      background-color: rgba(111, 67, 122, 0.658); }
+      .galeria .grid-galeria .grid-item .flex-item h3 {
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+        padding: 10px; }
+      .galeria .grid-galeria .grid-item .flex-item img {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px; }
+      .galeria .grid-galeria .grid-item .flex-item p {
+        font-size: 18px;
+        text-align: center;
+        color: white;
+        padding: 10px; }
+
+/*------------------------------------SECTION 3---------------------------*/
+.section-3 .bg-section-3 {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(165, 129, 177, 0.39);
+  backdrop-filter: blur(5px); }
+  .section-3 .bg-section-3 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    font-weight: 100px;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    padding: 20px; }
+  .section-3 .bg-section-3 .contenedor-flex {
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly; }
+    .section-3 .bg-section-3 .contenedor-flex .flex-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 265px;
+      background-color: rgba(215, 213, 213, 0.493);
+      box-shadow: 5px 5px 5px #747373;
+      border-radius: 15px; }
+      .section-3 .bg-section-3 .contenedor-flex .flex-div img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover; }
+      .section-3 .bg-section-3 .contenedor-flex .flex-div h3 {
+        text-align: center;
+        font-size: 23px;
+        font-weight: 700;
+        padding: 15px;
+        color: #642a73; }
+      .section-3 .bg-section-3 .contenedor-flex .flex-div p {
+        text-align: center;
+        font-size: 20px; }
+
+/*----------------------- SECTION 4--------------------------------*/
+.section-4 .contenedor-section-4 {
+  padding: 40px 0;
+  display: flex;
+  align-items: center; }
+  .section-4 .contenedor-section-4 .contenedor4-1 {
+    width: 40%; }
+    .section-4 .contenedor-section-4 .contenedor4-1 h3 {
+      font-size: 40px;
+      text-align: justify-all;
+      font-weight: 600;
+      color: #4d0686;
+      padding-bottom: 15px;
+      text-shadow: 2px 2px 5px #614479; }
+    .section-4 .contenedor-section-4 .contenedor4-1 p {
+      font-size: 22px;
+      text-align: justify-all;
+      padding-bottom: 40px; }
+    .section-4 .contenedor-section-4 .contenedor4-1 a {
+      text-decoration: none;
+      background-color: #6e4379;
+      padding: 15px 20px;
+      border-radius: 8px;
+      color: white;
+      box-shadow: 2px 2px 5px black;
+      transition: all 0.4s ease; }
+      .section-4 .contenedor-section-4 .contenedor4-1 a:hover {
+        background-color: #a581b1; }
+  .section-4 .contenedor-section-4 .contenedor4-2 {
+    width: 40%;
+    background-color: rgba(111, 67, 122, 0.658);
+    padding: 15px 0px 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 {
+      margin-bottom: 30px; }
+    .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 img, .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 img {
+      width: 250px; }
+    .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 h3, .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 h3 {
+      font-size: 28px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: white;
+      font-weight: bold; }
+    .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 h4, .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 h4 {
+      font-size: 24px;
+      color: white; }
+    .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1 p, .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-2 p {
+      font-weight: bold;
+      font-size: 20px; }
+
+/*----------------------- BANNER 2--------------------------------*/
+.banner-2 .conte-2 {
+  height: 65vh;
+  animation: banner-2 5s infinite linear alternate; }
+
+@keyframes banner-2 {
+  0%, 50% {
+    background-image: url(../img/banner2.jpg); }
+  51%, 100% {
+    background-image: url(../img/banner2-2.jpg); } }
+  .banner-2 .conte-2 .wave-3 {
+    width: 70%;
+    left: 0; }
+  .banner-2 .conte-2 .wave-4 {
+    width: 100%;
+    right: 0; }
+  .banner-2 .conte-2 .wrap-2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%; }
+    .banner-2 .conte-2 .wrap-2 .box-2 {
+      flex-basis: 80%;
+      color: white;
+      text-align: left;
+      align-self: center;
+      position: relative; }
+      .banner-2 .conte-2 .wrap-2 .box-2 h2 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.2;
+        padding-bottom: 20px;
+        text-shadow: 0.1em 0.1em 0.2em black; }
+      .banner-2 .conte-2 .wrap-2 .box-2 p {
+        font-style: italic;
+        font-size: 20px;
+        color: white;
+        border: 2px solid wheat;
+        background-color: rgba(0, 0, 0, 0.623);
+        text-align: center;
+        padding: 10px 6px;
+        border-radius: 5px; }
+      .banner-2 .conte-2 .wrap-2 .box-2 span {
+        color: white;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        font-size: 24px;
+        letter-spacing: 3px;
+        font-weight: 500; }
+      .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        flex-flow: row wrap;
+        position: relative; }
+        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2 {
+          position: relative;
+          flex-basis: 30%;
+          border: solid 2px;
+          border-radius: 20px;
+          padding: 10px 30px 10px 30px;
+          text-align: center;
+          text-decoration: none;
+          backdrop-filter: blur(10px);
+          color: white;
+          transition: all 0.4s ease; }
+          .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2:hover {
+            background-color: white;
+            color: black;
+            border: solid 2px white; }
+        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn2-2 {
+          position: relative;
+          flex-basis: 30%;
+          border: solid 2px white;
+          border-radius: 20px;
+          padding: 10px 30px 10px 30px;
+          text-align: center;
+          text-decoration: none;
+          color: black;
+          background-color: white;
+          transition: all 0.4s ease; }
+          .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn2-2:hover {
+            background-color: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(10px);
+            color: white; }
+
+/*----------------------- BOTON WHATSAPP--------------------------------*/
+.whatsapp {
+  position: fixed;
+  left: 0;
+  bottom: 0; }
+  .whatsapp img {
+    width: 60px;
+    filter: opacity(0.5); }
+    .whatsapp img:hover {
+      filter: opacity(1); }
+
+/*----CONOCEME------*/
+/*---------------------BANNER 3--------------------*/
+.banner-3 .conte-3 {
+  height: 60vh;
+  animation: banner-3 5s infinite linear alternate; }
+
+@keyframes banner-3 {
+  0%, 50% {
+    background-image: url(../img/banner-3.jpg); }
+  51%, 100% {
+    background-image: url(../img/banner3-2.jpg); } }
+  .banner-3 .conte-3 .wave-5, .banner-3 .conte-3 .wave-6 {
+    width: 100%;
+    right: 0; }
+  .banner-3 .conte-3 .wrap-3 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto; }
+    .banner-3 .conte-3 .wrap-3 h2 {
+      color: black;
+      font-size: 35px;
+      font-style: italic;
+      font-weight: 700;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border: 3px solid white;
+      padding: 10px 5px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      backdrop-filter: blur(20px);
+      box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
+      position: relative; }
+    .banner-3 .conte-3 .wrap-3 p {
+      color: white;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      text-align: right;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: oblique; }
+
+/*---------------------CONTENIDO CONOCEME--------------------*/
+.conoceme {
+  background: #cc94c0;
+  background: -webkit-linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.651));
+  background: linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.658)), url(../img/conoceme.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+  .conoceme .contenedor-conoceme {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .conoceme .contenedor-conoceme .contenido-conoceme {
+      width: 60%;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      backdrop-filter: blur(10px);
+      border-radius: 50px;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5); }
+      .conoceme .contenedor-conoceme .contenido-conoceme p {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px; }
+    .conoceme .contenedor-conoceme img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border: 6px solid rgba(111, 67, 122, 0.658);
+      border-radius: 50%;
+      filter: grayscale(50%);
+      transition: all 1s ease; }
+      .conoceme .contenedor-conoceme img:hover {
+        transform: scale(1.1);
+        filter: grayscale(0%); }
+
+/*----PSICOONCOLOGIA------*/
+.psicooncologia-main {
+  background: #cc94c0;
+  background: -webkit-linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.651));
+  background: linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.658)), url(../img/psicooncologia.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
+/*----------------------- BANNER PSICOONCOLOGÍA--------------------------------*/
+.banner-psicooncologia .contenedor-banner-psicoonco {
+  height: 60vh;
+  animation: banner-psicooncologia 5s infinite linear alternate; }
+
+@keyframes banner-psicooncologia {
+  0%, 50% {
+    background-image: url(../img/banner-psiconco.jpg); }
+  51%, 100% {
+    background-image: url(../img/banner-psiconco2.jpg); } }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1 {
+    width: 70%;
+    left: 0; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2 {
+    width: 100%;
+    right: 0; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto; }
+    .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia h2 {
+      color: black;
+      font-size: 35px;
+      font-style: italic;
+      font-weight: 700;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border: 3px solid #a581b1;
+      padding: 10px 5px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      backdrop-filter: blur(20px);
+      box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
+      position: relative; }
+
+/*---------------------------CONTENIDO PSICOONCOLOGIA-----------------*/
+.servicio-psicooncologia {
+  padding: 40px 0;
+  /*---------------------------PARTE 1------------------------------*/
+  /*---------------------------PARTE 2------------------------------*/
+  /*---------------------------PARTE 3------------------------------*/
+  /*---------------------------PARTE 4------------------------------*/ }
+  .servicio-psicooncologia .parte1-onco {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .servicio-psicooncologia .parte1-onco div p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      padding: 5px; }
+    .servicio-psicooncologia .parte1-onco img {
+      width: 50%;
+      height: 50%;
+      border: 5px solid #6e4379;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+      margin-right: 20px; }
+  .servicio-psicooncologia .parte2-onco h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #642a73;
+    padding-bottom: 15px;
+    letter-spacing: 2px; }
+  .servicio-psicooncologia .parte2-onco p {
+    text-align: justify-all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px; }
+  .servicio-psicooncologia .parte3-onco h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #642a73;
+    padding-bottom: 15px;
+    letter-spacing: 2px; }
+  .servicio-psicooncologia .parte3-onco p {
+    text-align: justify-all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px; }
+  .servicio-psicooncologia .parte4-onco h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #642a73;
+    padding-bottom: 15px;
+    letter-spacing: 2px; }
+  .servicio-psicooncologia .parte4-onco ul li {
+    list-style: none; }
+    .servicio-psicooncologia .parte4-onco ul li h3 {
+      font-size: 25px;
+      color: #642a73;
+      padding: 15px; }
+    .servicio-psicooncologia .parte4-onco ul li .subparte4 {
+      display: flex;
+      align-items: center;
+      width: 80%; }
+      .servicio-psicooncologia .parte4-onco ul li .subparte4 p {
+        text-align: justify-all;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-bottom: 15px; }
+      .servicio-psicooncologia .parte4-onco ul li .subparte4 img {
+        width: 200px;
+        height: 200px;
+        animation: img-psicoonco 4s linear infinite; }
+
+@keyframes img-psicoonco {
+  0% {
+    transform: translateX(10px); }
+  50% {
+    transform: translateX(0px); }
+  100% {
+    transform: translateX(10px); } }
+
+/*!TCC INDIVIDUAL*/
+.tcc-main {
+  background: #cc94c0;
+  background: -webkit-linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.651));
+  background: linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.658)), url(../img/psicoterapiaTCC.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+
+/*-----------------------------BANNER TCC---------------------------*/
+.banner-tcc .contenedor-banner-tcc {
+  height: 60vh;
+  animation: banner-tcc 5s infinite linear alternate; }
+
+@keyframes banner-tcc {
+  0%, 50% {
+    background-image: url(../img/banner-tcc.jpg); }
+  51%, 100% {
+    background-image: url(../img/banner-tcc2.jpg); } }
+  .banner-tcc .contenedor-banner-tcc .wave-tcc1 {
+    width: 100%;
+    left: 0; }
+  .banner-tcc .contenedor-banner-tcc .wave-tcc2 {
+    width: 100%;
+    right: 0; }
+  .banner-tcc .contenedor-banner-tcc .wrap-tcc {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto; }
+    .banner-tcc .contenedor-banner-tcc .wrap-tcc h2 {
+      color: black;
+      font-size: 35px;
+      font-style: italic;
+      font-weight: 700;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border: 3px solid white;
+      padding: 10px 5px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      backdrop-filter: blur(20px);
+      box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
+      position: relative; }
+    .banner-tcc .contenedor-banner-tcc .wrap-tcc p {
+      text-align: right;
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      font-style: oblique; }
+
+/*--------------------------------CONTENIDO TCC--------------------------*/
+.servicio-tcc {
+  padding: 40px 0;
+  /*---------------------------PARTE 1------------------------------*/
+  /*---------------------------PARTE 2------------------------------*/
+  /*---------------------------PARTE 3------------------------------*/
+  /*---------------------------PARTE 4------------------------------*/
+  /*---------------------------PARTE 5------------------------------*/ }
+  .servicio-tcc .parte1-tcc {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .servicio-tcc .parte1-tcc div p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      padding: 10px; }
+    .servicio-tcc .parte1-tcc img {
+      width: 40%;
+      height: 50%;
+      border: 5px solid #6e4379;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+      margin-right: 20px; }
+  .servicio-tcc .parte2-tcc h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #642a73;
+    padding-bottom: 15px;
+    letter-spacing: 2px; }
+  .servicio-tcc .parte2-tcc .txt-img-tcc2 {
+    display: flex;
+    align-items: center; }
+    .servicio-tcc .parte2-tcc .txt-img-tcc2 .txt-tcc2 p {
+      text-align: justify-all;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      padding-bottom: 15px; }
+    .servicio-tcc .parte2-tcc .txt-img-tcc2 .img-tcc2 img {
+      width: 350px;
+      height: 250px;
+      animation: img-tcc1 4s linear infinite; }
+
+@keyframes img-tcc1 {
+  0% {
+    transform: translateY(10px); }
+  50% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(10px); } }
+  .servicio-tcc .parte3-tcc h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #642a73;
+    padding: 15px;
+    letter-spacing: 2px; }
+  .servicio-tcc .parte3-tcc .txt-img-tcc3 {
+    display: flex;
+    align-items: center; }
+    .servicio-tcc .parte3-tcc .txt-img-tcc3 .txt-tcc3 p {
+      text-align: justify-all;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      padding-bottom: 15px; }
+    .servicio-tcc .parte3-tcc .txt-img-tcc3 .img-tcc3 img {
+      width: 350px;
+      height: 250px;
+      animation: img-tcc2 4s linear infinite; }
+
+@keyframes img-tcc2 {
+  0% {
+    transform: translateY(10px); }
+  50% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(10px); } }
+  .servicio-tcc .parte4-tcc h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #642a73;
+    padding: 15px;
+    letter-spacing: 2px; }
+  .servicio-tcc .parte4-tcc .txt-img-tcc4 {
+    display: flex;
+    align-items: center; }
+    .servicio-tcc .parte4-tcc .txt-img-tcc4 .txt-tcc4 p {
+      text-align: justify-all;
+      font-size: 20px;
+      font-weight: 500;
+      font-weight: 500;
+      line-height: 1.5;
+      padding-bottom: 15px; }
+    .servicio-tcc .parte4-tcc .txt-img-tcc4 .img-tcc4 img {
+      width: 350px;
+      height: 250px;
+      animation: img-tcc3 4s linear infinite; }
+
+@keyframes img-tcc3 {
+  0% {
+    transform: translateY(10px); }
+  50% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(10px); } }
+  .servicio-tcc .parte4-tcc ul li {
+    text-align: justify all;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding-bottom: 15px; }
+  .servicio-tcc .parte5-tcc .p5-1 {
+    margin-top: 15px;
+    padding: 20px;
+    border: 4px solid white;
+    padding: 10px 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(30px); }
+    .servicio-tcc .parte5-tcc .p5-1 h3 {
+      text-align: center;
+      font-size: 25px;
+      font-weight: 700;
+      color: #642a73;
+      padding: 15px;
+      letter-spacing: 2px; }
+    .servicio-tcc .parte5-tcc .p5-1 p {
+      text-align: justify-all;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      padding-bottom: 15px;
+      font-style: oblique;
+      color: #642a73;
+      font-weight: 500; }
+  .servicio-tcc .parte5-tcc .p5-2 {
+    margin-top: 15px; }
+    .servicio-tcc .parte5-tcc .p5-2 p {
+      text-align: justify-all;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      padding-bottom: 15px; }
+    .servicio-tcc .parte5-tcc .p5-2 ul {
+      padding-left: 5px; }
+      .servicio-tcc .parte5-tcc .p5-2 ul li span {
+        background-color: rgba(111, 67, 122, 0.658);
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+        margin-right: 5px; }
+  .servicio-tcc .parte5-tcc .p5-3 {
+    margin-top: 15px; }
+    .servicio-tcc .parte5-tcc .p5-3 p {
+      text-align: justify-all;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.5;
+      padding-bottom: 15px; }
+    .servicio-tcc .parte5-tcc .p5-3 ul {
+      padding-left: 5px; }
+      .servicio-tcc .parte5-tcc .p5-3 ul li span {
+        background-color: rgba(111, 67, 122, 0.658);
+        color: white;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+        margin-right: 5px; }
+
+/*!SOLICITAR TURNO*/
+.turnos {
+  background: #cc94c0;
+  background: -webkit-linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.651));
+  background: linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.658)), url(../img/section-1-img.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+  .turnos .contenedor-turnos {
+    padding: 40px 0; }
+    .turnos .contenedor-turnos .solicitar-turno {
+      margin: auto;
+      width: 400px;
+      background-color: rgba(111, 67, 122, 0.658);
+      padding: 50px;
+      border-radius: 5px;
+      color: white; }
+      .turnos .contenedor-turnos .solicitar-turno h2 {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 700;
+        font-family: 'Source Sans Pro', serif;
+        margin-bottom: 20px;
+        text-shadow: 0.1em 0.1em 0.2em black; }
+      .turnos .contenedor-turnos .solicitar-turno .formularios {
+        width: 100%;
+        background-color: rgba(111, 67, 122, 0.863);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: 1px solid white;
+        font-size: 18px; }
+        .turnos .contenedor-turnos .solicitar-turno .formularios:hover {
+          box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699); }
+      .turnos .contenedor-turnos .solicitar-turno h3 {
+        font-size: 25px;
+        text-align: center;
+        margin: 20px 0px 10px;
+        text-shadow: 0.1em 0.1em 0.2em black; }
+      .turnos .contenedor-turnos .solicitar-turno .date {
+        width: 100%;
+        background-color: rgba(111, 67, 122, 0.863);
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid white; }
+        .turnos .contenedor-turnos .solicitar-turno .date:hover {
+          box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699); }
+      .turnos .contenedor-turnos .solicitar-turno select {
+        width: 100%;
+        background-color: rgba(111, 67, 122, 0.863);
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid white; }
+        .turnos .contenedor-turnos .solicitar-turno select:hover {
+          box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699); }
+      .turnos .contenedor-turnos .solicitar-turno .terminos-condiciones {
+        font-size: 22px;
+        margin: 45px 0px 10px;
+        text-shadow: 0.1em 0.1em 0.2em black; }
+      .turnos .contenedor-turnos .solicitar-turno label {
+        font-size: 18px; }
+      .turnos .contenedor-turnos .solicitar-turno .agrega-comentarios {
+        font-size: 22px;
+        margin: 20px 0px 10px;
+        text-shadow: 0.1em 0.1em 0.2em black; }
+      .turnos .contenedor-turnos .solicitar-turno textarea {
+        width: 100%;
+        background-color: rgba(111, 67, 122, 0.863);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: 1px solid white;
+        font-size: 15px; }
+        .turnos .contenedor-turnos .solicitar-turno textarea:hover {
+          box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699); }
+      .turnos .contenedor-turnos .solicitar-turno .boton {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: rgba(111, 67, 122, 0.863);
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: 1px solid white;
+        font-size: 18px;
+        transition: all 0.4s ease;
+        cursor: pointer; }
+        .turnos .contenedor-turnos .solicitar-turno .boton:hover {
+          background-color: rgba(171, 117, 184, 0.863);
+          transform: scale(1.1); }
+      .turnos .contenedor-turnos .solicitar-turno .boton-coll {
+        width: 100%;
+        margin-top: 25px; }
+        .turnos .contenedor-turnos .solicitar-turno .boton-coll p .boton-p {
+          display: block;
+          width: 100%;
+          background-color: rgba(111, 67, 122, 0.863);
+          padding: 10px 10px;
+          border: 1px solid white;
+          border-radius: 5px;
+          color: #fff;
+          text-align: center;
+          font-size: 18px;
+          font-weight: 500;
+          text-decoration: none; }
+          .turnos .contenedor-turnos .solicitar-turno .boton-coll p .boton-p:hover {
+            background-color: rgba(171, 117, 184, 0.863); }
+        .turnos .contenedor-turnos .solicitar-turno .boton-coll .collapse .card {
+          background-color: rgba(132, 99, 138, 0.699); }
+          .turnos .contenedor-turnos .solicitar-turno .boton-coll .collapse .card p span {
+            font-weight: 700;
+            font-size: 20px; }
+
+/*!CONTACTO*/
+.pagina-contacto {
+  background: #cc94c0;
+  background: -webkit-linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.651));
+  background: linear-gradient(to right, rgba(122, 161, 209, 0.651), rgba(219, 211, 179, 0.651), rgba(204, 148, 192, 0.658)), url(../img/section-1-img.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
+  .pagina-contacto .contenedor-contacto {
+    padding: 40px 0; }
+    .pagina-contacto .contenedor-contacto .enviar-correo h2 {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #642a73;
+      margin-bottom: 10px;
+      text-shadow: 0.1em 0.1em 0.2em white; }
+    .pagina-contacto .contenedor-contacto .enviar-correo h3 {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 15px; }
+      .pagina-contacto .contenedor-contacto .enviar-correo h3 span {
+        color: white;
+        background-color: rgba(111, 67, 122, 0.658);
+        padding: 5px 5px;
+        border-radius: 5px; }
+        .pagina-contacto .contenedor-contacto .enviar-correo h3 span a {
+          text-decoration: none;
+          color: white; }
+    .pagina-contacto .contenedor-contacto .enviar-correo .container-campos {
+      padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos {
+        width: 50%;
+        background-color: rgba(111, 67, 122, 0.863);
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        border: 1px solid white;
+        font-size: 18px;
+        transition: all 0.4s ease; }
+        .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos:hover {
+          box-shadow: 4px 4px 4px #b689be; }
+    .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje h4 {
+        margin: 20px 0px 15px;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: underline;
+        margin-bottom: 15px;
+        color: #642a73; }
+      .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje textarea {
+        width: 50%;
+        background-color: rgba(111, 67, 122, 0.863);
+        border: 1px solid white;
+        margin-bottom: 15px;
+        transition: all 0.4s ease; }
+        .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje textarea:hover {
+          box-shadow: 4px 4px 4px #b689be; }
+      .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje input {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 20%;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: #642a73;
+        color: white;
+        font-size: 15px;
+        box-shadow: 0.1em 0.1em 0.2em #333333;
+        transition: all 0.4s ease; }
+        .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje input:hover {
+          background-color: rgba(171, 117, 184, 0.863);
+          transform: scale(1.1); }
+    .pagina-contacto .contenedor-contacto .iframe {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .pagina-contacto .contenedor-contacto .iframe h2 {
+        color: #642a73;
+        font-weight: 800;
+        margin-bottom: 20px; }
+      .pagina-contacto .contenedor-contacto .iframe iframe {
+        filter: brightness(50%);
+        border: 3px solid #642a73;
+        box-shadow: 0.1em 0.1em 0.2em #333333;
+        transition: all 2s ease; }
+        .pagina-contacto .contenedor-contacto .iframe iframe:hover {
+          filter: brightness(100%); }
+
+/*!BLOG*/
+.blog {
+  padding: 20px 0; }
+  .blog h2 {
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #642a73;
+    margin-bottom: 40px; }
+  .blog .grid-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    grid-auto-rows: minmax(200px, auto);
+    padding: 20px; }
+    .blog .grid-blog .grid-items .flex-blog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 5px black;
+      position: relative;
+      border-radius: 10px;
+      filter: grayscale(70%); }
+      .blog .grid-blog .grid-items .flex-blog:hover {
+        filter: opacity(1);
+        transform: scale(1.04); }
+      .blog .grid-blog .grid-items .flex-blog img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        position: relative;
+        border-radius: 10px; }
+      .blog .grid-blog .grid-items .flex-blog a {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        position: absolute;
+        text-decoration: none;
+        bottom: 0;
+        width: 100%;
+        line-height: 20px;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        margin-bottom: 12px; }
+
+/*-----------FOOTER---------------*/
+footer {
+  background-color: rgba(111, 67, 122, 0.658);
+  height: 110px;
+  overflow: hidden; }
+  footer .pie-pagina {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 3%; }
+    footer .pie-pagina .logo-pie {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      footer .pie-pagina .logo-pie img {
+        width: 65px;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
+        margin-right: 10px; }
+      footer .pie-pagina .logo-pie h2 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+        color: white;
+        font-size: 25px;
+        font-weight: 700; }
+        footer .pie-pagina .logo-pie h2:hover {
+          cursor: default; }
+    footer .pie-pagina .redes a img {
+      width: 50px;
+      padding: 5px;
+      filter: grayscale(70%);
+      transition: all 0.4s ease; }
+      footer .pie-pagina .redes a img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.4); }
+  footer .leyenda p {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px; }
+
+/*!---------------------------------RESPONSIVE-------------------------------------------*/
+@media (max-width: 470px) {
+  /*!--------------------INDEX-----------------------*/
+  /*HEADER*/
+  .encabezado {
+    justify-content: space-between;
+    padding-left: 15px;
+    height: 64.5px; }
+  .encabezado .contenedorlogo-h1 img {
+    width: 64px; }
+  .encabezado .contenedorlogo-h1 h1 {
+    display: none; }
+  .encabezado #toggle:checked ~ .navigation {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.856); }
+  /*BANNER 1*/
+  .banner-1 .conte {
+    height: 65vh; }
+  .banner-1 .conte .wrap .box h2 {
+    text-align: center; }
+  .banner-1 .conte .wrap .box .cards {
+    display: flex;
+    justify-content: center; }
+  .banner-1 .conte .wrap .box .cards img {
+    padding: 10px;
+    width: 95px;
+    height: 80px; }
+  .banner-1 .conte .wrap .box .botones {
+    flex-direction: row;
+    justify-content: space-between; }
+  .banner-1 .conte .wrap .box .botones .btn1, .btn2 {
+    padding: 2vh 4vw 2vh 4vw;
+    margin: 0 auto; }
+  /*SECTION 1*/
+  .section-1 .contenedor-section-1 .titulo1 {
+    font-size: 22px;
+    margin-top: 10px; }
+  .section-1 .contenedor-section-1 .bloque-1 {
+    flex-direction: column;
+    align-items: center; }
+  .section-1 .contenedor-section-1 .bloque-1 div {
+    padding: 5px 0px 20px; }
+  .section-1 .contenedor-section-1 .bloque-1 div p {
+    font-size: 18px; }
+  .section-1 .contenedor-section-1 .bloque-1 div img {
+    width: 60vw;
+    height: 60vw;
+    padding-bottom: 15px; }
+  .section-1 .contenedor-section-1 .bloque-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia {
+    background-color: rgba(111, 67, 122, 0.658);
+    width: 100%; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia p {
+    text-align: justify-all;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img {
+    width: 70vw;
+    height: 30vh;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 3px solid #642a73; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a {
+    text-align: left;
+    color: white;
+    font-size: 25px; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc {
+    background-color: rgba(111, 67, 122, 0.658);
+    width: 100%;
+    margin-top: 10px; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc p {
+    text-align: justify-all;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc img {
+    width: 70vw;
+    height: 30vh;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 3px solid #642a73; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc a {
+    text-align: left;
+    color: white;
+    font-size: 25px; }
+  /*SECTION 2*/
+  .section-2 .contenedor-section-2 .titulo2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px; }
+  .section-2 .contenedor-section-2 .ilustracion-textos h3 {
+    font-size: 20px;
+    text-align: center; }
+  .section-2 .contenedor-section-2 .ilustracion-textos p {
+    font-size: 18px;
+    text-align: center; }
+  /*GALERIA*/
+  .galeria {
+    padding-top: 5px; }
+  .galeria h2 {
+    padding: 10px;
+    font-size: 30px; }
+  .galeria .grid-galeria {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); }
+  .galeria .grid-galeria .grid-item {
+    margin: 0 auto; }
+  .galeria .grid-galeria .grid-item .flex-item {
+    width: 300px;
+    height: 370px;
+    padding: 5px;
+    justify-content: center; }
+  .galeria .grid-galeria .grid-item .flex-item img {
+    width: 270px;
+    height: 220px;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item .flex-item h3 {
+    font-size: 23px;
+    padding: 10px; }
+  .galeria .grid-galeria .grid-item .flex-item p {
+    font-size: 18px; }
+  /*Section 3*/
+  .section-3 .bg-section-3 {
+    height: 100%; }
+  .section-3 .bg-section-3 h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px; }
+  .section-3 .bg-section-3 .contenedor-flex {
+    flex-direction: column;
+    padding-top: 15px; }
+  .section-3 .bg-section-3 .contenedor-flex .flex-div {
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 15px; }
+  .section-3 .bg-section-3 .contenedor-flex .flex-div h3 {
+    font-size: 20px; }
+  .section-3 .bg-section-3 .contenedor-flex .flex-div p {
+    font-size: 18px; }
+  .section-3 .bg-section-3 .contenedor-flex .flex-div img {
+    width: 40px;
+    height: 40px; }
+  /*SECTION 4*/
+  .section-4 .contenedor-section-4 {
+    flex-direction: column;
+    margin: 0 auto; }
+  .section-4 .contenedor-section-4 .contenedor4-1 {
+    width: 100%; }
+  .section-4 .contenedor-section-4 .contenedor4-1 h3 {
+    font-size: 30px;
+    text-align: center; }
+  .section-4 .contenedor-section-4 .contenedor4-1 p {
+    text-align: center;
+    font-size: 20px; }
+  .section-4 .contenedor-section-4 .contenedor4-1 a {
+    margin-left: 25vw;
+    padding: 3vh 5vw; }
+  .section-4 .contenedor-section-4 .contenedor4-2 {
+    width: 100%;
+    margin-top: 35px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 {
+    display: flex;
+    flex-direction: column; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h3 {
+    text-align: center;
+    font-size: 20px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h4 {
+    text-align: center;
+    font-size: 20px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 p {
+    text-align: center;
+    font-size: 18px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 img {
+    margin: 0 auto;
+    width: 250px; }
+  /*BANNER 2*/
+  .banner-2 .conte-2 .wrap-2 {
+    flex-direction: column;
+    justify-content: center; }
+  .banner-2 .conte-2 .wrap-2 .box-2 h2 {
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 2px; }
+  .banner-2 .conte-2 .wrap-2 .box-2 p {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .banner-2 .conte-2 .wrap-2 .box-2 span {
+    display: block;
+    font-size: 18px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 20px; }
+  .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    padding: 10px 10px; }
+  .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2 {
+    margin-bottom: 10px; }
+  /*BOTON WHATSAPP*/
+  .whatsapp img {
+    width: 50px;
+    filter: opacity(0.5); }
+  /*FOOTER*/
+  footer .pie-pagina .logo-pie img {
+    width: 60px; }
+  footer .pie-pagina .logo-pie h2 {
+    display: none; }
+  footer .pie-pagina .redes {
+    display: flex; }
+  footer .pie-pagina .redes a img {
+    width: 50px; }
+  footer .leyenda p {
+    font-size: 15px; }
+  /*!--------------------CONOCEME-----------------------*/
+  /*BANNER 3*/
+  .banner-3 .conte-3 {
+    height: 45vh; }
+  .banner-3 .conte-3 .wrap-3 {
+    padding: 0px 15px; }
+  .banner-3 .conte-3 .wrap-3 h2 {
+    font-size: 25px;
+    color: white;
+    border: none;
+    backdrop-filter: blur(1.5px); }
+  .banner-3 .conte-3 .wave-5 {
+    fill: none; }
+  .banner-3 .conte-3 .wave-6 {
+    fill: none; }
+  /*CONTENIDO CONOCEME*/
+  .conoceme .contenedor-conoceme {
+    flex-direction: column-reverse; }
+  .conoceme .contenedor-conoceme .contenido-conoceme {
+    width: 100%; }
+  .contenedor-conoceme .contenido-conoceme p {
+    font-size: 20px;
+    width: 100%; }
+  .conoceme .contenedor-conoceme img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    filter: none; }
+  .conoceme .contenedor-conoceme img:hover {
+    transform: none;
+    filter: none; }
+  /*!--------------------PSICOONCOLOGIA-----------------------*/
+  /*BANNER PSICOONCOLOGIA*/
+  .banner-psicooncologia .contenedor-banner-psicoonco {
+    height: 45vh; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia {
+    padding: 0px 15px; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia h2 {
+    font-size: 25px;
+    color: black;
+    border: none;
+    backdrop-filter: blur(1.5px); }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1 {
+    fill: none; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2 {
+    fill: none; }
+  /*CONTENIDO PSICOONCOLOGIA*/
+  .servicio-psicooncologia {
+    padding: 15px 0px; }
+  .servicio-psicooncologia .parte1-onco {
+    display: flex;
+    flex-direction: column; }
+  .servicio-psicooncologia .parte1-onco img {
+    width: 80vw;
+    height: 25vh;
+    object-fit: cover; }
+  .servicio-psicooncologia .parte4-onco ul li .subparte4 {
+    flex-direction: column;
+    width: 100%; }
+  /*!--------------------TCC INDIVIDUAL-----------------------*/
+  /*BANNER TCC*/
+  .banner-tcc .contenedor-banner-tcc {
+    height: 45vh; }
+  .banner-tcc .contenedor-banner-tcc .wrap-tcc {
+    padding: 0px 15px; }
+  .banner-tcc .contenedor-banner-tcc .wrap-tcc h2 {
+    font-size: 25px;
+    color: white;
+    border: none;
+    backdrop-filter: blur(1.5px); }
+  .banner-tcc .contenedor-banner-tcc .wave-tcc1 {
+    fill: none; }
+  .banner-tcc .contenedor-banner-tcc .wave-tcc2 {
+    fill: none; }
+  /*CONTENIDO TCC*/
+  .servicio-tcc {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 15px 0px; }
+  .servicio-tcc .parte1-tcc {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte1-tcc img {
+    width: 80vw;
+    height: 25vh;
+    object-fit: cover;
+    margin-bottom: 20px; }
+  .servicio-tcc .parte2-tcc .txt-img-tcc2 {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte2-tcc .img-tcc2 img {
+    width: 80vw;
+    height: 25vh; }
+  .servicio-tcc .parte3-tcc .txt-img-tcc3 {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte3-tcc .img-tcc img {
+    width: 80vw;
+    height: 25vh; }
+  .servicio-tcc .parte4-tcc .txt-img-tcc4 {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte4-tcc .img-tcc4 img {
+    width: 80vw;
+    height: 25vh; }
+  /*!--------------------SOLICITAR TURNO-----------------------*/
+  .turnos .contenedor-turnos .solicitar-turno {
+    width: 100%; }
+  .turnos .contenedor-turnos .solicitar-turno h2 {
+    font-size: 28px; }
+  .turnos .contenedor-turnos .solicitar-turno h3, .terminos-condiciones {
+    font-size: 20px; }
+  .turnos .contenedor-turnos .solicitar-turno .agrega-comentarios {
+    font-size: 18px; }
+  /*!--------------------CONTACTO-----------------------*/
+  .pagina-contacto .contenedor-contacto {
+    display: flex;
+    flex-direction: column; }
+  .pagina-contacto .contenedor-contacto .enviar-correo h3 {
+    text-align: center; }
+  .pagina-contacto .contenedor-contacto .enviar-correo h3 span {
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0); }
+  .pagina-contacto .contenedor-contacto .enviar-correo h3 span a {
+    color: #642a73;
+    font-size: 21px;
+    font-weight: 700; }
+  .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px; }
+  .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje textarea {
+    width: 100%;
+    padding: 15px; }
+  .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje input {
+    width: 70%; }
+  .pagina-contacto .contenedor-contacto .iframe {
+    align-items: center; }
+  .pagina-contacto .contenedor-contacto .iframe iframe {
+    width: 250px;
+    height: 200px;
+    filter: brightness(100%); }
+  /*!--------------------BLOG-----------------------*/
+  .blog .grid-blog {
+    padding: 5px; } }
+
+@media (max-width: 767px) and (min-width: 471px) {
+  /*!--------------------INDEX-----------------------*/
+  /*HEADER*/
+  .encabezado {
+    justify-content: space-between;
+    padding-left: 15px;
+    height: 64.5px; }
+  .encabezado .contenedorlogo-h1 img {
+    width: 64px; }
+  .encabezado #toggle:checked ~ .navigation {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.856); }
+  /*BANNER 1*/
+  .banner-1 .conte {
+    height: 60vh; }
+  .banner-1 .conte .wrap .box h2 {
+    text-align: center; }
+  .banner-1 .conte .wrap .box .cards {
+    display: flex;
+    justify-content: center; }
+  .banner-1 .conte .wrap .box .cards img {
+    padding: 10px;
+    width: 120px;
+    height: 100px; }
+  .banner-1 .conte .wrap .box .botones {
+    flex-direction: row; }
+  .banner-1 .conte .wrap .box .botones .btn1, .btn2 {
+    padding: 2vh 4vw 2vh 4vw;
+    margin: 0 auto; }
+  /*SECTION 1*/
+  .section-1 .contenedor-section-1 .titulo1 {
+    font-size: 25px;
+    margin-top: 10px; }
+  .section-1 .contenedor-section-1 .bloque-1 {
+    flex-direction: column;
+    align-items: center; }
+  .section-1 .contenedor-section-1 .bloque-1 .bloque-1 div {
+    padding: 5px 0px 20px; }
+  .section-1 .contenedor-section-1 .bloque-1 div p {
+    font-size: 21px; }
+  .section-1 .contenedor-section-1 .bloque-1 div img {
+    width: 250px;
+    height: 250px;
+    padding-bottom: 15px; }
+  .section-1 .contenedor-section-1 .bloque-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia {
+    background-color: rgba(111, 67, 122, 0.658);
+    width: 75%;
+    margin: 0 auto; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia p {
+    text-align: justify-all;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 3px solid #642a73; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a {
+    text-align: center;
+    color: white;
+    font-size: 30px; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc {
+    background-color: rgba(111, 67, 122, 0.658);
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 10px; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc p {
+    text-align: justify-all;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 3px solid #642a73; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc a {
+    text-align: center;
+    color: white;
+    font-size: 30px; }
+  /*SECTION 2*/
+  .section-2 .contenedor-section-2 .titulo2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 25px; }
+  .section-2 .contenedor-section-2 .ilustracion-textos h3 {
+    text-align: center; }
+  .section-2 .contenedor-section-2 .ilustracion-textos p {
+    text-align: center; }
+  /*GALERIA*/
+  .galeria {
+    padding-top: 5px; }
+  .galeria .h2 {
+    padding: 10px;
+    font-size: 30px; }
+  .galeria .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px; }
+  .galeria .grid-galeria .grid-item .flex-item {
+    width: 90%;
+    height: 88%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+  .galeria .grid-galeria .grid-item .flex-item img {
+    width: 90%;
+    height: 20vh;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item .flex-item h3 {
+    font-size: 18px;
+    padding: 15px; }
+  .galeria .grid-galeria .grid-item .flex-item p {
+    font-size: 16px; }
+  /*SECTION 3*/
+  .section-3 .bg-section-3 {
+    height: 100%; }
+  .section-3 .bg-section-3 h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px; }
+  .section-3 .bg-section-3 .contenedor-flex {
+    flex-direction: row;
+    padding-top: 15px; }
+  .section-3 .bg-section-3 .contenedor-flex .flex-div {
+    width: 85vw;
+    height: 48vh;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-right: 10px; }
+  .section-3 .bg-section-3 .contenedor-flex .flex-div h3 {
+    font-size: 3vw; }
+  .section-3 .bg-section-3 .contenedor-flex .flex-div p {
+    font-size: 3vw; }
+  /*SECTION 4*/
+  .section-4 .contenedor-section-4 {
+    flex-direction: column;
+    margin: 0 auto; }
+  .section-4 .contenedor-section-4 .contenedor4-1 {
+    width: 100%; }
+  .section-4 .contenedor-section-4 .contenedor4-1 h3 {
+    font-size: 30px;
+    text-align: center; }
+  .section-4 .contenedor-section-4 .contenedor4-1 p {
+    text-align: center;
+    font-size: 22px; }
+  .section-4 .contenedor-section-4 .contenedor4-1 a {
+    margin-left: 25vw;
+    padding: 3vh 5vw; }
+  .section-4 .contenedor-section-4 .contenedor4-2 {
+    width: 70%;
+    margin-top: 35px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h3 {
+    text-align: center;
+    font-size: 20px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h4 {
+    text-align: center; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 p {
+    text-align: center;
+    font-size: 20px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 {
+    display: flex;
+    flex-direction: column; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 img {
+    margin: 0 auto;
+    width: 250px; }
+  /*BANNER 2*/
+  .banner-2 .conte-2 .wrap-2 {
+    flex-direction: column;
+    justify-content: center; }
+  .banner-2 .conte-2 .wrap-2 .box-2 h2 {
+    text-align: center;
+    font-size: 28px; }
+  .banner-2 .conte-2 .wrap-2 .box-2 p {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .banner-2 .conte-2 .wrap-2 .box-2 span {
+    display: block;
+    font-size: 18px;
+    padding-left: 20px; }
+  .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    padding: 2vh 4vw 2vh 4vw;
+    margin-top: 5px; }
+  .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2 {
+    margin-bottom: 10px; }
+  /*FOOTER*/
+  footer {
+    height: 130px; }
+  footer .pie-pagina .logo-pie img {
+    width: 65px; }
+  footer .pie-pagina .logo-pie h2 {
+    font-size: 25px; }
+  footer .pie-pagina .redes {
+    display: flex; }
+  footer .pie-pagina .redes a img {
+    width: 50px; }
+  footer .leyenda p {
+    font-size: 16px; }
+  /*!--------------------CONOCEME-----------------------*/
+  /*BANNER 3*/
+  .banner-3 .conte-3 {
+    height: 55vh; }
+  .banner-3 .conte-3 .wrap-3 {
+    padding: 0px 15px; }
+  .banner-3 .conte-3 .wrap-3 h2 {
+    font-size: 25px;
+    color: white;
+    border: none;
+    backdrop-filter: blur(1.5px); }
+  .banner-3 .conte-3 .wave-5 {
+    fill: none; }
+  .banner-3 .conte-3 .wave-6 {
+    fill: none; }
+  /*CONTENIDO CONOCEME*/
+  .conoceme .contenedor-conoceme {
+    padding: 50px 0px;
+    flex-direction: column-reverse; }
+  .conoceme .contenedor-conoceme .contenido-conoceme {
+    width: 100%; }
+  .contenedor-conoceme .contenido-conoceme p {
+    font-size: 20px;
+    width: 100%; }
+  .conoceme .contenedor-conoceme img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    filter: none; }
+  .conoceme .contenedor-conoceme img:hover {
+    transform: none;
+    filter: none; }
+  /*!--------------------PSICOONCOLOGIA-----------------------*/
+  /*BANNER PSICOONCOLOGIA*/
+  .banner-psicooncologia .contenedor-banner-psicoonco {
+    height: 55vh; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia {
+    padding: 0px 15px; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia h2 {
+    font-size: 25px;
+    color: black;
+    border: none;
+    backdrop-filter: blur(1.5px); }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1 {
+    fill: none; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2 {
+    fill: none; }
+  /*CONTENIDO PSICOONCOLOGIA*/
+  .servicio-psicooncologia {
+    padding: 15px 0px; }
+  .servicio-psicooncologia .parte1-onco {
+    display: flex;
+    flex-direction: column; }
+  .servicio-psicooncologia .parte1-onco img {
+    width: 60vw;
+    height: 45vh;
+    object-fit: cover; }
+  .servicio-psicooncologia .parte4-onco ul li .subparte4 {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; }
+  /*!--------------------TCC INDIVIDUAL-----------------------*/
+  /*BANNER TCC*/
+  .banner-tcc .contenedor-banner-tcc {
+    height: 55vh; }
+  .banner-tcc .contenedor-banner-tcc .wrap-tcc {
+    padding: 0px 15px; }
+  .banner-tcc .contenedor-banner-tcc .wrap-tcc h2 {
+    font-size: 25px;
+    color: #6d6c6c;
+    border: none;
+    backdrop-filter: blur(1.5px); }
+  .banner-tcc .contenedor-banner-tcc .wave-tcc1 {
+    fill: none; }
+  .banner-tcc .contenedor-banner-tcc .wave-tcc2 {
+    fill: none; }
+  /*CONTENIDO TCC*/
+  .servicio-tcc {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding: 15px 0px; }
+  .servicio-tcc .parte1-tcc {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte1-tcc img {
+    width: 70vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-bottom: 20px; }
+  .servicio-tcc .parte2-tcc .txt-img-tcc2 {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte2-tcc .img-tcc2 img {
+    width: 60vw;
+    height: 35vh; }
+  .servicio-tcc .parte3-tcc .txt-img-tcc3 {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte3-tcc .img-tcc3 img {
+    width: 60vw;
+    height: 35vh; }
+  .servicio-tcc .parte4-tcc .txt-img-tcc4 {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte4-tcc .img-tcc4 img {
+    width: 60vw;
+    height: 35vh; }
+  /*!--------------------SOLICITAR TURNO-----------------------*/
+  .turnos .contenedor-turnos .solicitar-turno {
+    width: 80%; }
+  .turnos .contenedor-turnos .solicitar-turno h2 {
+    font-size: 28px; }
+  .turnos .contenedor-turnos .solicitar-turno h3, .terminos-condiciones {
+    font-size: 20px; }
+  .turnos .contenedor-turnos .solicitar-turno .agrega-comentarios {
+    font-size: 18px; }
+  /*!--------------------CONTACTO-----------------------*/
+  .pagina-contacto .contenedor-contacto {
+    display: flex;
+    flex-direction: column; }
+  .pagina-contacto .contenedor-contacto .enviar-correo h3 {
+    text-align: center; }
+  .pagina-contacto .contenedor-contacto .enviar-correo h3 span {
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0); }
+  .pagina-contacto .contenedor-contacto .enviar-correo h3 span a {
+    color: #642a73;
+    font-size: 21px;
+    font-weight: 700; }
+  .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px; }
+  .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje textarea {
+    width: 80%;
+    padding: 15px; }
+  .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje input {
+    width: 40%; }
+  .pagina-contacto .contenedor-contacto .iframe {
+    align-items: center; }
+  .pagina-contacto .contenedor-contacto .iframe iframe {
+    width: 60vw;
+    height: 60vh;
+    filter: brightness(100%); } }
+
+@media (max-width: 850px) and (min-width: 768px) {
+  /*!--------------------INDEX----------------------*/
+  /*HEADER*/
+  .encabezado {
+    justify-content: space-between;
+    padding-left: 15px;
+    height: 64.5px; }
+  .encabezado .contenedorlogo-h1 img {
+    width: 64px; }
+  /*BANNER 1*/
+  .banner-1 .conte {
+    height: 60vh; }
+  .banner-1 .conte .wrap .box .cards {
+    display: flex;
+    justify-content: center; }
+  .banner-1 .conte .wrap .box .cards img {
+    padding: 10px;
+    width: 120px;
+    height: 100px; }
+  .banner-1 .conte .wrap .box .botones a {
+    padding: 2vh 3vw 2vh 3vw;
+    margin: 0 auto; }
+  /*SECTION 1*/
+  .section-1 .contenedor-section-1 .bloque-2 {
+    justify-content: space-evenly; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover; }
+  /*GALERIA*/
+  .galeria {
+    padding-top: 5px; }
+  .galeria .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px; }
+  .galeria .grid-galeria .grid-item .flex-item {
+    width: 42vw;
+    height: 90%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+  .galeria .grid-galeria .grid-item .flex-item img {
+    width: 32vw;
+    height: 20vh;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item .flex-item h3 {
+    font-size: 20px;
+    padding: 15px; }
+  .galeria .grid-galeria .grid-item .flex-item p {
+    font-size: 18px; }
+  /*SECTION 3*/
+  .section-3 .bg-section-3 .contenedor-flex .flex-div {
+    margin: 0 auto;
+    width: 220px;
+    height: 250px; }
+  /*SECTION 4*/
+  .section-4 .contenedor-section-4 .contenedor4-1 {
+    margin-right: 20px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-4 .contenedor-section-4 .contenedor4-2 div h3 {
+    text-align: center; }
+  .section-4 .contenedor-section-4 .contenedor4-2 div h4 {
+    text-align: center; }
+  .section-4 .contenedor-section-4 .contenedor4-2 div p {
+    text-align: center;
+    padding: 0px 3px; }
+  /*BANNER 2*/
+  .banner-2 .conte-2 {
+    height: 55vh; }
+  .banner-2 .conte-2 .wrap-2 .box-2 {
+    margin: 0 auto; }
+  .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 {
+    margin-top: 5px;
+    justify-content: space-around; }
+  /*FOOTER*/
+  footer {
+    height: 100px; }
+  /*!--------------------CONOCEME-----------------------*/
+  /*BANNER 3*/
+  .banner-3 .conte-3 {
+    height: 60vh; }
+  .banner-3 .conte-3 .wrap-3 {
+    padding: 0px 15px; }
+  .banner-3 .conte-3 .wrap-3 h2 {
+    color: white; }
+  /*CONTENIDO CONOCEME*/
+  .conoceme .contenedor-conoceme {
+    padding: 50px 0px; }
+  .conoceme .contenedor-conoceme .contenido-conoceme {
+    width: 50%; }
+  .conoceme .contenedor-conoceme .contenido-conoceme p {
+    font-size: 20px;
+    width: 100%; }
+  .conoceme .contenedor-conoceme img {
+    filter: none; }
+  .conoceme .contenedor-conoceme img:hover {
+    transform: none;
+    filter: none; }
+  /*!--------------------PSICOONCOLOGIA-----------------------*/
+  /*BANNER PSICOONCOLOGIA*/
+  .banner-psicooncologia .contenedor-banner-psicoonco {
+    height: 60vh; }
+  .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia {
+    padding: 0px 15px; }
+  /*CONTENIDO PSICOONCOLOGIA*/
+  .servicio-psicooncologia {
+    padding: 15px 0px; }
+  /*!--------------------TCC INDIVIDUAL-----------------------*/
+  /*BANNER TCC*/
+  .banner-tcc .contenedor-banner-tcc {
+    height: 65vh; }
+  .banner-tcc .contenedor-banner-tcc .wrap-tcc {
+    padding: 0px 15px; }
+  /*CONTENIDO TCC*/
+  .servicio-tcc .parte1-tcc {
+    display: flex;
+    flex-direction: column; }
+  .servicio-tcc .parte1-tcc img {
+    width: 60vw;
+    height: 40vh;
+    object-fit: cover;
+    margin: 20px 0px; }
+  /*!------------------CONTACTO----------------------*/
+  .pagina-contacto .contenedor-contacto .enviar-correo h3 span {
+    display: block;
+    text-align: center;
+    background: none; }
+  .pagina-contacto .contenedor-contacto .enviar-correo h3 span a {
+    color: #642a73;
+    font-weight: 700; }
+  .pagina-contacto .contenedor-contacto .iframe iframe {
+    filter: brightness(100%); } }
+
+@media (max-width: 1100px) and (min-width: 851px) {
+  /*!---------------------------INDEX--------------------------*/
+  /*HEADER*/
+  .encabezado {
+    justify-content: space-between;
+    padding-left: 15px;
+    height: 64.5px; }
+  .encabezado .contenedorlogo-h1 img {
+    width: 64px; }
+  /*BANNER 1*/
+  .banner-1 .conte {
+    height: 60vh; }
+  .banner-1 .conte .wrap .box .cards {
+    display: flex;
+    justify-content: center; }
+  .banner-1 .conte .wrap .box .cards img {
+    padding: 10px;
+    width: 120px;
+    height: 100px; }
+  .banner-1 .conte .wrap .box .botones .btn1, .btn2 {
+    padding: 2vh 3vw 2vh 3vw;
+    margin: 0 auto; }
+  /*SECTION 1*/
+  .section-1 .contenedor-section-1 .bloque-2 {
+    justify-content: space-evenly; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia, .tcc {
+    align-items: center; }
+  .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover; }
+  .section-1 .contenedor-section-1 .bloque-2 .tcc img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover; }
+  /*GALERIA*/
+  .galeria {
+    padding-top: 5px; }
+  .galeria .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px; }
+  .galeria .grid-galeria .grid-item .flex-item {
+    width: 42vw;
+    height: 100%;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }
+  .galeria .grid-galeria .grid-item .flex-item img {
+    width: 90%;
+    height: 30vh;
+    object-fit: cover; }
+  .galeria .grid-galeria .grid-item .flex-item h3 {
+    font-size: 25px;
+    padding: 15px; }
+  .galeria .grid-galeria .grid-item .flex-item p {
+    font-size: 18px; }
+  /*SECTION 3*/
+  .section-3 .bg-section-3 .contenedor-flex .flex-div {
+    margin: 0 auto;
+    width: 220px;
+    height: 250px; }
+  /*SECTION 4*/
+  .section-4 .contenedor-section-4 .contenedor4-1 {
+    margin-right: 20px; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h3 {
+    text-align: center; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h4 {
+    text-align: center; }
+  .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 p {
+    text-align: center;
+    padding: 0px 3px; }
+  /*BANNER 2*/
+  .banner-2 .conte-2 {
+    height: 55vh; }
+  .banner-2 .conte-2 .wrap-2 .box-2 {
+    margin: 0 auto; }
+  .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 {
+    margin-top: 5px; }
+  /*!-----------CONOCEME------------------*/
+  /*BANNER 3*/
+  .banner-3 .conte-3 .wrap-3 {
+    padding: 0px 20px; }
+  /*CONTENIDO CONOCEME*/
+  .conoceme .contenedor-conoceme .contenido-conoceme {
+    width: 50%; }
+  .conoceme .contenedor-conoceme img {
+    filter: none; }
+  .conoceme .contenedor-conoceme img:hover {
+    transform: none;
+    filter: none; }
+  /*!----------------PSICOONCOLOGIA-------------*/
+  /*BANNER PSICOONCOLOGIA*/
+  .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia {
+    padding: 0px 20px; }
+  /*!---------------TCC INDIVIDUAL---------------*/
+  /*BANNER TCC*/
+  .banner-tcc .contenedor-banner-tcc .wrap-tcc {
+    padding: 0px 20px; } }
+
+@media (max-width: 1135px) {
+  /*!------------------INDEX----------------*/
+  /*HEADER*/
+  .encabezado label {
+    display: initial; }
+  .encabezado {
+    padding: 20px 10%; }
+  .encabezado .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.856);
+    display: none; }
+  .encabezado .navigation ul li {
+    width: 100%; }
+  .encabezado .navigation ul li a {
+    padding: 8px 30px 8px 10%; }
+  .encabezado .navigation ul li ul {
+    position: relative;
+    width: 100%;
+    left: 0; }
+  .encabezado .navigation ul li ul li {
+    background-color: rgba(1, 1, 1, 0.7); }
+  .encabezado .navigation ul li ul li ul {
+    position: relative;
+    width: 100%;
+    left: 0; }
+  .encabezado #toggle:checked ~ .navigation {
+    display: block; } }
