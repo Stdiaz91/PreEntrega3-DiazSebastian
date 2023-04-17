@@ -55,17 +55,23 @@
                 <div class="enviar-correo">
                     <h2>CONTACTO</h2>
                     <h3>Contactarse enviando un formulario o enviar un correo a <span><a href="mailto: psico-online2023@gmail.com">psico-online2023@gmail.com</a></span></h3>
-                    <div class="container-campos">
-                        <input class="campos" type="text" name="nombres" placeholder="Nombre">
-                        <input class="campos" type="text" name="apellidos" placeholder="Apellido">
-                        <input class="campos" type="email" name="mail" placeholder="Correo">
-                        <input class="campos" type="number" placeholder="Teléfono">
-                    </div>
-                    <div class="container-mensaje">
-                        <h4>Mensaje</h4>
-                        <textarea id="coments"  cols="50" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
-                        <input type="submit" value="Enviar Mensaje" required>
-                    </div>
+                    <form action="">
+                        <div class="container-campos">
+                            <input class="campos" type="text" name="nombres" id="name__f" placeholder="Nombre">
+                            <label for="name__f"></label>
+                            <input class="campos" type="text" name="apellidos" id="surname__f" placeholder="Apellido">
+                            <label for="surname__f"></label>
+                            <input class="campos" type="email" name="mail" id="email__f" placeholder="Correo">
+                            <label for="email__f"></label>
+                            <input class="campos" type="number" id="phone__f" placeholder="Teléfono">
+                            <label for="phone__f"></label>
+                        </div>
+                        <div class="container-mensaje">
+                            <h4>Mensaje</h4>
+                            <textarea id="coments"  cols="50" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+                            <input type="submit" value="Enviar Mensaje" required>
+                        </div>
+                    </form>
                 </div>
                 <div class="iframe">
                     <h2>Ubicación del consultorio</h2>

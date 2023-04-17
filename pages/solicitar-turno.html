@@ -51,57 +51,65 @@
     <main>
                                 <!--!CONTENIDO TURNOS-->
         <section class="turnos">
-            <div class="contenedor-turnos">
-                <div class="solicitar-turno">
-                    <h2>Solicitar Turno</h2>
-                    <input class="formularios" type="text" name="nombres" placeholder="Ingrese su nombre">
-                    <input class="formularios" type="text" name="apellidos" placeholder="Ingrese su apellido">
-                    <input class="formularios" type="number" name="dni" placeholder="Ingrese su documento" maxlength="8" required minlength="8">
-                    <input class="formularios" type="email" name="mail" placeholder="Ingrese su correo">
-                    <input class="formularios" type="password" placeholder="contraseña">
-                    <input class="formularios" type="number" placeholder="Teléfono">
-                    <h3>Selecciona tu país</h3>
-                    <select>
-                        <option selected>Argentina</option>
-                        <option>Uruguay</option>
-                        <option>Paraguay</option>
-                        <option>Chile</option>
-                        <option>Otro</option>
-                    </select>
-                    <h3>Escoge el día</h3>
-                    <input class="date" type="date" id="fecha">
-                    <h3>Selecciona prestación</h3>
-                    <select>
-                        <option selected>Psicooncología</option>
-                        <option>TCC individual</option>
-                    </select>
-                    <h3 class="terminos-condiciones">Encuadre</h3>
-                            <!------------CÓDIGO BOOTSTRAP / BOTÓN COLLAPSE-------->
-                    <div class="boton-coll">
-                        <p>
-                            <a class="boton-p" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                Leer Encuadre
-                            </a>
-                        </p>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                <p><span>1</span> La sesión individual, actualmente, tiene un costo de 2000 pesos ARS y la grupal 1800 pesos ARS. Con posibilidad de ajuste cada 3 a 6 meses.</p>
-                                <p><span>2</span> Los encuentros podrán ser semanales o quincenales, depediendo de caso particular.</p>
-                                <p><span>3</span> La cancelación del turno debe realizarse con 24hs de anticipación, caso contrario se cobrará el 50% de la sesión.</p>
-                                <p><span>4</span> En caso de ausencia injustificada y sin previo aviso por un período de 3 sesiones consecutivas, se dará por finalizado el tratamiento.</p>
+            <form action="">
+                <div class="contenedor-turnos">
+                    <div class="solicitar-turno">
+                        <h2>Solicitar Turno</h2>
+                        <input class="formularios" type="text" name="nombres" id="nombre" placeholder="Ingrese su nombre">
+                        <label for="nombre"></label>
+                        <input class="formularios" type="text" name="apellidos" id="apellido" placeholder="Ingrese su apellido">
+                        <label for="apellido"></label>
+                        <input class="formularios" type="number" name="dni" id="documento" placeholder="Ingrese su documento" maxlength="8" required minlength="8">
+                        <label for="documento"></label>
+                        <input class="formularios" type="email" name="mail" id="correo" placeholder="Ingrese su correo">
+                        <label for="correo"></label>
+                        <input class="formularios" type="password" id="contrasenia" placeholder="contraseña">
+                        <label for="contrasenia"></label>
+                        <input class="formularios" type="number" id="telefono" placeholder="Teléfono">
+                        <label for="telefono"></label>
+                        <h3>Selecciona tu país</h3>
+                        <select>
+                            <option selected>Argentina</option>
+                            <option>Uruguay</option>
+                            <option>Paraguay</option>
+                            <option>Chile</option>
+                            <option>Otro</option>
+                        </select>
+                        <h3>Escoge el día</h3>
+                        <input class="date" type="date" id="fecha">
+                        <h3>Selecciona prestación</h3>
+                        <select>
+                            <option selected>Psicooncología</option>
+                            <option>TCC individual</option>
+                        </select>
+                        <h3 class="terminos-condiciones">Encuadre</h3>
+                                <!------------CÓDIGO BOOTSTRAP / BOTÓN COLLAPSE-------->
+                        <div class="boton-coll">
+                            <p>
+                                <a class="boton-p" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Leer Encuadre
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <p><span>1</span> La sesión individual, actualmente, tiene un costo de 2000 pesos ARS y la grupal 1800 pesos ARS. Con posibilidad de ajuste cada 3 a 6 meses.</p>
+                                    <p><span>2</span> Los encuentros podrán ser semanales o quincenales, depediendo de caso particular.</p>
+                                    <p><span>3</span> La cancelación del turno debe realizarse con 24hs de anticipación, caso contrario se cobrará el 50% de la sesión.</p>
+                                    <p><span>4</span> En caso de ausencia injustificada y sin previo aviso por un período de 3 sesiones consecutivas, se dará por finalizado el tratamiento.</p>
 
+                                </div>
                             </div>
                         </div>
+                                <!------------------------------------->
+                        <label>
+                            <input type="checkbox"> Aceptar
+                        </label>
+                        <h4 class="agrega-comentarios">Agrega comentarios</h4>
+                        <textarea id="coments"  cols="40" rows="3" placeholder="Comenta Aquí"></textarea>
+                        <input class="boton" type="submit" value="ENVIAR" required>
                     </div>
-                            <!------------------------------------->
-                    <label>
-                        <input type="checkbox"> Aceptar
-                    </label>
-                    <h4 class="agrega-comentarios">Agrega comentarios</h4>
-                    <textarea id="coments"  cols="40" rows="3" placeholder="Comenta Aquí"></textarea>
-                    <input class="boton" type="submit" value="ENVIAR" required>
                 </div>
-            </div>
+            </form>
         </section>
 
                                 <!--!BOTON WHATSAPP-->

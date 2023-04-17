@@ -1025,6 +1025,8 @@ main {
         font-size: 18px; }
         .turnos .contenedor-turnos .solicitar-turno .formularios:hover {
           box-shadow: 5px 5px 4px rgba(132, 99, 138, 0.699); }
+        .turnos .contenedor-turnos .solicitar-turno .formularios::placeholder {
+          color: #d1cdcd; }
       .turnos .contenedor-turnos .solicitar-turno h3 {
         font-size: 25px;
         text-align: center;
@@ -1150,7 +1152,7 @@ main {
       .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos {
         width: 50%;
         background-color: rgba(111, 67, 122, 0.863);
-        color: black;
+        color: white;
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 15px;
@@ -1159,6 +1161,8 @@ main {
         transition: all 0.4s ease; }
         .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos:hover {
           box-shadow: 4px 4px 4px #b689be; }
+        .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos::placeholder {
+          color: #d1cdcd; }
     .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje {
       display: flex;
       flex-direction: column;
@@ -1178,6 +1182,8 @@ main {
         transition: all 0.4s ease; }
         .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje textarea:hover {
           box-shadow: 4px 4px 4px #b689be; }
+        .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje textarea::placeholder {
+          color: #d1cdcd; }
       .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje input {
         display: flex;
         justify-content: center;

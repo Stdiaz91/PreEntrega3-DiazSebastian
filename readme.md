@@ -2,9 +2,12 @@
 
 * Explicación del funcionamiento del simulador:
 
+* Nota importante: A diferencia de la primera entrega, se ha establecido un objeto con clase y su función constructora correspondiente, con el nombre de "Paciente". Y también se implementó el uso de arrays para los turnos y para los servicios. Además con lo estipulado en las consignas de la segunda pre-entrega se hizo el uso de métodos y creación de funciones de orden superior, utilizando el método join, find y map.
+
 Al ingresar al sitio web, principalmente en el inicio, aparece una ventana que indica dos opciones: "Aceptar" para solicitar un turno o "Cancelar" para seguir navegando en el sitio.
 
 Si clickeamos en el botón "Aceptar" el simulador nos lleva en primer lugar a tres ventanas que aparecerán de manera secuencial, donde se deberá colocar el Nombre, Apellido y Documento del usuario. Vale destacar que en el caso del formulario Nombre y Apellido, no se podrá ingresar caracteres numéricos, espacios o dejar el formulario en blanco. Para el formulario de Documento, dicha ventana no permite colocar caracteres alfabéticos, espacios o dejarlo en blanco.
+--Además por consola nos mostrará los valores de las variables--
 
 Una vez completados los formularios correspondientes, se cargan los datos ingresados y aparece una ventana con el Nombre y el Apellido del usuario, mas un aviso para continuar con la solicitud.
 
@@ -18,4 +21,4 @@ Al colocar la letra A o B aparece una ventana donde nos mostrará el horario que
 
 Luego de Aceptar, el simulador nos lleva a una ventana donde nos permite colocar la hora del día que nos quede cómodos para realizar nuestra sesión online. Hay diversos rangos horarios. Similar a las ventanas anteriores, se deberá colocar un número específico asignado a cada hora de sesión. Cabe destacar que tambien se encuentra condicionado por el sistema, y no permite colocar palabras ni números que no corresponden.
 
-Una vez seleccionada una hora, aparece una ventana de alerta que nos recuerda y confirma la hora elegida. Al Aceptar, nos dirige a una última ventana de confirmación con nuestros datos ingresados (Nombre, Apellido y Documento) y una serie de recomendaciones.
+Una vez seleccionada una hora, aparece una ventana de alerta que nos recuerda y confirma la hora elegida. Al Aceptar, nos dirige a una última ventana de confirmación con nuestros datos ingresados (Nombre, Apellido, Documento y turno elegido) y una serie de recomendaciones.

@@ -1232,6 +1232,9 @@ main{
                 &:hover{
                     box-shadow: 5px 5px 4px nth($colores, 8);
                 }
+                &::placeholder{
+                    color: rgb(209, 205, 205);
+                }
             }
 
             h3{
@@ -1401,7 +1404,7 @@ main{
                 .campos{
                     width: 50%;
                     background-color: hsla(288, 29%, 37%, 0.863);
-                    color: rgb(0, 0, 0);
+                    color: white;
                     padding: 10px;
                     border-radius: 5px;
                     margin-bottom: 15px;
@@ -1410,6 +1413,9 @@ main{
                     transition: all 0.4s ease;
                     &:hover{
                         box-shadow: 4px 4px 4px rgb(182, 137, 190);
+                    }
+                    &::placeholder{
+                        color: rgb(209, 205, 205);
                     }
                 }
             }
@@ -1434,6 +1440,9 @@ main{
                     transition: all 0.4s ease;
                     &:hover{
                         box-shadow: 4px 4px 4px rgb(182, 137, 190);
+                    }
+                    &::placeholder{
+                        color: rgb(209, 205, 205);
                     }
                 }
 
