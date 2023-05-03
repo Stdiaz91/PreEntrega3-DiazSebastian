@@ -27,7 +27,7 @@
                                 <!--!HEADER-->
     <header class="encabezado">   
         <div class="contenedorlogo-h1">
-                    <img src="../img/logotipo.png" alt="logotype">
+                    <img src="../img/logotipo.png" id="inicio__" alt="logotype">
                     <h1>Psico-Online</h1>
         </div>
         <input type="checkbox" id="toggle">
@@ -42,23 +42,47 @@
                         <li><a href="./tcc-individual.html">TCC Individual</a></li>
                     </ul>
                 </li>
-                <li><a href="./solicitar-turno.html">SOLICITAR TURNO</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li>
                 <li><a href="./blog.html">BLOG</a></li>
+                <li><a id="boton-login-turno">INICIAR SESIÓN</a></li>
             </ul>
         </nav>
     </header>
     <main class="psicooncologia-main">
-                                    <!--!BANNER PSICOONCOLOGÍA-->
-        <section class="banner-psicooncologia">
-            <div class="contenedor-banner-psicoonco">
-                <div class="wave-psicoonc1" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M208.08,0.00 C45.99,-112.97 262.02,75.98 69.13,253.13 L0.00,150.00 L0.00,0.00 Z" style="stroke: none;"></path></svg></div>
-                <div class="wave-psicoonc2" style="overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M359.20,-119.88 C471.50,-56.72 490.69,187.02 318.00,215.63 L500.00,150.00 L524.54,-14.28 Z" style="stroke: none;"></path></svg></div>
-                <div class="wrap-psicooncologia">
-                    <h2>La psicooncología ayuda a mejorar la calidad de vida del paciente y de sus familiares.</h2>
+        <!--!BANNER-->
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="../img/imgslidesecond.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h4 class="text-carousel">Psicología 100% online al alcance de un click</h4>
                 </div>
+
+              </div>
+              <div class="carousel-item c-item">
+                <img src="../img/mediodepagos.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h4 class="text-carousel">Realiza tus sesiones desde la comodidad de tu hogar</h4>
+                </div>
+
+              </div>
+              <div class="carousel-item c-item">
+                <img src="../img/anete-lusina-zwsHjakE_iI-unsplash.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption d-md-block">
+                    <h4 class="text-carousel">Ingresa a nuestro Blog</h4>
+                </div>
+
+              </div>
             </div>
-        </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
                                 <!--!CONTENIDO PSICOONCOLOGIA-->
                                 
                                     <!--PARTE 1-->
@@ -115,8 +139,6 @@
                 </ul>
             </div>
         </section>
-                                <!--!BOTON WHATSAPP-->
-        <a class="whatsapp" href="#"><img src="../img/whatsapp.png" alt="logo-whatsapp"></a>
     </main>
                             <!--!FOOTER-->
     <footer>
@@ -139,6 +161,6 @@
         <!--!JS BOOTSTRAP V 5.0.2-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--!JS MAIN-->
-    <script src="main.js"></script>
+    <script src="../js/psicooncologia.js"></script>
 </body>
 </html>

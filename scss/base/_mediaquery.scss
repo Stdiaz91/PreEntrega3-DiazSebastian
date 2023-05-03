@@ -24,30 +24,13 @@
     
                 /*BANNER 1*/
 
-        .banner-1 .conte{
-            height: 65vh;
-        }
-        .banner-1 .conte .wrap .box h2{
-            text-align: center;
-        }
-        .banner-1 .conte .wrap .box .cards{
-            display: flex;
-            justify-content: center;
-        }
-        .banner-1 .conte .wrap .box .cards img{
-            padding: 10px;
-            width: 95px;
-            height: 80px;
-        }
-        .banner-1 .conte .wrap .box .botones{
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .banner-1 .conte .wrap .box .botones .btn1, .btn2{
-            padding: 2vh 4vw 2vh 4vw;
-            margin: 0 auto;
-        }
-    
+    .text-carousel{
+        text-shadow: 0.1em 0.1em 0.2em black;
+        font-size: 25px;
+        background-color: #a581b1c0;
+        border-radius: 10px
+    }
+
                 /*SECTION 1*/
 
         .section-1 .contenedor-section-1 .titulo1{
@@ -94,7 +77,7 @@
             border: 3px solid #642a73;
         }
         .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a{
-            text-align: left;
+            text-align: center;
             color: white;
             font-size: 25px;
         }
@@ -118,7 +101,7 @@
             border: 3px solid #642a73;
         }
         .section-1 .contenedor-section-1 .bloque-2 .tcc a{
-            text-align: left;
+            text-align: center;
             color: white;
             font-size: 25px;
         }
@@ -158,8 +141,6 @@
         .galeria .grid-galeria .grid-item .flex-item{
             width: 300px;
             height: 370px;
-            padding: 5px;
-            justify-content: center;
         }
         .galeria .grid-galeria .grid-item .flex-item img{
             width: 270px;
@@ -168,10 +149,11 @@
         }
         .galeria .grid-galeria .grid-item .flex-item h3{
             font-size: 23px;
-            padding: 10px;
+            padding-top: 10px;
         }
         .galeria .grid-galeria .grid-item .flex-item p{
             font-size: 18px;
+            text-align: center;
         }
                 /*Section 3*/
 
@@ -252,47 +234,9 @@
             width: 250px;
         }
 
-                /*BANNER 2*/
+                /*BOTON LOGOUT*/
 
-        .banner-2 .conte-2 .wrap-2{
-            flex-direction: column;
-            justify-content: center;
-            
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 h2{
-            text-align: center;
-            font-size: 28px;
-            padding-bottom: 2px;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 p{
-            text-align: center;
-            font-size: 18px;
-            padding: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 span{
-            display: block;
-            font-size: 18px;
-            padding-bottom: 2px;
-            padding-top: 2px;
-            padding-left: 20px;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-bottom: 10px;
-            margin-top: 2px;
-            padding: 10px 10px;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2{
-            margin-bottom: 10px;
-        }
-
-                /*BOTON WHATSAPP*/
-
-        .whatsapp img{
+        .logout_ img{
         width: 50px;
         filter: opacity(0.5);
         }
@@ -316,27 +260,6 @@
         }
 
         /*!--------------------CONOCEME-----------------------*/
-
-                /*BANNER 3*/
-
-        .banner-3 .conte-3{
-            height: 45vh;
-        }
-        .banner-3 .conte-3 .wrap-3{
-            padding: 0px 15px;
-        }
-        .banner-3 .conte-3 .wrap-3 h2{
-            font-size: 25px;
-            color: white;
-            border: none;
-            backdrop-filter: blur(1.5px);
-        }
-        .banner-3 .conte-3 .wave-5{
-            fill: none;
-        }
-        .banner-3 .conte-3 .wave-6{
-            fill: none;
-        }
 
 
                 /*CONTENIDO CONOCEME*/
@@ -363,27 +286,6 @@
         }
 
         /*!--------------------PSICOONCOLOGIA-----------------------*/
-
-                /*BANNER PSICOONCOLOGIA*/
-
-        .banner-psicooncologia .contenedor-banner-psicoonco{
-            height: 45vh;
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
-            padding: 0px 15px;
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia h2{
-            font-size: 25px;
-            color: black;
-            border: none;
-            backdrop-filter: blur(1.5px);
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1{
-            fill: none;
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2{
-            fill: none;
-        }
 
                 /*CONTENIDO PSICOONCOLOGIA*/
 
@@ -472,16 +374,16 @@
 
         /*!--------------------SOLICITAR TURNO-----------------------*/
 
-        .turnos .contenedor-turnos .solicitar-turno{
+        .turnos #form_js .contenedor-turnos .solicitar-turno{
             width: 100%;
         }
-        .turnos .contenedor-turnos .solicitar-turno h2{
+        .turnos #form_js .contenedor-turnos .solicitar-turno h2{
             font-size: 28px;
         }
-        .turnos .contenedor-turnos .solicitar-turno h3, .terminos-condiciones{
+        .turnos #form_js .contenedor-turnos .solicitar-turno h3, .terminos-condiciones{
             font-size: 20px;
         }
-        .turnos .contenedor-turnos .solicitar-turno .agrega-comentarios{
+        .turnos #form_js .contenedor-turnos .solicitar-turno .agrega-comentarios{
             font-size: 18px;
         }
 
@@ -504,17 +406,17 @@
             font-size: 21px;
             font-weight: 700;
         }
-        .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos{
+        .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-campos .campos{
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
             font-size: 18px;
         }
-        .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje textarea{
+        .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje textarea{
             width: 100%;
             padding: 15px;
         }
-        .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje input{
+        .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje input{
             width: 70%;
         }
         .pagina-contacto .contenedor-contacto .iframe{
@@ -531,7 +433,16 @@
         .blog .grid-blog{
             padding: 5px;
         }
+
+        /*!--------------------MODAL-----------------------*/
+
+        main .modal__section .m-o{
+            width: 90%;
+            height: 70%;
+        }
+        
     }
+
 
     @media(max-width:767px) and (min-width:471px){
 
@@ -554,27 +465,11 @@
     
                 /*BANNER 1*/
 
-        .banner-1 .conte{
-            height: 60vh;
-        }
-        .banner-1 .conte .wrap .box h2{
-            text-align: center;
-        }
-        .banner-1 .conte .wrap .box .cards{
-            display: flex;
-            justify-content: center;
-        }
-        .banner-1 .conte .wrap .box .cards img{
-            padding: 10px;
-            width: 120px;
-            height: 100px;
-        }
-        .banner-1 .conte .wrap .box .botones{
-            flex-direction: row;
-        }
-        .banner-1 .conte .wrap .box .botones .btn1, .btn2{
-            padding: 2vh 4vw 2vh 4vw;
-            margin: 0 auto;
+        .text-carousel{
+        text-shadow: 0.1em 0.1em 0.2em black;
+        font-size: 25px;
+        background-color: #a581b1c0;
+        border-radius: 10px
         }
     
                 /*SECTION 1*/
@@ -683,10 +578,10 @@
         .galeria .grid-galeria .grid-item .flex-item{
             width: 90%;
             height: 88%;
-            padding: 5px;
-            justify-content: center;
-            align-items: center;
-            margin: 0 auto;
+            margin-bottom: 8px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            align-content: center;
         }
         .galeria .grid-galeria .grid-item .flex-item img{
             width: 90%;
@@ -695,7 +590,7 @@
         }
         .galeria .grid-galeria .grid-item .flex-item h3{
             font-size: 18px;
-            padding: 15px;
+            padding: 7px;
         }
         .galeria .grid-galeria .grid-item .flex-item p{
             font-size: 16px;
@@ -982,16 +877,16 @@
     
         /*!--------------------SOLICITAR TURNO-----------------------*/
 
-        .turnos .contenedor-turnos .solicitar-turno{
+        .turnos #form_js .contenedor-turnos .solicitar-turno{
             width: 80%;
         }
-        .turnos .contenedor-turnos .solicitar-turno h2{
+        .turnos #form_js .contenedor-turnos .solicitar-turno h2{
             font-size: 28px;
         }
-        .turnos .contenedor-turnos .solicitar-turno h3, .terminos-condiciones{
+        .turnos #form_js .contenedor-turnos .solicitar-turno h3, .terminos-condiciones{
             font-size: 20px;
         }
-        .turnos .contenedor-turnos .solicitar-turno .agrega-comentarios{
+        .turnos #form_js .contenedor-turnos .solicitar-turno .agrega-comentarios{
             font-size: 18px;
         }
 
@@ -1014,17 +909,17 @@
             font-size: 21px;
             font-weight: 700;
         }
-        .pagina-contacto .contenedor-contacto .enviar-correo .container-campos .campos{
+        .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-campos .campos{
             width: 80%;
             padding: 10px;
             margin-bottom: 15px;
             font-size: 18px;
         }
-        .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje textarea{
+        .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje textarea{
             width: 80%;
             padding: 15px;
         }
-        .pagina-contacto .contenedor-contacto .enviar-correo .container-mensaje input{
+        .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje input{
             width: 40%;
         }
         .pagina-contacto .contenedor-contacto .iframe{
@@ -1035,6 +930,14 @@
             height: 60vh;
             filter: brightness(100%);
         }
+
+        /*!--------------------MODAL-----------------------*/
+
+        main .modal__section .m-o{
+            width: 70%;
+            height: 70%;
+        }
+
     }
 
     @media(max-width:850px) and (min-width:768px){
@@ -1066,7 +969,6 @@
             height: 100px;
         }
         .banner-1 .conte .wrap .box .botones a{
-            padding: 2vh 3vw 2vh 3vw;
             margin: 0 auto;
         }
 
@@ -1076,11 +978,16 @@
             justify-content: space-evenly;
         }
         .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
+            margin-top: 15px;
+            margin-bottom: 10px;
+
             width: 80%;
             height: 250px;
             object-fit: cover;
         }
         .section-1 .contenedor-section-1 .bloque-2 .tcc img{
+            margin-top: 15px;
+            margin-bottom: 10px;
             width: 80%;
             height: 250px;
             object-fit: cover;
@@ -1285,7 +1192,6 @@
             height: 100px;
         }
         .banner-1 .conte .wrap .box .botones .btn1, .btn2{
-            padding: 2vh 3vw 2vh 3vw;
             margin: 0 auto;
         }
 

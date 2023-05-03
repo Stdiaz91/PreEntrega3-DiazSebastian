@@ -12,110 +12,22 @@ main{
     background-attachment: fixed;
 }
 
-    /*----------------------- BANNER 1--------------------------------*/
+    /*----------------------- BANNER--------------------------------*/
 
-.banner-1{
-    .conte{
-        @extend %banners;
-        height: 65vh;
-        animation: banner-1 5s infinite linear alternate;
-        @keyframes banner-1{
-            0%, 50%{
-                background-image: url(../img/mediodepagos.jpg);
-            }
-            51%, 100%{
-                background-image: url(../img/mediodepagos2.jpg);
-            }
-        }
-
-        .wave-1{
-            @extend %wave;
-            width: 80%;
-            top: 0;
-            left: 0;
-
-        }
-        .wave-2{
-            @extend %wave;
-            width: 80%;
-            bottom: 0;
-            right: 0;
-        }
-
-        .wrap{
-            @include wrap (flex, row wrap, left, relative);
-            max-width: 1000px;
-            margin: 0 auto;
-            height: 100%;
-
-            .box{
-                flex-basis: 100%;
-                color: white;
-                text-align: left;
-                align-self: center;
-                position: relative;
-            
-                h2{
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                    font-size: nth($font-size, 1);
-                    line-height: 1.2;
-                    font-weight: 700;
-                    padding: 20px;
-                    text-shadow: 0.1em 0.1em 0.2em black;                
-                }
-
-                .cards{
-
-                    img{
-                        padding: 5px;
-                        width: 110px;
-                        height: 85px;                    
-                    }
-                }
-
-                .botones{
-                    display: flex;
-                    justify-content: space-around;
-                    margin-top: 30px;
-
-                    .btn1{
-                        flex-basis: 30%;
-                        border: solid 2px;
-                        border-radius: 20px;
-                        padding: 10px 30px 10px 30px;
-                        text-align: center;
-                        text-decoration: none;
-                        color: white;
-                        backdrop-filter: blur(10px);
-                        transition: all 0.4s ease;
-                        &:hover{
-                            background-color: white;
-                            color: black;
-                            border: solid 2px white;                        
-                        }                    
-                    }
-                    .btn2{
-                        flex-basis: 30%;
-                        border: solid 2px white;
-                        border-radius: 20px;
-                        padding: 10px 30px 10px 30px;
-                        margin-right: 20px;
-                        text-align: center;
-                        text-decoration: none;
-                        color: black;
-                        background-color: white;
-                        transition: all 0.4s ease;
-                        &:hover{
-                            background-color: rgba(255, 255, 255, 0);
-                            backdrop-filter: blur(10px);
-                            color: white;                        
-                        }                    
-                    }
-                }
-            }
-        }
+    .c-item{
+        height: 450px;
     }
-}
+
+    .c-img{
+        height: 100%;
+    }
+    .text-carousel{
+        text-shadow: 0.1em 0.1em 0.2em black;                
+        font-size: 35px;
+        background-color: #a581b1c0;
+        border-radius: 10px
+
+    }
 
     /*----------------------- SECTION 1--------------------------------*/
 
@@ -162,12 +74,12 @@ main{
                 @extend %psicooncologia-tcc;
             
                 a{
+                    text-align: center;
                     text-decoration: none;
                     font-size: nth($font-size, 2);
                     font-weight: bold;
                     color: white;
                     padding-bottom: 20px;
-                    padding-left: 50px;
                     &:hover{
                         text-decoration: underline;
                         color: #E2E2E2;
@@ -175,16 +87,18 @@ main{
                 }
                 img{
                     @include img (300px, 300px, cover);
+                    margin: auto;
                     margin-bottom: 20px;
-                    margin-left: 50px;
                     border: 3px solid nth($colores, 1);
                     border-radius: 8px;                
                 }
 
                 p{
+                    text-align: center;
                     color: white;
                     font-size: nth($font-size, 5);
                     padding-left: 20px;
+                    padding-right: 20px;
                     padding-bottom: 15px;                
                 }
             }
@@ -284,7 +198,6 @@ main{
                 @include flex (flex, column, center);
                 width: 300px;
                 height: 320px;
-                padding: 15px;
                 border-radius: 15px;
                 background-color: nth($colores, 4);
             
@@ -445,194 +358,24 @@ main{
     }
 }
 
-    /*----------------------- BANNER 2--------------------------------*/
+    /*----------------------- BOTON LOGOUT--------------------------------*/
 
-.banner-2{
-    .conte-2{
-        @extend %banners;
-        height: 65vh;
-        animation: banner-2 5s infinite linear alternate;
-        @keyframes banner-2{
-            0%, 50%{
-                background-image: url(../img/banner2.jpg);
-            }
-            51%, 100%{
-                background-image: url(../img/banner2-2.jpg);
-            }
-        }
-
-        .wave-3{
-            @extend %wave;
-            width: 70%;
-            left: 0;
-        }
-
-        .wave-4{
-            @extend %wave;
-            width: 100%;
-            right: 0;
-        }
-
-        .wrap-2{
-            @include wrap (flex, row wrap, left, relative);
-            max-width: 1000px;
-            margin: 0 auto;
-            height: 100%;
-
-            .box-2{
-                flex-basis: 80%;
-                color: white;
-                text-align: left;
-                align-self: center;
-                position: relative;
-            
-                h2{
-                    font-size: 40px;
-                    font-weight: 600;
-                    line-height: 1.2;
-                    padding-bottom: 20px;
-                    text-shadow: 0.1em 0.1em 0.2em black;                
-                }
-
-                p{
-                    font-style: italic;
-                    font-size: nth($font-size, 4);
-                    color: white;
-                    border: 2px solid wheat;
-                    background-color: hsla(0, 0%, 0%, 0.623);
-                    text-align: center;
-                    padding: 10px 6px;
-                    border-radius: 5px;                
-                }
-
-                span{
-                    color: white;
-                    text-shadow: 0.1em 0.1em 0.2em black;
-                    font-size: 24px;
-                    letter-spacing: 3px;
-                    font-weight: 500;                
-                }
-
-                .botones-2{
-                    display: flex;
-                    justify-content: space-evenly;
-                    margin-top: 30px;
-                    flex-flow: row wrap;
-                    position: relative;
-
-                    .btn1-2{
-                        position: relative;
-                        flex-basis: 30%;
-                        border: solid 2px;
-                        border-radius: 20px;
-                        padding: 10px 30px 10px 30px;
-                        text-align: center;
-                        text-decoration: none;
-                        backdrop-filter: blur(10px);
-                        color: white;
-                        transition: all 0.4s ease;
-                        &:hover{
-                            background-color: white;
-                            color: black;
-                            border: solid 2px white;                            
-                        }                        
-                    }
-
-                    .btn2-2{
-                        position: relative;
-                        flex-basis: 30%;
-                        border: solid 2px white;
-                        border-radius: 20px;
-                        padding: 10px 30px 10px 30px;
-                        text-align: center;
-                        text-decoration: none;
-                        color: black;
-                        background-color: white;
-                        transition: all 0.4s ease;
-                        &:hover{
-                            background-color: rgba(255, 255, 255, 0);
-                            backdrop-filter: blur(10px);
-                            color: white;                            
-                        }                        
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-    /*----------------------- BOTON WHATSAPP--------------------------------*/
-
-.whatsapp{
+.logout_{
     position: fixed;
     left: 0;
     bottom: 0;
 
     img{
-        width: 60px;
+        width: 70px;
         filter: opacity(0.5);
         &:hover{
             filter: opacity(1);
+            cursor: pointer;
         }    
     }
 }
 
             /*----CONOCEME------*/
-
-    /*---------------------BANNER 3--------------------*/
-
-.banner-3{
-    .conte-3{
-        @extend %banners;
-        height: 60vh;
-        animation: banner-3 5s infinite linear alternate;
-        @keyframes banner-3{
-            0%, 50%{
-                background-image: url(../img/banner-3.jpg)
-            }
-            51%, 100%{
-                background-image: url(../img/banner3-2.jpg)
-            }
-        }
-    
-        .wave-5, .wave-6{
-            @extend %wave;
-            width: 100%;
-            right: 0;
-        }
-
-        .wrap-3{
-            @include wrap (flex, column, center, relative);
-            max-width: 100%;
-            margin: 0 auto;
-
-            h2{
-                color: black;
-                font-size: 35px;
-                font-style: italic;
-                font-weight: 700;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                border: 3px solid white;
-                padding: 10px 5px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-                backdrop-filter: blur(20px);
-                box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
-                position: relative;    
-            }
-
-            p{
-                color: white;
-                text-shadow: 0.1em 0.1em 0.2em black;
-                text-align: right;
-                font-size: nth($font-size, 4);
-                font-weight: 700;
-                font-style: oblique;            
-            }
-        }
-    }
-}
 
     /*---------------------CONTENIDO CONOCEME--------------------*/
 
@@ -693,59 +436,6 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-
-}
-
-
-    /*----------------------- BANNER PSICOONCOLOGÍA--------------------------------*/
-
-.banner-psicooncologia{
-    .contenedor-banner-psicoonco{
-        @extend %banners;
-        height: 60vh;
-        animation: banner-psicooncologia 5s infinite linear alternate;
-        @keyframes banner-psicooncologia{
-            0%, 50%{
-                background-image: url(../img/banner-psiconco.jpg);
-            }
-            51%, 100%{
-                background-image: url(../img/banner-psiconco2.jpg);
-            }
-        }
-
-        .wave-psicoonc1{
-            @extend %wave;
-            width: 70%;
-            left: 0;
-        }
-
-        .wave-psicoonc2{
-            @extend %wave;
-            width: 100%;
-            right: 0;
-        }
-
-        .wrap-psicooncologia{
-            @include wrap (flex, column, center, relative);
-            max-width: 100%;
-            margin: 0 auto;
-        
-            h2{
-                color: black;
-                font-size: 35px;
-                font-style: italic;
-                font-weight: 700;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                border: 3px solid nth($colores, 5);
-                padding: 10px 5px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-                backdrop-filter: blur(20px);
-                box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
-                position: relative;            
-            }
-        }
-    }
 }
 
     /*---------------------------CONTENIDO PSICOONCOLOGIA-----------------*/
@@ -874,64 +564,6 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-}
-
-    /*-----------------------------BANNER TCC---------------------------*/
-
-.banner-tcc{
-    .contenedor-banner-tcc{
-        @extend %banners;
-        height: 60vh;
-        animation: banner-tcc 5s infinite linear alternate;
-        @keyframes banner-tcc{
-            0%, 50%{
-                background-image: url(../img/banner-tcc.jpg);
-            }
-            51%, 100%{
-                background-image: url(../img/banner-tcc2.jpg);
-            }
-        }
-
-        .wave-tcc1{
-            @extend %wave;
-            width: 100%;
-            left: 0;
-        }
-
-        .wave-tcc2{
-            @extend %wave;
-            width: 100%;
-            right: 0;
-        }
-
-        .wrap-tcc{
-            @include wrap (flex, column, center, relative);
-            max-width: 100%;
-            margin: 0 auto;
-
-            h2{
-                color: black;
-                font-size: 35px;
-                font-style: italic;
-                font-weight: 700;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                border: 3px solid white;
-                padding: 10px 5px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-                backdrop-filter: blur(20px);
-                box-shadow: 2px 1px 16px 0px rgba(0, 0, 0, 0.74);
-                position: relative;            
-            }
-
-            p{
-                @include titulos (right, 20px, 700);
-                color: white;
-                text-shadow: 0.1em 0.1em 0.2em black;
-                font-style: oblique;            
-            }
-        }
-    }
 }
 
     /*--------------------------------CONTENIDO TCC--------------------------*/
@@ -1200,154 +832,181 @@ main{
     background-position: center;
     background-attachment: fixed;
 
+    #saludar{
+        padding-top: 40px;
 
-    .contenedor-turnos{
-        @extend %sections;
-        padding: 40px 0;
+        h2{
+            text-align: center;
+            font-size: 35px;
+            font-weight: 600;
+            color: hsla(288, 29%, 37%, 0.938);
+            font-style: italic;
+            text-shadow: 0.1em 0.1em 0.2em rgba(235, 232, 232, 0.664);
+        }
+    }
 
-        .solicitar-turno{
-            margin: auto;
-            width: 400px;
-            background-color: nth($colores, 4);
-            padding: 50px;
-            border-radius: 5px;
-            color: white;
-        
-            h2{
-                @include titulos (center, 35px, 700);
-                font-family: 'Source Sans Pro', serif;
-                margin-bottom: 20px;
-                text-shadow: 0.1em 0.1em 0.2em black;
-            }
+    #form_js{
 
-            .formularios{
-                width: 100%;
-                background-color: nth($colores, 7);
+        .contenedor-turnos{
+            @extend %sections;
+            padding: 40px 0;
+
+            .solicitar-turno{
+                margin: auto;
+                width: 400px;
+                background-color: hsla(288, 29%, 37%, 0.418);
+                padding: 50px;
+                border: 3px solid rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
                 color: white;
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 15px;
-                border: 1px solid white;
-                font-size: nth($font-size, 5);
-                &:hover{
-                    box-shadow: 5px 5px 4px nth($colores, 8);
+            
+                h2{
+                    @include titulos (center, 35px, 700);
+                    font-family: 'Source Sans Pro', serif;
+                    margin-bottom: 20px;
+                    text-shadow: 0.1em 0.1em 0.2em black;
                 }
-                &::placeholder{
-                    color: rgb(209, 205, 205);
-                }
-            }
 
-            h3{
-                font-size: nth($font-size, 2);
-                text-align: center;
-                margin: 20px 0px 10px;
-                text-shadow: 0.1em 0.1em 0.2em black;            
-            }
-
-            .date{
-                width: 100%;
-                background-color: nth($colores, 7);
-                color: white;
-                font-size: nth($font-size, 5);
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid white;
-                &:hover{
-                    box-shadow: 5px 5px 4px nth($colores, 8);
-                }
-            }
-
-            select{
-                width: 100%;
-                background-color: nth($colores, 7);
-                color: white;
-                font-size: nth($font-size, 5);
-                padding: 10px;
-                border-radius: 5px;
-                border: 1px solid white;
-                &:hover{
-                    box-shadow: 5px 5px 4px nth($colores, 8);
-                }
-            }
-
-            .terminos-condiciones{
-                font-size: nth($font-size, 3);
-                margin: 45px 0px 10px;
-                text-shadow: 0.1em 0.1em 0.2em black            
-            }
-
-            label{
-                font-size: nth($font-size, 5);
-            }
-
-            .agrega-comentarios{
-                font-size: nth($font-size, 3);
-                margin: 20px 0px 10px;
-                text-shadow: 0.1em 0.1em 0.2em black;            
-            }
-
-            textarea{
-                width: 100%;
-                background-color: nth($colores, 7);
-                color: white;
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 15px;
-                border: 1px solid white;
-                font-size: nth($font-size, 7);
-                &:hover{
-                    box-shadow: 5px 5px 4px nth($colores, 8);
-                }            
-            }
-
-            .boton{
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                width: 100%;
-                background-color: nth($colores, 7);
-                color: white;
-                padding: 10px;
-                border-radius: 5px;
-                margin-bottom: 15px;
-                border: 1px solid white;
-                font-size: nth($font-size, 5);
-                transition: all 0.4s ease;
-                cursor: pointer;
-                &:hover{
-                    background-color: nth($colores, 9);
-                    transform: scale(1.1);                
-                }            
-            }
-
-            .boton-coll{
-                width: 100%;
-                margin-top: 25px;            
-                p{
-                    .boton-p{
-                        display: block;
-                        width: 100%;
-                        background-color: nth($colores, 7);
-                        padding: 10px 10px;
-                        border: 1px solid white;
-                        border-radius: 5px;
-                        color: #fff;
-                        @include titulos (center, 18px, 500);
-                        text-decoration: none;
-                        &:hover{
-                            background-color: hsla(288, 32%, 59%, 0.863);
-                        }                    
+                .formularios{
+                    width: 100%;
+                    background-color: nth($colores, 7);
+                    color: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    border: 1px solid white;
+                    font-size: nth($font-size, 5);
+                    &:hover{
+                        box-shadow: 5px 5px 4px nth($colores, 8);
+                        cursor: pointer;
+                    }
+                    &::placeholder{
+                        color: rgb(209, 205, 205);
                     }
                 }
 
-                .collapse{
-                    .card{
-                        background-color: nth($colores, 8);
+                h3{
+                    font-size: nth($font-size, 2);
+                    text-align: center;
+                    margin: 30px 0px 10px;
+                    text-shadow: 0.1em 0.1em 0.2em black;            
+                }
 
-                        p{
-                            span{
-                                font-weight: 700;
-                                font-size: nth($font-size, 4);
+                h4{
+                    font-size: nth($font-size, 5);
+                    text-shadow: 0.1em 0.1em 0.2em black;            
+                    font-style: italic;
+                }
+
+                .date{
+                    width: 100%;
+                    background-color: nth($colores, 7);
+                    color: white;
+                    font-size: nth($font-size, 5);
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid white;
+                    cursor: pointer;
+                    &:hover{
+                        box-shadow: 5px 5px 4px nth($colores, 8);
+                    }
+                }
+
+                select{
+                    width: 100%;
+                    background-color: nth($colores, 7);
+                    color: white;
+                    font-size: nth($font-size, 5);
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 1px solid white;
+                    &:hover{
+                        box-shadow: 5px 5px 4px nth($colores, 8);
+                    }
+                }
+
+                .terminos-condiciones{
+                    font-size: nth($font-size, 3);
+                    margin: 45px 0px 10px;
+                    text-shadow: 0.1em 0.1em 0.2em black            
+                }
+
+                label{
+                    font-size: nth($font-size, 5);
+                }
+
+                .agrega-comentarios{
+                    font-size: nth($font-size, 3);
+                    margin: 20px 0px 10px;
+                    text-shadow: 0.1em 0.1em 0.2em black;            
+                }
+
+                textarea{
+                    width: 100%;
+                    background-color: nth($colores, 7);
+                    color: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    border: 1px solid white;
+                    font-size: nth($font-size, 7);
+                    &:hover{
+                        box-shadow: 5px 5px 4px nth($colores, 8);
+                    }
+                    &::placeholder{
+                        color: rgb(209, 205, 205);
+                    }            
+                }
+
+                .boton{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    background-color: nth($colores, 7);
+                    color: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    border: 1px solid white;
+                    font-size: nth($font-size, 5);
+                    transition: all 0.4s ease;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: nth($colores, 9);
+                        transform: scale(1.1);                
+                    }            
+                }
+
+                .boton-coll{
+                    width: 100%;
+                    margin-top: 25px;            
+                    p{
+                        .boton-p{
+                            display: block;
+                            width: 100%;
+                            background-color: nth($colores, 7);
+                            padding: 10px 10px;
+                            border: 1px solid white;
+                            border-radius: 5px;
+                            color: #fff;
+                            @include titulos (center, 18px, 500);
+                            text-decoration: none;
+                            &:hover{
+                                background-color: hsla(288, 32%, 59%, 0.863);
+                            }                    
+                        }
+                    }
+
+                    .collapse{
+                        .card{
+                            background-color: nth($colores, 8);
+
+                            p{
+                                span{
+                                    font-weight: 700;
+                                    font-size: nth($font-size, 4);
+                                }
                             }
                         }
                     }
@@ -1357,6 +1016,67 @@ main{
     }
 }
 
+main .modal__section{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .modal__section .m-o{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsla(290, 58%, 84%, 0.918);
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    overflow: hidden;
+}
+main .modal__section .m-o-c{
+    transform: translateY(-200%);
+}
+main .modal__section .m-o > h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+main .modal__section .m-o span h3{
+    padding-left: 15px;
+    font-size: 25px;
+}
+main .modal__section .m-o h3{
+    padding-left: 15px;
+    font-size: 25px;
+}
+main .modal__section .m-o > h4{
+    text-align: center;
+    font-size: 20px;
+}
+main .modal__section .m-o > #close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
                                 /*!CONTACTO*/
 
 .pagina-contacto{
@@ -1397,70 +1117,73 @@ main{
                 }
             }
 
-            .container-campos{
-                padding-top: 15px;
-                @include flex (flex, column, center);
-            
-                .campos{
-                    width: 50%;
-                    background-color: hsla(288, 29%, 37%, 0.863);
-                    color: white;
-                    padding: 10px;
-                    border-radius: 5px;
-                    margin-bottom: 15px;
-                    border: 1px solid white;
-                    font-size: nth($font-size, 5);
-                    transition: all 0.4s ease;
-                    &:hover{
-                        box-shadow: 4px 4px 4px rgb(182, 137, 190);
-                    }
-                    &::placeholder{
-                        color: rgb(209, 205, 205);
-                    }
-                }
-            }
-
-            .container-mensaje{
-                @include flex (flex, column, center);
-            
-                h4{
-                    margin: 20px 0px 15px;
-                    font-size: nth($font-size, 2);
-                    font-weight: bold;
-                    text-decoration: underline;
-                    margin-bottom: 15px;
-                    color: nth($colores, 1);                
-                }
-
-                textarea{
-                    width: 50%;
-                    background-color: nth($colores, 7);
-                    border: 1px solid white;
-                    margin-bottom: 15px;
-                    transition: all 0.4s ease;
-                    &:hover{
-                        box-shadow: 4px 4px 4px rgb(182, 137, 190);
-                    }
-                    &::placeholder{
-                        color: rgb(209, 205, 205);
+            #contact-js{
+                .container-campos{
+                    padding-top: 15px;
+                    @include flex (flex, column, center);
+                
+                    .campos{
+                        width: 50%;
+                        background-color: hsla(288, 29%, 37%, 0.863);
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        border: 1px solid white;
+                        font-size: nth($font-size, 5);
+                        transition: all 0.4s ease;
+                        &:hover{
+                            box-shadow: 4px 4px 4px rgb(182, 137, 190);
+                        }
+                        &::placeholder{
+                            color: rgb(209, 205, 205);
+                        }
                     }
                 }
 
-                input{
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    width: 20%;
-                    padding: 15px;
-                    border-radius: 5px;
-                    background-color: nth($colores, 1);
-                    color: white;
-                    font-size: nth($font-size, 7);
-                    box-shadow: 0.1em 0.1em 0.2em rgb(51, 51, 51);
-                    transition: all 0.4s ease;
-                    &:hover{
-                        background-color: nth($colores, 9);
-                        transform: scale(1.1);                    
+                .container-mensaje{
+                    @include flex (flex, column, center);
+                
+                    h4{
+                        margin: 20px 0px 15px;
+                        font-size: nth($font-size, 2);
+                        font-weight: bold;
+                        text-decoration: underline;
+                        margin-bottom: 15px;
+                        color: nth($colores, 1);                
+                    }
+
+                    textarea{
+                        width: 50%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        border: 1px solid white;
+                        margin-bottom: 15px;
+                        transition: all 0.4s ease;
+                        &:hover{
+                            box-shadow: 4px 4px 4px rgb(182, 137, 190);
+                        }
+                        &::placeholder{
+                            color: rgb(209, 205, 205);
+                        }
+                    }
+
+                    input{
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        width: 20%;
+                        padding: 15px;
+                        border-radius: 5px;
+                        background-color: nth($colores, 1);
+                        color: white;
+                        font-size: nth($font-size, 7);
+                        box-shadow: 0.1em 0.1em 0.2em rgb(51, 51, 51);
+                        transition: all 0.4s ease;
+                        &:hover{
+                            background-color: nth($colores, 9);
+                            transform: scale(1.1);                    
+                        }
                     }
                 }
             }
@@ -1468,8 +1191,8 @@ main{
 
         .iframe{
             margin-top: 50px;
-            @include flex (flex, column, flex-end);
-        
+            @include flex (flex, column, center);
+            
             h2{
                 color: nth($colores, 1);
                 font-weight: 800;
@@ -1542,3 +1265,314 @@ main{
         }
     }
 }
+
+/*-------------------------- LOGIN ----------------------------*/
+
+.main-login{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main-login section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.main-login section .form-box{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    background-color: hsla(288, 29%, 37%, 0.418);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-login section .form-box .form-values #login_js h2{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.2em black            
+}
+.main-login section .form-box .form-values #login_js .container__login{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.main-login section .form-box .form-values #login_js .container__login label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform:  translateY(-50%);
+    color: #fff;
+    font-size: 15px;
+    transition: .5s;
+}
+.main-login section .form-box .form-values #login_js .container__login input{
+    width: 100%;
+    height: 50px;
+    background-color: hsla(288, 29%, 37%, 0.582);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.main-login section .form-box .form-values #login_js .container__login input:hover{
+    box-shadow: 5px 5px 4px rgba(190, 179, 192, 0.699);
+}
+.main-login section .form-box .form-values #login_js .container__login input::placeholder{
+    color: rgb(209, 205, 205);
+}
+.main-login section .form-box .form-values #login_js .container__login ion-icon{
+    position: absolute;
+    right: 8px;
+    color:  #fff;
+    font-size: 18px;
+    top: 20px;
+}
+.main-login section .form-box .form-values #login_js .button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: nth($colores, 7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: nth($font-size, 5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-weight: 600;    
+}
+.main-login section .form-box .form-values #login_js .button:hover{
+    background-color: nth($colores, 9);
+    transform: scale(1.1);                
+}
+.main-login section .form-box .form-values #login_js .register{
+    padding-top: 30px;
+}
+
+.main-login section .form-box .form-values #login_js #error-login{
+    display: none;
+    background-color: rgba(53, 52, 52, 0.733);
+    margin-bottom: 10px;
+    padding: 3px 3px;
+    height: 35%;
+    width: 100%;
+    border-radius: 5px;
+}
+.main-login section .form-box .form-values #login_js #error-login p{
+    padding-top: 5px;
+    color: #fff;
+}
+.main-login section .form-box .form-values #login_js #error-login p span{
+    background-color: crimson;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;       
+}
+.main-login section .form-box .form-values #login_js .register{
+    font-size: 18px;
+}
+
+/*------------------------- REGISTRO ----------------------------------*/
+
+.main-register{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main-register section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.main-register section .register-box{
+    position: relative;
+    height: 650px;
+    width: 400px;
+    background-color: hsla(288, 29%, 37%, 0.418);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-register section .register-box .register-values #register_js h2{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.2em black            
+}
+.main-register section .register-box .register-values #register_js .container__register{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.main-register section .register-box .register-values #register_js .container__register label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform:  translateY(-50%);
+    color: #fff;
+    font-size: 15px;
+    transition: .5s;
+}
+.main-register section .register-box .register-values #register_js .container__register input{
+    width: 100%;
+    height: 50px;
+    background-color: hsla(288, 29%, 37%, 0.582);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.main-register section .register-box .register-values #register_js .container__register input:hover{
+    box-shadow: 5px 5px 4px rgba(190, 179, 192, 0.699);
+}
+.main-register section .register-box .register-values #register_js .container__register input::placeholder{
+    color: rgb(209, 205, 205);
+}
+.main-register section .register-box .register-values #register_js .container__register ion-icon{
+    position: absolute;
+    right: 8px;
+    color:  #fff;
+    font-size: 18px;
+    top: 20px;
+}
+.main-register section .register-box .register-values #register_js .boton-reg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: nth($colores, 7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: nth($font-size, 5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-weight: 600;    
+}
+.main-register section .register-box .register-values #register_js .boton-reg:hover{
+    background-color: nth($colores, 9);
+    transform: scale(1.1);                
+}
+.main-register section .register-box .register-values #register_js .option-login{
+    padding-top: 30px;
+}
+.main-register section .register-box .register-values #register_js #error-mail-reg{
+    display: none;
+    background-color: rgba(53, 52, 52, 0.733);
+    margin-bottom: 10px;
+    padding: 3px 3px;
+    height: 35%;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.main-register section .register-box .register-values #register_js #error-mail-reg p{
+    padding-top: 5px;
+    color: #fff;
+}
+.main-register section .register-box .register-values #register_js #error-mail-reg p span{
+    background-color: crimson;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;       
+}
+.main-register section .register-box .register-values #register_js .option-login{
+    font-size: 18px;
+}
+
+/*----------------------MOSTRAR TURNO ---------------------------*/
+
+.main-mt{
+    background: hsl(313, 35%, 69%);
+    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
+    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+                    
+
+                    
+                        
+                        
+                        
+
+
+
+
+
+
+
+
+
+
+/*-------------------------- DARK MODE ----------------------------*/
+.dark-mode{
+    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/section-1-img.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
