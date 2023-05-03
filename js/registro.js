@@ -54,7 +54,9 @@ registro.addEventListener("submit", (e)=>{
         icon: 'success',
         title: '¡Registro Exitoso!',
         showConfirmButton: false,
-        timer: 2000
+        timer: 2000,
+        background: '#976ca1',
+        color: '#fff'
     });
 });
 

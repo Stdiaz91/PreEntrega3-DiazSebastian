@@ -308,27 +308,6 @@
 
         /*!--------------------TCC INDIVIDUAL-----------------------*/
 
-                /*BANNER TCC*/
-
-        .banner-tcc .contenedor-banner-tcc{
-            height: 45vh;
-        }
-        .banner-tcc .contenedor-banner-tcc .wrap-tcc{
-            padding: 0px 15px;
-        }
-        .banner-tcc .contenedor-banner-tcc .wrap-tcc h2{
-            font-size: 25px;
-            color: white;
-            border: none;
-            backdrop-filter: blur(1.5px);
-        }
-        .banner-tcc .contenedor-banner-tcc .wave-tcc1{
-            fill: none
-        }
-        .banner-tcc .contenedor-banner-tcc .wave-tcc2{
-            fill: none
-        }
-
                 /*CONTENIDO TCC*/
         
         .servicio-tcc{
@@ -418,14 +397,6 @@
         }
         .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje input{
             width: 70%;
-        }
-        .pagina-contacto .contenedor-contacto .iframe{
-            align-items: center;
-        }
-        .pagina-contacto .contenedor-contacto .iframe iframe{
-            width: 250px;
-            height: 200px;
-            filter: brightness(100%);
         }
 
         /*!--------------------BLOG-----------------------*/
@@ -666,38 +637,6 @@
             margin: 0 auto;
             width: 250px;
         }
-                /*BANNER 2*/
-
-        .banner-2 .conte-2 .wrap-2{
-            flex-direction: column;
-            justify-content: center; 
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 h2{
-            text-align: center;
-            font-size: 28px;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 p{
-            text-align: center;
-            font-size: 18px;
-            padding: 10px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 span{
-            display: block;
-            font-size: 18px;
-            padding-left: 20px;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
-            display: flex;
-            flex-direction: column;
-            margin-left: 5px;
-            padding: 2vh 4vw 2vh 4vw;
-            margin-top: 5px;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2 .btn1-2{
-            margin-bottom: 10px;
-        }
                 /*FOOTER*/
 
         footer{
@@ -720,27 +659,6 @@
         }
 
         /*!--------------------CONOCEME-----------------------*/
-    
-                /*BANNER 3*/
-    
-        .banner-3 .conte-3{
-            height: 55vh;
-        }
-        .banner-3 .conte-3 .wrap-3{
-            padding: 0px 15px;
-        }
-        .banner-3 .conte-3 .wrap-3 h2{
-            font-size: 25px;
-            color: white;
-            border: none;
-            backdrop-filter: blur(1.5px);
-        }
-        .banner-3 .conte-3 .wave-5{
-            fill: none;
-        }
-        .banner-3 .conte-3 .wave-6{
-            fill: none;
-        }
 
                 /*CONTENIDO CONOCEME*/
 
@@ -768,26 +686,6 @@
 
         /*!--------------------PSICOONCOLOGIA-----------------------*/
 
-                /*BANNER PSICOONCOLOGIA*/
-
-        .banner-psicooncologia .contenedor-banner-psicoonco{
-            height: 55vh;
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
-            padding: 0px 15px;
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia h2{
-            font-size: 25px;
-            color: black;
-            border: none;
-            backdrop-filter: blur(1.5px);
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc1{
-            fill: none;
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wave-psicoonc2{
-            fill: none;
-        }
 
                 /*CONTENIDO PSICOONCOLOGIA*/
 
@@ -811,26 +709,6 @@
 
         /*!--------------------TCC INDIVIDUAL-----------------------*/
 
-                /*BANNER TCC*/
-
-        .banner-tcc .contenedor-banner-tcc{
-            height: 55vh;
-        }
-        .banner-tcc .contenedor-banner-tcc .wrap-tcc{
-            padding: 0px 15px;
-        }
-        .banner-tcc .contenedor-banner-tcc .wrap-tcc h2{
-            font-size: 25px;
-            color: rgb(109, 108, 108);
-            border: none;
-            backdrop-filter: blur(1.5px);
-        }
-        .banner-tcc .contenedor-banner-tcc .wave-tcc1{
-            fill: none
-        }
-        .banner-tcc .contenedor-banner-tcc .wave-tcc2{
-            fill: none
-        }
 
                 /*CONTENIDO TCC*/
         
@@ -922,14 +800,6 @@
         .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje input{
             width: 40%;
         }
-        .pagina-contacto .contenedor-contacto .iframe{
-            align-items: center;
-        }
-        .pagina-contacto .contenedor-contacto .iframe iframe{
-            width: 60vw;
-            height: 60vh;
-            filter: brightness(100%);
-        }
 
         /*!--------------------MODAL-----------------------*/
 
@@ -953,23 +823,6 @@
         }
         .encabezado .contenedorlogo-h1 img{
             width: 64px;
-        }
-                /*BANNER 1*/
-
-        .banner-1 .conte{
-            height: 60vh;
-        }
-        .banner-1 .conte .wrap .box .cards{
-            display: flex;
-            justify-content: center;
-        }
-        .banner-1 .conte .wrap .box .cards img{
-            padding: 10px;
-            width: 120px;
-            height: 100px;
-        }
-        .banner-1 .conte .wrap .box .botones a{
-            margin: 0 auto;
         }
 
                 /*SECTION 1*/
@@ -1053,19 +906,6 @@
             padding: 0px 3px;
         }
 
-                /*BANNER 2*/
-        
-        .banner-2 .conte-2{
-            height: 55vh;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2{
-            margin: 0 auto;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
-            margin-top: 5px;
-            justify-content: space-around;
-        }
-
                 /*FOOTER*/
         
         footer{
@@ -1074,18 +914,6 @@
 
         /*!--------------------CONOCEME-----------------------*/
     
-                /*BANNER 3*/
-    
-        .banner-3 .conte-3{
-            height: 60vh;
-        }
-        .banner-3 .conte-3 .wrap-3{
-            padding: 0px 15px;
-        }
-        .banner-3 .conte-3 .wrap-3 h2{
-            color: white;
-        }
-
                 /*CONTENIDO CONOCEME*/
 
         .conoceme .contenedor-conoceme{
@@ -1108,15 +936,6 @@
         
         /*!--------------------PSICOONCOLOGIA-----------------------*/
 
-                /*BANNER PSICOONCOLOGIA*/
-
-        .banner-psicooncologia .contenedor-banner-psicoonco{
-            height: 60vh;
-        }
-        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
-            padding: 0px 15px;
-        }
-
                 /*CONTENIDO PSICOONCOLOGIA*/
 
         .servicio-psicooncologia{
@@ -1124,15 +943,6 @@
         }
 
         /*!--------------------TCC INDIVIDUAL-----------------------*/
-
-                /*BANNER TCC*/
-
-        .banner-tcc .contenedor-banner-tcc{
-            height: 65vh;
-        }
-        .banner-tcc .contenedor-banner-tcc .wrap-tcc{
-            padding: 0px 15px;
-        }
 
                 /*CONTENIDO TCC*/
         
@@ -1158,9 +968,6 @@
             color: #642a73;
             font-weight: 700;
         }
-        .pagina-contacto .contenedor-contacto .iframe iframe{
-            filter: brightness(100%);
-        }
     }
 
     @media(max-width:1100px) and (min-width:851px){
@@ -1176,23 +983,6 @@
         }
         .encabezado .contenedorlogo-h1 img{
             width: 64px;
-        }
-                /*BANNER 1*/
-
-        .banner-1 .conte{
-            height: 60vh;
-        }
-        .banner-1 .conte .wrap .box .cards{
-            display: flex;
-            justify-content: center;
-        }
-        .banner-1 .conte .wrap .box .cards img{
-            padding: 10px;
-            width: 120px;
-            height: 100px;
-        }
-        .banner-1 .conte .wrap .box .botones .btn1, .btn2{
-            margin: 0 auto;
         }
 
                 /*SECTION 1*/
@@ -1275,26 +1065,9 @@
             padding: 0px 3px;
         }
 
-                /*BANNER 2*/
-        
-        .banner-2 .conte-2{
-            height: 55vh;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2{
-            margin: 0 auto;
-        }
-        .banner-2 .conte-2 .wrap-2 .box-2 .botones-2{
-            margin-top: 5px;
-        }
-
         
         /*!-----------CONOCEME------------------*/
 
-                /*BANNER 3*/
-
-        .banner-3 .conte-3 .wrap-3{
-            padding: 0px 20px;
-        }
 
                 /*CONTENIDO CONOCEME*/
 
@@ -1307,22 +1080,6 @@
         .conoceme .contenedor-conoceme img:hover{
             transform: none;
             filter: none;
-        }
-
-        /*!----------------PSICOONCOLOGIA-------------*/
-
-                /*BANNER PSICOONCOLOGIA*/
-
-        .banner-psicooncologia .contenedor-banner-psicoonco .wrap-psicooncologia{
-            padding: 0px 20px;
-        }
-
-        /*!---------------TCC INDIVIDUAL---------------*/
-
-                /*BANNER TCC*/
-
-        .banner-tcc .contenedor-banner-tcc .wrap-tcc{
-        padding: 0px 20px;
         }
 
     }

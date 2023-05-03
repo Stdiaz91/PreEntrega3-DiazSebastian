@@ -87,7 +87,9 @@ formulario.addEventListener("submit", (e)=>{
         icon: 'success',
         title: `¡Turno solicitado exitosamente`,
         showConfirmButton: false,
-        timer: 1500
+        timer: 1500,
+        background: '#976ca1',
+        color: '#fff'
     });
 //---------> Código para ventana modal (aparecerá con el evento submit con los datos relevantes del turno)
     let modal = document.querySelector(".m-o");

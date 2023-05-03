@@ -48,7 +48,9 @@ login.addEventListener("submit", (e)=>{
         icon: 'success',
         title: `¡Bienvenid@ a Psico-Online ${validUser.nombre}`,
         showConfirmButton: false,
-        timer: 2500
+        timer: 2500,
+        background: '#976ca1',
+        color: '#fff'
     });
 });
 

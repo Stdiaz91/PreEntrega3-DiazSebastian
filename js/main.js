@@ -54,7 +54,6 @@ logout.addEventListener("click", ()=>{
 });
 
 function Change() {
-    // const ArrayUsuariolog = JSON.parse(localStorage.getItem("user-login"));
     document.querySelector("#boton-login-turno").innerHTML = "SOLICITAR TURNO";
 }
 
