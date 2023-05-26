@@ -18,10 +18,12 @@
             <!--IMAGE-->
     <meta property="og:image" content="https://psico-online2023.000webhostapp.com/img/logotipo.png">
         <!--!CSS BOOTSTRAP V 5.0.2-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../css/estilos.css">   <!--!CSS-->
     <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">    <!--!FAVICON-->
-    <title>Psico-Online | Psicología 100% Online al alcance de un click | Ingresá</title>    <!--!TITULO DE LA PAGE-->
+    <title>Psico-Online | Psicología 100% Online al alcance de un click | Admin</title>    <!--!TITULO DE LA PAGE-->
 </head>
 <body>
                                 <!--!HEADER-->
@@ -48,35 +50,31 @@
             </ul>
         </nav>
     </header>
-    <main class="main-login">
-                                <!--!CONTENIDO LOGIN-->
+    <main>
         <section>
-            <div class="form-box">
-                <div class="form-values">
-                    <form id="login_js">
-                        <h2>INICIAR SESIÓN</h2>
-                        <div class="container__login">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <input type="email" name="correo-electronico" id="email" placeholder="Ingresa tu correo" required autofocus>
-                            <label for="email"></label>
-                        </div>
-                        <div class="container__login">
-                            <ion-icon name="lock-closed-outline"></ion-icon>
-                            <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
-                            <label for="password"></label>
-                        </div>
-                        <div id="error-login">
-                            <p><span>X</span> Email y/o contraseña incorrectas</p>
-                        </div>
-                        <input class="button" type="submit" value="INGRESAR" required>
-                        <div class="register">
-                            <p>¿No tienes una cuenta? <a href="./registro.html">Registrate</a></p>
-                        </div>
-                    </form>        
+            <div class="container-table my-5 text-center" id="table__">
+                <div class="mt-5">
+                    <table class="table" id="tablaDatos">
+                        <thead>
+                            <tr>
+                                <th scope="col" id="insertarNombreApellido">Nombre y Apellido</th>
+                                <th scope="col" id="insertarServicio">Servicio</th>
+                                <th scope="col" id="insertarDia">Día</th>
+                                <th scope="col" id="insertarHora">Hora</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contenido">
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
-
+        <div class="container-loader" id="loader">
+            <div class="loadingio-spinner-eclipse-f3oaniwh1ew"><div class="ldio-59e5hvslhm">
+                <div></div>
+                </div></div>
+            <h2 class="txt-load" id="txt-loader"></h2>
+        </div>
     </main>
                                     <!--!FOOTER-->
     <footer>
@@ -104,6 +102,6 @@
         <!--!SCRIPT SWEET ALERT2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!--!JS-->
-    <script src="../js/login.js"></script>
+    <script src="../js/administrador.js"></script>
 </body>
 </html>

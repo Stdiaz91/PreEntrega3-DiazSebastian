@@ -1,6 +1,71 @@
 /*-----------FOOTER---------------*/
 
-footer{
+body footer{
+    background-color: nth($colores, 4);
+    height: 110px;
+    overflow: hidden;
+
+    .pie-pagina{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 3%;    
+
+        .logo-pie{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+            img{
+                width: 65px;
+                filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
+                margin-right: 10px;            
+            }
+
+            h2{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+                color: white;
+                font-size: nth($font-size, 2);
+                font-weight: 700;
+                &:hover{
+                    cursor: default;
+                }
+            }
+        }
+
+        .redes{
+
+            a{
+
+                img{
+                    width: 50px;
+                    padding: 5px;
+                    filter: grayscale(70%);
+                    transition: all 0.4s ease;
+                    &:hover{
+                        filter: grayscale(0%);
+                        transform: scale(1.4);                    
+                    }                
+                }
+            }
+        }
+
+    }
+
+    .leyenda{
+
+        p{
+            text-align: center;
+            color: white;
+            padding-bottom: 20px;        
+        }
+    }
+}
+
+//-----------DARK MODE
+.dark footer{
     background-color: nth($colores, 4);
     height: 110px;
     overflow: hidden;

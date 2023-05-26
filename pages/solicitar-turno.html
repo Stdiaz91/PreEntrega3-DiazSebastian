@@ -27,11 +27,11 @@
                                 <!--!HEADER-->
     <header class="encabezado">   
         <div class="contenedorlogo-h1">
-                    <img src="../img/logotipo.png" id="inicio__" alt="logotype">
-                    <h1>Psico-Online</h1>
+            <img src="../img/logotipo.png" id="inicio__" alt="logotype">
+            <h1 id="texto-js"></h1>
         </div>
         <input type="checkbox" id="toggle">
-        <label for="toggle" class="menu"> <img src="../img/menu.svg" alt="icon-menu"></label>
+        <label for="toggle" class="menu"> <img src="../img/menu.png" alt="icon-menu"></label>
         <nav class="navigation">
             <ul>
                 <li><a href="../index.html">HOME</a></li>
@@ -59,8 +59,8 @@
                     <div class="solicitar-turno">
                         <h2>Solicitar Turno</h2>
                         <h3>Escoge el día</h3>
-                        <input class="date" type="date" id="date_" required>
-                        <label for="date"></label>
+                        <input class="date" type="date" id="date_" value="" min="" required>
+                        <label for="date_"></label>
                         <h3>Selecciona prestación</h3>
                         <select name="prestaciones" id="services" required>
                             <option value="Psicooncología" selected>Psicooncología</option>
@@ -106,7 +106,7 @@
                 </div>
             </form>
         </section>
-        <section class="modal__section">
+        <div class="modal__section">
                 <div class="m-o m-o-c">
                     <p id="close">X</p>
                     <h2>Gracias por confiar en Psico-Online</h2>
@@ -117,7 +117,7 @@
                     <h4>Le aconsejamos que disponga de buena señal de internet para evitar interrupciones en la sesión.</h4>
                     <h4>Saludos Cordiales.</h4>
                 </div>
-        </section>
+        </div>
     </main>
                                     <!--!FOOTER-->
     <footer>
@@ -141,7 +141,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--!SCRIPT SWEET ALERT2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <!--!JS MAIN-->
+        <!--!JS-->
     <script src="../js/form.js"></script>
 </body>
 </html>

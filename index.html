@@ -24,6 +24,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!--!CSS-->
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <!--!FAVICON-->
@@ -35,26 +37,26 @@
 
 <body>
     <!--!HEADER-->
-    <header class="encabezado">
+    <header class="encabezado" id="header__">
         <div class="contenedorlogo-h1">
             <img src="./img/logotipo.png" id="inicio__" alt="logotype" />
-            <h1>Psico-Online</h1>
+            <h1 id="texto-js"></h1>
         </div>
         <input type="checkbox" id="toggle" />
-        <label for="toggle"> <img src="./img/menu.svg" alt="icon-menu" /></label>
-        <nav class="navigation">
-            <ul>
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./pages/conoceme.html">CONOCEME</a></li>
+        <label for="toggle"> <img src="./img/menu.png" alt="icon-menu" /></label>
+        <nav class="navigation" id="nav__">
+            <ul id="ul__dm">
+                <li><a id="a__" href="./index.html">HOME</a></li>
+                <li><a id="a__1" href="./pages/conoceme.html">CONOCEME</a></li>
                 <li>
-                    <a href="#">PRESTACIONES</a>
-                    <ul>
-                        <li><a href="./pages/psicooncologia.html">Psicooncología</a></li>
-                        <li><a href="./pages/tcc-individual.html">TCC Individual</a></li>
+                    <a id="a__2" href="#">PRESTACIONES</a>
+                    <ul id="ul__">
+                        <li id="li__"><a id="a2__" href="./pages/psicooncologia.html">Psicooncología</a></li>
+                        <li id="li__1"><a id="a2__1" href="./pages/tcc-individual.html">TCC Individual</a></li>
                     </ul>
                 </li>
-                <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                <li><a href="./pages/blog.html">BLOG</a></li>
+                <li><a id="a__3" href="./pages/contacto.html">CONTACTO</a></li>
+                <li><a id="a__4" href="./pages/blog.html">BLOG</a></li>
                 <li><a id="boton-login-turno">INICIAR SESIÓN</a></li>
             </ul>
         </nav>
@@ -99,30 +101,30 @@
         <!--!SECTION 1-->
         <section class="section-1">
             <div class="contenedor-section-1">
-                <h2 class="titulo1">¿Qué es la plataforma Psico-Online?</h2>
+                <h2 id="title1" class="titulo1">¿Qué es la plataforma Psico-Online?</h2>
                 <div class="bloque-1">
                     <div>
-                        <p>
+                        <p class="p-block1-light" id="p1">
                             <b>Psico-Online</b> es una plataforma online dedicada a los
                             servicios y prestaciones de <b>Psicooncología</b> y
                             <b>Psicoterapia individual</b> desde la línea
                             cognitivo-conductual (TCC Individual), liderada por la
                             Licenciada en Psicología Giuliana Maggioni.
                         </p>
-                        <p>
+                        <p class="p-block1-light" id="p2">
                             La característica principal de esta plataforma es que ambas
                             prestaciones se ofrecen de manera online. Aunque también, pueden
                             brindarse de forma presencial en el consultorio de la
                             profesional.
                         </p>
-                        <p>
+                        <p class="p-block1-light" id="p3">
                             Psico-Online surge con el fin de brindar terapia online en
                             tiempos de pandemia, debido a que la emergencia social y
                             sanitaria nos hizo perder de vista que la salud no se reduce
                             únicamente a prevenir y curar afecciones físicas observables en
                             el cuerpo humano.
                         </p>
-                        <p>
+                        <p class="p-block1-light" id="p4">
                             La salud incluye el bienestar como algo global, y eso implica
                             que no podemos olvidar algo tan importante como la salud mental,
                             especialmente ante contextos capaces de hacernos afrontar
@@ -130,7 +132,7 @@
                         </p>
                     </div>
                     <div>
-                        <img src="./img/logotipo.png" alt="logo" />
+                        <img class="img-block1-light" id="logo-block" src="./img/logotipo.png" alt="logo" />
                     </div>
                 </div>
                 <div class="bloque-2">
@@ -200,31 +202,31 @@
         <!--!SECTION 2-->
         <section class="section-2">
             <div class="contenedor-section-2">
-                <h2 class="titulo2">Las ventajas de utilizar Psico-Online</h2>
+                <h2 id="titulo2__" class="titulo2">Las ventajas de utilizar Psico-Online</h2>
                 <div class="ilustracion-textos">
-                    <h3><span>1</span>Nos da tiempo para otras cosas</h3>
-                    <p>
+                    <h3 class="h3-bl2" id="h3-bl2-1"><span>1</span>Nos da tiempo para otras cosas</h3>
+                    <p id="p-bl2-1" class="p-bl2">
                         Tener un hueco en la agenda para ir al psicológo no sólo implica
                         estar ocupados el tiempo de la sesión: también hay que tener
                         previsto el tiempo del desplazamiento en la ida y la vuelta. La
                         terapia psicológica online ayuda a que dispongamos de más tiempo,
                         porque no hace falta desplazarse para ir al consultorio.
                     </p>
-                    <h3><span>2</span>No hay límites geográficos</h3>
-                    <p>
+                    <h3 class="h3-bl2" id="h3-bl2-2"><span>2</span>No hay límites geográficos</h3>
+                    <p id="p-bl2-2" class="p-bl2">
                         La distancia entre uno mismo y el psicólogo deja de ser un
                         problema por el que preocuparse. En la psicoterapia online, da
                         igual la distancia que nos encontremos del consultorio.
                     </p>
-                    <h3><span>3</span>Puede ayudarte a ahorrar</h3>
-                    <p>
+                    <h3 class="h3-bl2" id="h3-bl2-3"><span>3</span>Puede ayudarte a ahorrar</h3>
+                    <p id="p-bl2-3" class="p-bl2">
                         Al no requerir tantos recursos materiales ni un modelo de
                         recepción de pacientes en el consultorio o en el centro de
                         psicología, la psicoterapia online puede servir para abaratar
                         costos.
                     </p>
-                    <h3><span>4</span>Ofrece un enterno de confianza</h3>
-                    <p>
+                    <h3 class="h3-bl2" id="h3-bl2-4"><span>4</span>Ofrece un enterno de confianza</h3>
+                    <p id="p-bl2-4" class="p-bl2">
                         Hay pacientes para los que el simple hecho de expresar sus
                         problemas y contar aspectos personales de sus vidas les resulta un
                         problema, especialmente si sienten que estan en un lugar en el que
@@ -236,7 +238,7 @@
         </section>
         <!--!GALERIA-->
         <section class="galeria">
-            <h2>Descubrí las herramientas de Psico-Online</h2>
+            <h2 class="h2-gallery" id="h2_gallery">Descubrí las herramientas de Psico-Online</h2>
             <div class="grid-galeria">
                 <div class="grid-item">
                     <div class="flex-item">
@@ -323,8 +325,8 @@
         <section class="section-4">
             <div class="contenedor-section-4">
                 <div class="contenedor4-1">
-                    <h3>¿Cuánto cuesta una sesión de terapia online?</h3>
-                    <p>
+                    <h3 class="h3-bl4" id="h3__bl4">¿Cuánto cuesta una sesión de terapia online?</h3>
+                    <p class="p-bl4" id="p__bl4">
                         Comprá las sesiones de terapia que necesites, cuando lo necesites
                         y trabajá junto conmigo para encontrar tu mejor versión
                     </p>
@@ -377,9 +379,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!--!SCRIPT IONICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!--!SCRIPT SWEET ALERT2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!--!JS MAIN-->
+    <!--!JS-->
     <script src="./js/main.js"></script>
 </body>
 

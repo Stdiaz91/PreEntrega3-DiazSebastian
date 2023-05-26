@@ -1,0 +1,43 @@
+[
+    {
+        "nombre" : "Juan",
+        "apellido" : "Perez",
+        "email" : "juanperez@mail.com",
+        "password" : "12345",
+        "servicio" : "Psicoterapia TCC",
+        "dia" : "2023-06-07",
+        "hora" : "11:00 AM",
+        "comentarios" : ""
+    },
+    {
+        "nombre" : "Carlos",
+        "apellido" : "Garcia",
+        "email" : "c.garcia@mail.com",
+        "password" : "123456",
+        "servicio" : "Psicoterapia TCC",
+        "dia" : "2023-06-09",
+        "hora" : "10:00 AM",
+        "comentarios" : "Buenas. Voy a realizar la sesión mediante datos, no tendré wifi"
+    },
+    {
+        "nombre" : "Jorge",
+        "apellido" : "Rodriguez",
+        "email" : "rodriguez@mail.com",
+        "password" : "jorge123",
+        "servicio" : "Psicooncología",
+        "dia" : "2023-06-04",
+        "hora" : "11:00 AM",
+        "comentarios" : ""
+    },
+    {
+        "nombre" : "Ana",
+        "apellido" : "Lisa",
+        "email" : "analisa@mail.com",
+        "password" : "analizame",
+        "servicio" : "Psicoterapia TCC",
+        "dia" : "2023-06-06",
+        "hora" : "16:00 PM",
+        "comentarios" : "Iniciaré sesión 10 minutos tarde, perdón :)"
+    }
+
+]

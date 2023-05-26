@@ -21,6 +21,37 @@ function saludoUser(){
 saludoUser(); // Función invocada
 
 // ----------------------------------------------------------------
+//---> Si la key "users-final" está nula porque aún los usuarios no registraron ningún turno desde el sitio, se cargarán los users del JSON
+// En caso de que ya se haya registrado un turno desde el sitio, el flujo seguirá por el else.
+
+const ArrayUsersLS = JSON.parse(localStorage.getItem("users-final"));
+console.log(ArrayUsersLS);
+function UsuarioAnulado() {
+    if (ArrayUsersLS === null) {
+        const JsonLS = JSON.parse(localStorage.getItem("json"));
+        console.log(JsonLS);
+        localStorage.setItem("users-final", JSON.stringify(JsonLS));
+    } else{
+    };
+};
+UsuarioAnulado(); // Función invocada
+
+//-----------------------------------------------
+//Función Date para obtener el día actual y para evitar registrar turnos días anteriores al actual
+window.onload = function(){
+    var fecha = new Date();
+    var month = fecha.getMonth()+1;
+    var dates = fecha.getDate();
+    var year = fecha.getFullYear();
+    if(dates<10)
+        dates='0'+dates;
+    if(month<10)
+        month='0'+ month;
+    document.getElementById('date_').value=year+"-"+month+"-"+dates;
+    document.getElementById('date_').min=year+"-"+month+"-"+dates;
+}
+
+//----------------------------------------------
 
 // SOLICITUD DE TURNOS
 
@@ -64,7 +95,6 @@ formulario.addEventListener("submit", (e)=>{
         });
     };
 //------- 
-
     // Se desconstruye el Array del user logeado, guardado en el LS para formar el usuario final con todos los datos cargados 
     const ArrayUserLoginLocalStorage = JSON.parse(localStorage.getItem("user-login"));
     let name = ArrayUserLoginLocalStorage.nombre;
@@ -72,16 +102,45 @@ formulario.addEventListener("submit", (e)=>{
     let mail = ArrayUserLoginLocalStorage.email;
     let pass = ArrayUserLoginLocalStorage.password;
     
-    const UsuarioFinal = [{
+    const UsuarioFinal = {
         nombre: name,
         apellido: surname,
         email: mail,
         password: pass,
         ...UsuarioConTurno
-    }];
+    };
     console.log(UsuarioFinal);
 
-    localStorage.setItem("users-final", JSON.stringify(UsuarioFinal));
+    //----> Esta sección evita que un usuario solicite mas de un turno a la vez sin el aval del psicólogo
+    const ArrayTotal = ArrayUsuarioFinalLocalStorage.concat(ArrayUserLoginLocalStorage);
+    const busqueda = ArrayTotal.reduce((acc, user) => {
+        acc[user.email] = ++acc[user.email] || 0;
+        return acc;
+    }, {});
+
+    const duplicados = ArrayTotal.filter( (user) => {
+        return busqueda[user.email];
+    });
+    
+    console.log(duplicados);
+    
+    if (duplicados) {
+        if (duplicados.length > 0) {
+            return Swal.fire({
+                icon: 'error',
+                title: 'Lo sentimos. Usted ya ha solicitado un turno',
+                color: '#fff',
+                confirmButtonColor: '#3085d6',
+                background: '#976ca1'
+            });
+        } else {
+        };
+    };
+
+    //----------------------
+
+    ArrayUsuarioFinalLocalStorage.push(UsuarioFinal);
+    localStorage.setItem("users-final", JSON.stringify(ArrayUsuarioFinalLocalStorage));
     Swal.fire({
         position: 'center',
         icon: 'success',
@@ -105,15 +164,17 @@ formulario.addEventListener("submit", (e)=>{
         modal.classList.toggle("m-o-c");
 
         const ArrayUsuarioLSa = JSON.parse(localStorage.getItem("users-final"));
-        const nombre = ArrayUsuarioLSa[0].nombre;
+            console.log(ArrayUsuarioLSa);
+        const ArrayUsuarioTurno = ArrayUsuarioLSa[ArrayUsuarioLSa.length - 1];
+        const nombre = ArrayUsuarioTurno.nombre;
             console.log(nombre);
-        const apellido = ArrayUsuarioLSa[0].apellido;
+        const apellido = ArrayUsuarioTurno.apellido;
             console.log(apellido);
-        const servicio = ArrayUsuarioLSa[0].servicio;
+        const servicio = ArrayUsuarioTurno.servicio;
             console.log(servicio);
-        const dia = ArrayUsuarioLSa[0].dia;
+        const dia = ArrayUsuarioTurno.dia;
             console.log(dia);
-        const horario = ArrayUsuarioLSa[0].hora;
+        const horario = ArrayUsuarioTurno.hora;
             console.log(horario);
         //-----
         const MostrarNyA = document.querySelector("#colocar_textNyA");
@@ -128,12 +189,18 @@ formulario.addEventListener("submit", (e)=>{
         //-----
         const MostrarD = document.querySelector("#colocar_textD");
         const h3D = document.createElement("h3");
-        h3D.textContent = `La sesión será el día: ${dia} a las ${horario}`;
+        h3D.textContent = `La sesión será el día: ${MostrarFecha(dia)} a las ${horario}`;
         MostrarD.appendChild(h3D);
     };
     temporizadorDeRetraso(); //Función invocada
 });
 
+//--------------------->
+// Función para mostrar la fecha de manera convencional a la región
+function MostrarFecha(fecha) {
+    return `${fecha.slice(8,11)}/${fecha.slice(5,7)}/${fecha.slice(0,4)}`;
+};
+//---------------------
 //------------------> EVENTO
 //Evento click para cerrar ventana modal
 const cerrar = document.querySelector("#close");
@@ -145,35 +212,52 @@ cerrar.addEventListener("click", ()=>{
         modalC.style.opacity = "0";
         modalC.style.visibility = "hidden";    
     },850);
+    window.location.href = "../index.html";
 });
 
-
-//-------------------------------------------------------
+//------------------------------------------------------->
 
 // Se trae el objeto guardado en el Local Storage
-const ArrayUsuarioFormulario= JSON.parse(localStorage.getItem("user-login"));
-console.log(ArrayUsuarioFormulario);
+const ArrayUsuarioLoger = JSON.parse(localStorage.getItem("user-login"));
 // EVENTO ---->
-// Evento click para redirigir ingreso a página "login" o "solicitar-turno" 
-const LoginORegistroForm = document.querySelector("#boton-login-turno");
-LoginORegistroForm.addEventListener("click", ()=>{
-    if (ArrayUsuarioFormulario) {
-        window.location.href = "./solicitar-turno.html";
-    }else{
+// Evento click para redirigir ingreso a página "login" o "solicitar-turno" o "Admin"
+const LoginORegistroLoger = document.querySelector("#boton-login-turno");
+LoginORegistroLoger.addEventListener("click", ()=>{
+    if (ArrayUsuarioLoger) {
+        if (ArrayUsuarioLoger.email === "admin@psico.com") {
+            window.location.href = "./administrador.html";
+        } else {
+            window.location.href = "./solicitar-turno.html";
+        }
+    } else {
         window.location.href = "./login.html";
-    };
+    }
 });
 
-//----------------------------------------------
+//---------------------------------------------->
 
-//Función para aplicar innerHTML
+//Funciones para aplicar innerHTML
 function Change() {
     document.querySelector("#boton-login-turno").innerHTML = "SOLICITAR TURNO";
 };
-// Al estar un usurio logeado, cambia el nombre del enlace "INICIAR AHORA" por "SOLICITAR TURNO" en el encabezado del header
-if (ArrayUsuarioFormulario) {
-    Change(); //Función invocada
-}; //---> Caso contrario figurará la leyenda "INICIAR AHORA"
+function ChangeAdmin() {
+    document.querySelector("#boton-login-turno").innerHTML = "ADMIN";
+};
+// Al estar un usurio logeado, cambia el nombre del enlace "INICIAR AHORA" por "SOLICITAR TURNO" o por
+// ADMIN (en caso que el administrador este logeado) en el encabezado del header
+function ChangeTxt() {
+    if (ArrayUsuarioLoger) {
+        if (ArrayUsuarioLoger.email === "admin@psico.com") {
+            ChangeAdmin(); //Función invocada
+        }else{
+            Change(); //Función invocada
+        }
+    } else {
+    } //----> Queda el texto "INICIAR SESIÓN"
+};
+ChangeTxt();
+
+//---------------------------------------->
 
 // Evento click redirección al Home
 const IrAlHome = document.querySelector("#inicio__");
@@ -183,6 +267,35 @@ IrAlHome.addEventListener("click", ()=>{
     };
 });
 
+// Animación título principal
+const textoPrincipal = "Psico-Online";
+
+let i = 0;
+let txt = "";
+let velocidad = 70; //---> milisegundos
+
+function escribir() {
+    if (i < textoPrincipal.length) {
+        txt += textoPrincipal.charAt(i);
+        document.querySelector("#texto-js").innerHTML = txt;
+        i++;
+        setTimeout(escribir, velocidad);
+    }else{
+        setTimeout(borrar, 1000);
+    };
+};
+function borrar() {
+    if (i >= 0) {
+        txt = textoPrincipal.substring(0, i);
+        document.querySelector("#texto-js").innerHTML = txt;
+        i--;
+        setTimeout(borrar, velocidad);
+    }else{
+        i = 0
+        setTimeout(escribir, 1000);
+    };
+};
+escribir(); //---> Función invocada
 
 
 

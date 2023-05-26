@@ -2,10 +2,19 @@
 
             /*----*INDEX------*/
 
-main{
+body main{
     background: hsl(313, 35%, 69%);
     background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
     background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.dark main{ //---> DARK MODE
+    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/section-1-img.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -31,7 +40,7 @@ main{
 
     /*----------------------- SECTION 1--------------------------------*/
 
-.section-1{
+body main .section-1{
     .contenedor-section-1{
         @extend %sections;
         padding: 40px 0;
@@ -43,23 +52,43 @@ main{
             color: nth($colores, 1);
             margin: 60px 0px 40px;        
         }
+        .titulo1-dm{  //---> DARK MODE
+            @include titulos (center, 30px, 700);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+            letter-spacing: 2px;
+            color: #a581b1;
+            margin: 60px 0px 40px;        
+        
+        }
 
         .bloque-1{
             display: flex;
 
             div{
-                p{
+                .p-block1-light{
                     text-align: justify-all;
                     font-size: nth($font-size, 4);
                     font-weight: 600;
                     padding: 6px;                
                 }
+                .p-block1-dm{ //---> DARK MODE
+                    color: #fff;
+                    text-align: justify-all;
+                    font-size: nth($font-size, 4);
+                    font-weight: 600;
+                    padding: 6px; 
+                }
             }
 
             div{
-                img{
+                .img-block1-light{
                     width: 250px;
                     height: 250px;                    
+                }
+                .img-block1-dm{ //---> DARK MODE
+                    width: 250px;
+                    height: 250px;                    
+                    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
                 }
             }
         }
@@ -129,9 +158,111 @@ main{
     }
 }
 
+/*----------------------- DARK SECTION 1 ------------------------*/
+.dark main .section-1{
+    .contenedor-section-1{
+        @extend %sections;
+        padding: 40px 0;
+    
+        .titulo1{
+            @include titulos (center, 30px, 700);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+            letter-spacing: 2px;
+            color: #a581b1;
+            margin: 60px 0px 40px;        
+        }
+
+        .bloque-1{
+            display: flex;
+
+            div{
+                .p-block1-light{
+                    color: #c9c6c6;
+                    text-align: justify-all;
+                    font-size: nth($font-size, 4);
+                    font-weight: 600;
+                    padding: 6px;                
+                }
+            }
+
+            div{
+                .img-block1-light{
+                    width: 250px;
+                    height: 250px;   
+                    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(18deg) brightness(110%) contrast(101%);
+                }
+            }
+        }
+
+        .bloque-2{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        
+            .psicooncologia, .tcc{
+                @extend %psicooncologia-tcc;
+            
+                a{
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: nth($font-size, 2);
+                    font-weight: bold;
+                    color: white;
+                    padding-bottom: 20px;
+                    &:hover{
+                        text-decoration: underline;
+                        color: #E2E2E2;
+                    }                    
+                }
+                img{
+                    @include img (300px, 300px, cover);
+                    margin: auto;
+                    margin-bottom: 20px;
+                    border: 3px solid nth($colores, 1);
+                    border-radius: 8px;                
+                }
+
+                p{
+                    text-align: center;
+                    color: white;
+                    font-size: nth($font-size, 5);
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 15px;                
+                }
+            }
+        }
+
+        .comienza-ahora{
+            font-size: nth($font-size, 4);
+            text-align: center;
+            margin-top: 70px;
+            transition: all 0.4s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        
+            a{
+                text-decoration: none;
+                background-color: nth($colores, 2);
+                padding: 15px 20px;
+                border-radius: 8px;
+                color: white;
+                box-shadow: 5px 5px 10px black;
+                transition: all 0.4s ease;      
+                &:hover{
+                    background-color: #a581b1;
+                }
+            }
+        }
+    }
+}
+
+
     /*----------------------- SECTION 2--------------------------------*/
 
-.section-2{
+body main .section-2{
     .contenedor-section-2{
         @extend %sections;
         padding: 40px 0;
@@ -143,15 +274,40 @@ main{
             color: nth($colores, 1);
             margin-bottom: 40px;        
         }
-
+        .titulo2-dm{ //---> DARK MODE
+            @include titulos (center, 30px, 600);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+            letter-spacing: 2px;
+            color: #a581b1;
+            margin-bottom: 40px;        
+        }
         .ilustracion-textos{
             text-align: center;
 
-            h3{
+            .h3-bl2{
                 font-weight: 700;
                 font-size: nth($font-size, 3);
                 margin-bottom: 15px;
-            
+
+                span{
+                    background-color: nth($colores, 4);
+                    color: white;
+                    border-radius: 50%;
+                    display: inline-block;
+                    text-align: center;
+                    width: 30px;
+                    height: 30px;
+                    padding: 2px;
+                    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+                    margin-right: 5px;                
+                }
+            }
+            .h3-bl2-dm{ //---> DARK MODE
+                font-weight: 700;
+                font-size: nth($font-size, 3);
+                margin-bottom: 15px;
+                color: #fff;
+
                 span{
                     background-color: nth($colores, 4);
                     color: white;
@@ -166,29 +322,90 @@ main{
                 }
             }
 
-            p{
+            .p-bl2{
                 font-size: nth($font-size, 4);
                 padding: 0px 0px 30px 15px;
                 text-align: justify-all;            
             }
+            .p-bl2-dm{ //---> DARK MODE
+                font-size: nth($font-size, 4);
+                padding: 0px 0px 30px 15px;
+                text-align: justify-all;
+                color: #fff;           
+            }
+
         }
     }
 }
 
+/*---------------------------- DARK SECTION 2 --------------------------*/
+.dark main .section-2{
+    .contenedor-section-2{
+        @extend %sections;
+        padding: 40px 0;
+    
+        .titulo2{ //---> DARK MODE
+            @include titulos (center, 30px, 600);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+            letter-spacing: 2px;
+            color: #a581b1;
+            margin-bottom: 40px;        
+        }
+        .ilustracion-textos{
+            text-align: center;
+
+            .h3-bl2{ //---> DARK MODE
+                font-weight: 700;
+                font-size: nth($font-size, 3);
+                margin-bottom: 15px;
+                color: #c9c6c6;
+
+                span{
+                    background-color: nth($colores, 4);
+                    color: #c9c6c6;
+                    border-radius: 50%;
+                    display: inline-block;
+                    text-align: center;
+                    width: 30px;
+                    height: 30px;
+                    padding: 2px;
+                    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+                    margin-right: 5px;                
+                }
+            }
+
+            .p-bl2{ //---> DARK MODE
+                font-size: nth($font-size, 4);
+                padding: 0px 0px 30px 15px;
+                text-align: justify-all;
+                color: #c9c6c6;
+            }
+
+        }
+    }
+}
+
+
     /*----------------------- GALERIA--------------------------------*/
 
-.galeria{
+body main .galeria{
     padding: 20px 0;
     @extend %sections;
 
-    h2{
+    .h2-gallery{
         @include titulos (center, 30px, 600);
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
         letter-spacing: 2px;
         color: nth($colores, 1);
         margin-bottom: 30px;    
     }
-
+    .h2-gallery-dm{ //---> DARK MODE
+        @include titulos (center, 30px, 600);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+        letter-spacing: 2px;
+        color: #a581b1;
+        margin-bottom: 30px;    
+    }
     .grid-galeria{
         @include grid (grid, repeat(3,1fr), 15px);
         grid-template-rows: repeat(2,1fr);
@@ -224,9 +441,120 @@ main{
     }
 }
 
+/*-------------------------- DARK GALERIA --------------------*/
+.dark main .galeria{
+    padding: 20px 0;
+    @extend %sections;
+
+    .h2-gallery{
+        @include titulos (center, 30px, 600);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+        letter-spacing: 2px;
+        color: #a581b1;
+        margin-bottom: 30px;    
+    }
+    .h2-gallery-dm{ //---> DARK MODE
+        @include titulos (center, 30px, 600);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+        letter-spacing: 2px;
+        color: #a581b1;
+        margin-bottom: 30px;    
+    }
+    .grid-galeria{
+        @include grid (grid, repeat(3,1fr), 15px);
+        grid-template-rows: repeat(2,1fr);
+    
+        .grid-item{
+            .flex-item{
+                @include flex (flex, column, center);
+                width: 300px;
+                height: 320px;
+                border-radius: 15px;
+                background-color: nth($colores, 4);
+            
+                h3{
+                    color: white;
+                    text-align: center;
+                    text-decoration: underline;
+                    padding: 10px;                
+                }
+
+                img{
+                    @include img (250px, 150px, cover);
+                    border-radius: 10px;                
+                }
+
+                p{
+                    font-size: nth($font-size, 5);
+                    text-align: center;
+                    color: white;
+                    padding: 10px;                
+                }
+            }
+        }
+    }
+}
+
+
     /*------------------------------------SECTION 3---------------------------*/
 
-.section-3{
+body main .section-3{
+    .bg-section-3{
+        margin-top: 50px;
+        width: 100%;
+        height: 400px;
+        @include flex (flex, column, center);
+        background-color: hsla(285, 24%, 60%, 0.39);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+    
+        h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: whitesmoke;
+            font-weight: 100px;
+            text-shadow: 0.1em 0.1em 0.2em black;
+            padding: 20px;        
+        }
+
+        .contenedor-flex{
+            padding: 20px 0;
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-evenly;
+        
+            .flex-div{
+                @include flex (flex, column, center);
+                justify-content: center;
+                width: 250px;
+                height: 265px;
+                background-color: hsla(0, 2%, 84%, 0.493);
+                box-shadow: 5px 5px 5px rgb(116, 115, 115);
+                border-radius: 15px;
+            
+                img{
+                    @include img (60px, 60px, cover);
+                }
+
+                h3{
+                    @include titulos (center, 23px, 700);
+                    padding: 15px;
+                    color: nth($colores, 1);
+                }
+
+                p{
+                    text-align: center;
+                    font-size: nth($font-size, 4);
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------DARK SECTION 3 -----------------------*/
+.dark main .section-3{
     .bg-section-3{
         margin-top: 50px;
         width: 100%;
@@ -280,9 +608,10 @@ main{
     }
 }
 
+
     /*----------------------- SECTION 4--------------------------------*/
 
-.section-4{
+body main .section-4{
     .contenedor-section-4{
         @extend %sections;
         padding: 40px 0;
@@ -292,7 +621,7 @@ main{
         .contenedor4-1{
             width: 40%;
 
-            h3{
+            .h3-bl4{
                 font-size: 40px;
                 text-align: justify-all;
                 font-weight: 600;
@@ -300,12 +629,26 @@ main{
                 padding-bottom: 15px;
                 text-shadow: 2px 2px 5px #614479;            
             }
-
-            p{
+            .h3-bl4-dm{ //---> DARK MODE
+                font-size: 40px;
+                text-align: justify-all;
+                font-weight: 600;
+                color: #a581b1;
+                padding-bottom: 15px;
+                text-shadow: 2px 2px 5px #614479;            
+            }
+            .p-bl4{
                 font-size: nth($font-size, 3);
                 text-align: justify-all;
                 padding-bottom: 40px;            
             }
+            .p-bl4-dm{
+                font-size: nth($font-size, 3);
+                text-align: justify-all;
+                padding-bottom: 40px; 
+                color: #fff;           
+            }
+
 
             a{
                 text-decoration: none;
@@ -358,9 +701,104 @@ main{
     }
 }
 
+/*---------------------------- DARK SECTION 4 ---------------------*/
+.dark main .section-4{
+    .contenedor-section-4{
+        @extend %sections;
+        padding: 40px 0;
+        display: flex;
+        align-items: center;
+    
+        .contenedor4-1{
+            width: 40%;
+
+            .h3-bl4{ //---> DARK MODE
+                font-size: 40px;
+                text-align: justify-all;
+                font-weight: 600;
+                color: #a581b1;
+                padding-bottom: 15px;
+                text-shadow: 2px 2px 5px #614479;            
+            }
+            .p-bl4{
+                font-size: nth($font-size, 3);
+                text-align: justify-all;
+                padding-bottom: 40px; 
+                color: #c9c6c6;
+            }
+
+
+            a{
+                text-decoration: none;
+                background-color: nth($colores, 2);
+                padding: 15px 20px;
+                border-radius: 8px;
+                color: white;
+                box-shadow: 2px 2px 5px black;
+                transition: all 0.4s ease;
+                &:hover{
+                    background-color: nth($colores, 5);
+                }            
+            }
+        }
+
+        .contenedor4-2{
+            width: 40%;
+            background-color: nth($colores, 4);
+            padding: 15px 0px 15px;
+            border-radius: 8px;
+            @include flex (flex, column, center);
+        
+            .contenedor4-2-1{
+                margin-bottom: 30px;
+            }
+
+            .contenedor4-2-1, .contenedor4-2-2{
+                img{
+                    width: 250px;
+                }
+
+                h3{
+                    font-size: 28px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: white;
+                    font-weight: bold;                
+                }
+
+                h4{
+                    font-size: 24px;
+                    color: white;                
+                }
+
+                p{
+                    font-weight: bold;
+                    font-size: nth($font-size, 4);
+                }
+            }
+        }
+    }
+}
+
+
     /*----------------------- BOTON LOGOUT--------------------------------*/
 
-.logout_{
+body main .logout_{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    img{
+        width: 70px;
+        filter: opacity(0.5);
+        &:hover{
+            filter: opacity(1);
+            cursor: pointer;
+        }    
+    }
+}
+
+/*-------------------DARK MODE LOGOUT ------------------*/
+.dark main .logout_{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -379,15 +817,7 @@ main{
 
     /*---------------------CONTENIDO CONOCEME--------------------*/
 
-.conoceme{
-    background: hsl(313, 35%, 69%);
-    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
-    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/conoceme.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-
+body main .conoceme{
     .contenedor-conoceme{
         @extend %sections;
         padding: 80px 0;
@@ -426,9 +856,51 @@ main{
     }
 }
 
+/*------------------DARK MODE CONOCEME --------*/
+
+.dark main .conoceme{
+    .contenedor-conoceme{
+        @extend %sections;
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;    
+        .contenido-conoceme{
+            width: 60%;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);        
+
+            p{
+                color: #c9c6c6;
+                font-family: 'Playfair Display', serif;
+                font-size: nth($font-size, 4);
+                width: 80%;
+                text-align: center;
+                margin: 0 auto;
+                padding: 5px;
+            }
+        }
+
+        img{
+            @include img (300px, 300px, cover);
+            border: 6px solid nth($colores, 4);
+            border-radius: 50%;
+            filter: grayscale(50%);
+            transition: all 1s ease;
+            &:hover{
+                transform: scale(1.1);
+                filter: grayscale(0%);            
+            }        
+        }
+    }
+}
+
             /*----PSICOONCOLOGIA------*/
 
-.psicooncologia-main{
+body .psicooncologia-main{
     background: hsl(313, 35%, 69%);
     background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
     background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/psicooncologia.jpg);
@@ -440,7 +912,7 @@ main{
 
     /*---------------------------CONTENIDO PSICOONCOLOGIA-----------------*/
 
-.servicio-psicooncologia{
+body .psicooncologia-main .servicio-psicooncologia{
     @extend %sections;
     padding: 40px 0;
 
@@ -554,9 +1026,144 @@ main{
     }
 }
 
+/*----------------------- DARK PSICOONCOLOGIA
+            /*----PSICOONCOLOGIA------*/
+
+.dark .psicooncologia-main{
+    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/psicooncologia.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+    /*---------------------------CONTENIDO PSICOONCOLOGIA-----------------*/
+
+.dark .psicooncologia-main .servicio-psicooncologia{
+    @extend %sections;
+    padding: 40px 0;
+
+            /*---------------------------PARTE 1------------------------------*/
+    .parte1-onco{
+        padding: 20px 0px;
+        @include flex (flex, row, center);
+
+        div{
+            p{
+                color: #c9c6c6;
+                font-size: nth($font-size, 4);
+                font-weight: 500;
+                line-height: 1.5;
+                padding: 5px;            
+            }
+        }
+
+        img{
+            width: 50%;
+            height: 50%;
+            border: 5px solid #a581b1;
+            ;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+            margin-right: 20px;        
+        }
+    }
+
+            /*---------------------------PARTE 2------------------------------*/
+    .parte2-onco{
+        h2{
+            @include titulos (center, 30px, 700);
+            color: #a581b1;
+            padding-bottom: 15px;
+            letter-spacing: 2px;        
+        }
+
+        p{
+            color: #c9c6c6;
+            @include titulos (justify-all, 20px, 500);
+            line-height: 1.5;
+            padding-bottom: 15px;        
+        }
+    }
+
+            /*---------------------------PARTE 3------------------------------*/
+    .parte3-onco{
+
+        h2{
+            @include titulos (center, 30px, 700);
+            color: #a581b1;
+            padding-bottom: 15px;
+            letter-spacing: 2px;        
+        }
+
+        p{
+            color: #c9c6c6;
+            @include titulos (justify-all, 20px, 500);
+            line-height: 1.5;
+            padding-bottom: 15px;        
+        }
+    }
+
+            /*---------------------------PARTE 4------------------------------*/
+    .parte4-onco{
+        h2{
+            @include titulos (center, 30px, 700);
+            color: #a581b1;
+            padding-bottom: 15px;
+            letter-spacing: 2px;        
+        }
+
+        ul{
+
+            li{
+                list-style: none;
+
+                h3{
+                    font-size: nth($font-size, 2);
+                    color: #a581b1;
+                    padding: 15px;                
+                }
+
+                .subparte4{
+                    display: flex;
+                    align-items: center;
+                    width: 80%;
+                
+                    p{
+                        color: #c9c6c6;
+                        @include titulos (justify-all, 20px, 500);
+                        line-height: 1.5;
+                        padding-bottom: 15px;                    
+                    }
+
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        animation: img-psicoonco 4s linear infinite;
+                        @keyframes img-psicoonco {
+                            0%{
+                                transform: translateX(10px);
+                            }
+                            50%{
+                                transform: translateX(0px);
+                            }
+                            100%{
+                                transform: translateX(10px);
+                            }
+                        }                    
+                    }
+                }
+            }
+        }
+    }
+}
+
+
                                 /*!TCC INDIVIDUAL*/
 
-.tcc-main{
+body .tcc-main{
     background: hsl(313, 35%, 69%);
     background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
     background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/psicoterapiaTCC.jpg);
@@ -566,9 +1173,7 @@ main{
     background-attachment: fixed;
 }
 
-    /*--------------------------------CONTENIDO TCC--------------------------*/
-
-.servicio-tcc{
+body .tcc-main .servicio-tcc{
     @extend %sections;
     padding: 40px 0;
 
@@ -821,9 +1426,283 @@ main{
     }
 }
 
+//*----------------------------DARK TCC ----------------------*/
+
+.dark .tcc-main{
+    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/psicoterapiaTCC.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.dark .tcc-main .servicio-tcc{
+    @extend %sections;
+    padding: 40px 0;
+
+            /*---------------------------PARTE 1------------------------------*/
+    .parte1-tcc{
+        padding: 20px 0px;
+        @include flex (flex, row, center);
+    
+        div{
+            p{
+                color: #c9c6c6;
+                font-size: nth($font-size, 4);
+                font-weight: 500;
+                line-height: 1.5;
+                padding: 10px;            
+            }
+        }
+
+        img{
+            width: 40%;
+            height: 50%;
+            border: 5px solid nth($colores, 2);
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.5);
+            margin-right: 20px;        
+        }
+    }
+
+            /*---------------------------PARTE 2------------------------------*/
+
+    .parte2-tcc{
+        h2{
+            @include titulos (center, 30px, 700);
+            color: nth($colores, 1);
+            padding-bottom: 15px;
+            letter-spacing: 2px;        
+        }
+
+        .txt-img-tcc2{
+            display: flex;
+            align-items: center;
+
+            .txt-tcc2{
+                p{
+                    color: #c9c6c6;
+                    @include titulos (justify-all, 20px, 500);
+                    line-height: 1.5;
+                    padding-bottom: 15px;                
+                }
+            }
+
+            .img-tcc2{
+                img{
+                    width: 350px;
+                    height: 250px;
+                    animation: img-tcc1 4s linear infinite;
+                    @keyframes img-tcc1 {
+                        0%{
+                            transform: translateY(10px);
+                        }
+                        50%{
+                            transform: translateY(0px);
+                        }
+                        100%{
+                            transform: translateY(10px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+            /*---------------------------PARTE 3------------------------------*/
+    .parte3-tcc{
+        h2{
+            @include titulos (center, 30px, 700);
+            color: nth($colores, 1);
+            padding: 15px;
+            letter-spacing: 2px;        
+        }
+
+        .txt-img-tcc3{
+            display: flex;
+            align-items: center;
+        
+            .txt-tcc3{
+                p{
+                    color: #c9c6c6;
+                    @include titulos (justify-all, 20px, 500);
+                    line-height: 1.5;
+                    padding-bottom: 15px;                
+                }
+            }
+
+            .img-tcc3{
+                img{
+                    width: 350px;
+                    height: 250px;
+                    animation: img-tcc2 4s linear infinite;
+                    @keyframes img-tcc2 {
+                        0%{
+                            transform: translateY(10px);
+                        }
+                        50%{
+                            transform: translateY(0px);
+                        }
+                        100%{
+                            transform: translateY(10px);
+                        }
+                    }                                    
+                }
+            }
+        }
+    }
+
+            /*---------------------------PARTE 4------------------------------*/
+    .parte4-tcc{
+        h2{
+            @include titulos (center, 30px, 700);
+            color: nth($colores, 1);
+            padding: 15px;
+            letter-spacing: 2px;        
+        }
+
+        .txt-img-tcc4{
+            display: flex;
+            align-items: center;
+
+            .txt-tcc4{
+                p{
+                    color: #c9c6c6;
+                    @include titulos (justify-all, 20px, 500);
+                    font-weight: 500;
+                    line-height: 1.5;
+                    padding-bottom: 15px;                
+                }
+            }
+
+            .img-tcc4{
+                img{
+                    width: 350px;
+                    height: 250px;
+                    animation: img-tcc3 4s linear infinite;
+                    @keyframes img-tcc3 {
+                        0%{
+                            transform: translateY(10px);
+                        }
+                        50%{
+                            transform: translateY(0px);
+                        }
+                        100%{
+                            transform: translateY(10px);
+                        }
+                    }                    
+                }
+            }
+        }
+
+        ul{
+            li{
+                text-align: justify all;
+                font-size: nth($font-size, 4);
+                font-weight: 500;
+                line-height: 1.5;
+                padding-bottom: 15px;            
+            }
+        }
+    }
+
+            /*---------------------------PARTE 5------------------------------*/
+    .parte5-tcc{
+        .p5-1{
+            margin-top: 15px;
+            padding: 20px;
+            border: 4px solid white;
+            padding: 10px 10px;
+            border-radius: 15px;
+            backdrop-filter: blur(30px);
+        
+            h3{
+                @include titulos (center, 25px, 700);
+                color: nth($colores, 1);
+                padding: 15px;
+                letter-spacing: 2px;            
+            }
+
+            p{
+                @include titulos (justify-all, 20px, 500);
+                line-height: 1.5;
+                padding-bottom: 15px;
+                font-style: oblique;
+                color: nth($colores, 1);
+                font-weight: 500;            
+            }
+        }
+
+        .p5-2{
+            margin-top: 15px;
+
+            p{
+                color: #c9c6c6;
+                @include titulos (justify-all, 20px, 500);
+                line-height: 1.5;
+                padding-bottom: 15px;            
+            }
+
+            ul{
+                padding-left: 5px;
+
+                li{
+                    span{
+                        background-color: nth($colores, 4);
+                        color: #c9c6c6;
+                        border-radius: 50%;
+                        display: inline-block;
+                        text-align: center;
+                        width: 30px;
+                        height: 30px;
+                        padding: 2px;
+                        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+                        margin-right: 5px;                    
+                    }
+                }
+            }
+        }
+
+        .p5-3{
+            margin-top: 15px;
+
+            p{
+                @include titulos (justify-all, 20px, 500);
+                line-height: 1.5;
+                padding-bottom: 15px;            
+            }
+
+            ul{
+                padding-left: 5px;
+
+                li{
+                    span{
+                        background-color: nth($colores, 4);
+                        color: #c9c6c6;
+                        border-radius: 50%;
+                        display: inline-block;
+                        text-align: center;
+                        width: 30px;
+                        height: 30px;
+                        padding: 2px;
+                        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+                        margin-right: 5px;                    
+                    }
+                }
+            }
+        }
+    }
+}
+
                                 /*!SOLICITAR TURNO*/
 
-.turnos{
+body main{
+    height: 100%;
+    width: 100%;
+    .turnos{
     background: hsl(313, 35%, 69%);
     background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
     background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
@@ -832,180 +1711,181 @@ main{
     background-position: center;
     background-attachment: fixed;
 
-    #saludar{
-        padding-top: 40px;
+        #saludar{
+            padding-top: 40px;
 
-        h2{
-            text-align: center;
-            font-size: 35px;
-            font-weight: 600;
-            color: hsla(288, 29%, 37%, 0.938);
-            font-style: italic;
-            text-shadow: 0.1em 0.1em 0.2em rgba(235, 232, 232, 0.664);
+            h2{
+                text-align: center;
+                font-size: 35px;
+                font-weight: 600;
+                color: hsla(288, 29%, 37%, 0.938);
+                font-style: italic;
+                text-shadow: 0.1em 0.1em 0.2em rgba(235, 232, 232, 0.664);
+            }
         }
-    }
 
-    #form_js{
+        #form_js{
 
-        .contenedor-turnos{
-            @extend %sections;
-            padding: 40px 0;
+            .contenedor-turnos{
+                @extend %sections;
+                padding: 40px 0;
 
-            .solicitar-turno{
-                margin: auto;
-                width: 400px;
-                background-color: hsla(288, 29%, 37%, 0.418);
-                padding: 50px;
-                border: 3px solid rgba(255, 255, 255, 0.5);
-                border-radius: 10px;
-                color: white;
-            
-                h2{
-                    @include titulos (center, 35px, 700);
-                    font-family: 'Source Sans Pro', serif;
-                    margin-bottom: 20px;
-                    text-shadow: 0.1em 0.1em 0.2em black;
-                }
-
-                .formularios{
-                    width: 100%;
-                    background-color: nth($colores, 7);
+                .solicitar-turno{
+                    margin: auto;
+                    width: 400px;
+                    background-color: hsla(288, 29%, 37%, 0.418);
+                    padding: 50px;
+                    border: 3px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 10px;
                     color: white;
-                    padding: 10px;
-                    border-radius: 5px;
-                    margin-bottom: 15px;
-                    border: 1px solid white;
-                    font-size: nth($font-size, 5);
-                    &:hover{
-                        box-shadow: 5px 5px 4px nth($colores, 8);
-                        cursor: pointer;
+                
+                    h2{
+                        @include titulos (center, 35px, 700);
+                        font-family: 'Source Sans Pro', serif;
+                        margin-bottom: 20px;
+                        text-shadow: 0.1em 0.1em 0.2em black;
                     }
-                    &::placeholder{
-                        color: rgb(209, 205, 205);
-                    }
-                }
 
-                h3{
-                    font-size: nth($font-size, 2);
-                    text-align: center;
-                    margin: 30px 0px 10px;
-                    text-shadow: 0.1em 0.1em 0.2em black;            
-                }
-
-                h4{
-                    font-size: nth($font-size, 5);
-                    text-shadow: 0.1em 0.1em 0.2em black;            
-                    font-style: italic;
-                }
-
-                .date{
-                    width: 100%;
-                    background-color: nth($colores, 7);
-                    color: white;
-                    font-size: nth($font-size, 5);
-                    padding: 10px;
-                    border-radius: 5px;
-                    border: 1px solid white;
-                    cursor: pointer;
-                    &:hover{
-                        box-shadow: 5px 5px 4px nth($colores, 8);
-                    }
-                }
-
-                select{
-                    width: 100%;
-                    background-color: nth($colores, 7);
-                    color: white;
-                    font-size: nth($font-size, 5);
-                    padding: 10px;
-                    border-radius: 5px;
-                    border: 1px solid white;
-                    &:hover{
-                        box-shadow: 5px 5px 4px nth($colores, 8);
-                    }
-                }
-
-                .terminos-condiciones{
-                    font-size: nth($font-size, 3);
-                    margin: 45px 0px 10px;
-                    text-shadow: 0.1em 0.1em 0.2em black            
-                }
-
-                label{
-                    font-size: nth($font-size, 5);
-                }
-
-                .agrega-comentarios{
-                    font-size: nth($font-size, 3);
-                    margin: 20px 0px 10px;
-                    text-shadow: 0.1em 0.1em 0.2em black;            
-                }
-
-                textarea{
-                    width: 100%;
-                    background-color: nth($colores, 7);
-                    color: white;
-                    padding: 10px;
-                    border-radius: 5px;
-                    margin-bottom: 15px;
-                    border: 1px solid white;
-                    font-size: nth($font-size, 7);
-                    &:hover{
-                        box-shadow: 5px 5px 4px nth($colores, 8);
-                    }
-                    &::placeholder{
-                        color: rgb(209, 205, 205);
-                    }            
-                }
-
-                .boton{
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    background-color: nth($colores, 7);
-                    color: white;
-                    padding: 10px;
-                    border-radius: 5px;
-                    margin-bottom: 15px;
-                    border: 1px solid white;
-                    font-size: nth($font-size, 5);
-                    transition: all 0.4s ease;
-                    cursor: pointer;
-                    &:hover{
-                        background-color: nth($colores, 9);
-                        transform: scale(1.1);                
-                    }            
-                }
-
-                .boton-coll{
-                    width: 100%;
-                    margin-top: 25px;            
-                    p{
-                        .boton-p{
-                            display: block;
-                            width: 100%;
-                            background-color: nth($colores, 7);
-                            padding: 10px 10px;
-                            border: 1px solid white;
-                            border-radius: 5px;
-                            color: #fff;
-                            @include titulos (center, 18px, 500);
-                            text-decoration: none;
-                            &:hover{
-                                background-color: hsla(288, 32%, 59%, 0.863);
-                            }                    
+                    .formularios{
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        border: 1px solid white;
+                        font-size: nth($font-size, 5);
+                        &:hover{
+                            box-shadow: 5px 5px 4px nth($colores, 8);
+                            cursor: pointer;
+                        }
+                        &::placeholder{
+                            color: rgb(209, 205, 205);
                         }
                     }
 
-                    .collapse{
-                        .card{
-                            background-color: nth($colores, 8);
+                    h3{
+                        font-size: nth($font-size, 2);
+                        text-align: center;
+                        margin: 30px 0px 10px;
+                        text-shadow: 0.1em 0.1em 0.2em black;            
+                    }
 
-                            p{
-                                span{
-                                    font-weight: 700;
-                                    font-size: nth($font-size, 4);
+                    h4{
+                        font-size: nth($font-size, 5);
+                        text-shadow: 0.1em 0.1em 0.2em black;            
+                        font-style: italic;
+                    }
+
+                    .date{
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        font-size: nth($font-size, 5);
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid white;
+                        cursor: pointer;
+                        &:hover{
+                            box-shadow: 5px 5px 4px nth($colores, 8);
+                        }
+                    }
+
+                    select{
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        font-size: nth($font-size, 5);
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid white;
+                        &:hover{
+                            box-shadow: 5px 5px 4px nth($colores, 8);
+                        }
+                    }
+
+                    .terminos-condiciones{
+                        font-size: nth($font-size, 3);
+                        margin: 45px 0px 10px;
+                        text-shadow: 0.1em 0.1em 0.2em black            
+                    }
+
+                    label{
+                        font-size: nth($font-size, 5);
+                    }
+
+                    .agrega-comentarios{
+                        font-size: nth($font-size, 3);
+                        margin: 20px 0px 10px;
+                        text-shadow: 0.1em 0.1em 0.2em black;            
+                    }
+
+                    textarea{
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        border: 1px solid white;
+                        font-size: nth($font-size, 7);
+                        &:hover{
+                            box-shadow: 5px 5px 4px nth($colores, 8);
+                        }
+                        &::placeholder{
+                            color: rgb(209, 205, 205);
+                        }            
+                    }
+
+                    .boton{
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        border: 1px solid white;
+                        font-size: nth($font-size, 5);
+                        transition: all 0.4s ease;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: nth($colores, 9);
+                            transform: scale(1.1);                
+                        }            
+                    }
+
+                    .boton-coll{
+                        width: 100%;
+                        margin-top: 25px;            
+                        p{
+                            .boton-p{
+                                display: block;
+                                width: 100%;
+                                background-color: nth($colores, 7);
+                                padding: 10px 10px;
+                                border: 1px solid white;
+                                border-radius: 5px;
+                                color: #fff;
+                                @include titulos (center, 18px, 500);
+                                text-decoration: none;
+                                &:hover{
+                                    background-color: hsla(288, 32%, 59%, 0.863);
+                                }                    
+                            }
+                        }
+
+                        .collapse{
+                            .card{
+                                background-color: nth($colores, 8);
+
+                                p{
+                                    span{
+                                        font-weight: 700;
+                                        font-size: nth($font-size, 4);
+                                    }
                                 }
                             }
                         }
@@ -1015,8 +1895,7 @@ main{
         }
     }
 }
-
-main .modal__section{
+body main .modal__section{
     opacity: 0;
     visibility: hidden;
     position: fixed;
@@ -1030,40 +1909,44 @@ main .modal__section{
     justify-content: center;
     align-items: center;
 }
-main .modal__section .m-o{
+body main .modal__section .m-o{
     width: 50%;
     height: 60%;
     display: flex;
     border-radius: 10px;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: hsla(290, 58%, 84%, 0.918);
+    background-color: hsla(288, 29%, 37%, 0.863);
     position: relative;
     transition: transform 1s;
     transform: translateY(0%);
     overflow: hidden;
 }
-main .modal__section .m-o-c{
+body main .modal__section .m-o-c{
     transform: translateY(-200%);
 }
-main .modal__section .m-o > h2{
+body main .modal__section .m-o > h2{
     text-align: center;
     font-size: 30px;
     font-weight: 600;
+    color: #fff;
 }
-main .modal__section .m-o span h3{
+body main .modal__section .m-o span h3{
     padding-left: 15px;
     font-size: 25px;
+    color: #fff;
 }
-main .modal__section .m-o h3{
+body main .modal__section .m-o h3{
     padding-left: 15px;
     font-size: 25px;
+    color: #fff;
 }
-main .modal__section .m-o > h4{
+body main .modal__section .m-o > h4{
     text-align: center;
     font-size: 20px;
+    color: #fff;
 }
-main .modal__section .m-o > #close{
+body main .modal__section .m-o > #close{
     position: absolute;
     top: 5px;
     right: 5px;
@@ -1077,9 +1960,273 @@ main .modal__section .m-o > #close{
     cursor: pointer;
     border-radius: 50%;
 }
+
+//*---------------------- DARK SOLICITAR TURNO------------------*/
+.dark main{
+    height: 100%;
+    width: 100%;
+    .turnos{
+    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/section-1-img.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+        #saludar{
+            padding-top: 40px;
+
+            h2{
+                text-align: center;
+                font-size: 35px;
+                font-weight: 600;
+                color: hsla(288, 29%, 37%, 0.938);
+                font-style: italic;
+                text-shadow: 0.1em 0.1em 0.2em rgba(235, 232, 232, 0.664);
+            }
+        }
+
+        #form_js{
+
+            .contenedor-turnos{
+                @extend %sections;
+                padding: 40px 0;
+
+                .solicitar-turno{
+                    margin: auto;
+                    width: 400px;
+                    background-color: hsla(288, 29%, 37%, 0.418);
+                    padding: 50px;
+                    border: 3px solid rgba(255, 255, 255, 0.5);
+                    border-radius: 10px;
+                    color: white;
+                
+                    h2{
+                        @include titulos (center, 35px, 700);
+                        font-family: 'Source Sans Pro', serif;
+                        margin-bottom: 20px;
+                        text-shadow: 0.1em 0.1em 0.2em black;
+                    }
+
+                    .formularios{
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        border: 1px solid white;
+                        font-size: nth($font-size, 5);
+                        &:hover{
+                            box-shadow: 5px 5px 4px nth($colores, 8);
+                            cursor: pointer;
+                        }
+                        &::placeholder{
+                            color: rgb(209, 205, 205);
+                        }
+                    }
+
+                    h3{
+                        font-size: nth($font-size, 2);
+                        text-align: center;
+                        margin: 30px 0px 10px;
+                        text-shadow: 0.1em 0.1em 0.2em black;            
+                    }
+
+                    h4{
+                        font-size: nth($font-size, 5);
+                        text-shadow: 0.1em 0.1em 0.2em black;            
+                        font-style: italic;
+                    }
+
+                    .date{
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        font-size: nth($font-size, 5);
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid white;
+                        cursor: pointer;
+                        &:hover{
+                            box-shadow: 5px 5px 4px nth($colores, 8);
+                        }
+                    }
+
+                    select{
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        font-size: nth($font-size, 5);
+                        padding: 10px;
+                        border-radius: 5px;
+                        border: 1px solid white;
+                        &:hover{
+                            box-shadow: 5px 5px 4px nth($colores, 8);
+                        }
+                    }
+
+                    .terminos-condiciones{
+                        font-size: nth($font-size, 3);
+                        margin: 45px 0px 10px;
+                        text-shadow: 0.1em 0.1em 0.2em black            
+                    }
+
+                    label{
+                        font-size: nth($font-size, 5);
+                    }
+
+                    .agrega-comentarios{
+                        font-size: nth($font-size, 3);
+                        margin: 20px 0px 10px;
+                        text-shadow: 0.1em 0.1em 0.2em black;            
+                    }
+
+                    textarea{
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        border: 1px solid white;
+                        font-size: nth($font-size, 7);
+                        &:hover{
+                            box-shadow: 5px 5px 4px nth($colores, 8);
+                        }
+                        &::placeholder{
+                            color: rgb(209, 205, 205);
+                        }            
+                    }
+
+                    .boton{
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        width: 100%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        border: 1px solid white;
+                        font-size: nth($font-size, 5);
+                        transition: all 0.4s ease;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: nth($colores, 9);
+                            transform: scale(1.1);                
+                        }            
+                    }
+
+                    .boton-coll{
+                        width: 100%;
+                        margin-top: 25px;            
+                        p{
+                            .boton-p{
+                                display: block;
+                                width: 100%;
+                                background-color: nth($colores, 7);
+                                padding: 10px 10px;
+                                border: 1px solid white;
+                                border-radius: 5px;
+                                color: #fff;
+                                @include titulos (center, 18px, 500);
+                                text-decoration: none;
+                                &:hover{
+                                    background-color: hsla(288, 32%, 59%, 0.863);
+                                }                    
+                            }
+                        }
+
+                        .collapse{
+                            .card{
+                                background-color: nth($colores, 8);
+
+                                p{
+                                    span{
+                                        font-weight: 700;
+                                        font-size: nth($font-size, 4);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.dark main .modal__section{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark main .modal__section .m-o{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsla(288, 29%, 37%, 0.863);
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0%);
+    overflow: hidden;
+}
+.dark main .modal__section .m-o-c{
+    transform: translateY(-200%);
+}
+.dark main .modal__section .m-o > h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.dark main .modal__section .m-o span h3{
+    padding-left: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+.dark main .modal__section .m-o h3{
+    padding-left: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+.dark main .modal__section .m-o > h4{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+.dark main .modal__section .m-o > #close{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
                                 /*!CONTACTO*/
 
-.pagina-contacto{
+body main .pagina-contacto{
     background: hsl(313, 35%, 69%);
     background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
     background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
@@ -1188,33 +2335,126 @@ main .modal__section .m-o > #close{
                 }
             }
         }
+    }
+}
 
-        .iframe{
-            margin-top: 50px;
-            @include flex (flex, column, center);
-            
+//*-----------------DARK MODE CONTACTO ------------*//
+.dark main .pagina-contacto{
+    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/section-1-img.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    .contenedor-contacto{
+        @extend %sections;
+        padding: 40px 0;
+
+        .enviar-correo{
             h2{
+                @include titulos (center, 30px, bold);
                 color: nth($colores, 1);
-                font-weight: 800;
-                margin-bottom: 20px;            
+                margin-bottom: 10px;
+                text-shadow: 0.1em 0.1em 0.2em white;            
             }
 
-            iframe{
-                filter: brightness(50%);
-                border: 3px solid nth($colores, 1);
-                box-shadow: 0.1em 0.1em 0.2em rgb(51, 51, 51);
-                transition: all 2s ease;
-                &:hover{
-                    filter: brightness(100%);
-                }            
+            h3{
+                @include titulos (center, 20px, 400);
+                margin-bottom: 15px;
+                
+                span{
+                    color: white;
+                    background-color: nth($colores, 4);
+                    padding: 5px 5px;
+                    border-radius: 5px;
+                    
+                    a{
+                        text-decoration: none;
+                        color: white;                    
+                    }
+                }
+            }
+
+            #contact-js{
+                .container-campos{
+                    padding-top: 15px;
+                    @include flex (flex, column, center);
+                
+                    .campos{
+                        width: 50%;
+                        background-color: hsla(288, 29%, 37%, 0.863);
+                        color: white;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 15px;
+                        border: 1px solid white;
+                        font-size: nth($font-size, 5);
+                        transition: all 0.4s ease;
+                        &:hover{
+                            box-shadow: 4px 4px 4px rgb(182, 137, 190);
+                        }
+                        &::placeholder{
+                            color: rgb(209, 205, 205);
+                        }
+                    }
+                }
+
+                .container-mensaje{
+                    @include flex (flex, column, center);
+                
+                    h4{
+                        margin: 20px 0px 15px;
+                        font-size: nth($font-size, 2);
+                        font-weight: bold;
+                        text-decoration: underline;
+                        margin-bottom: 15px;
+                        color: nth($colores, 1);                
+                    }
+
+                    textarea{
+                        width: 50%;
+                        background-color: nth($colores, 7);
+                        color: white;
+                        border: 1px solid white;
+                        margin-bottom: 15px;
+                        transition: all 0.4s ease;
+                        &:hover{
+                            box-shadow: 4px 4px 4px rgb(182, 137, 190);
+                        }
+                        &::placeholder{
+                            color: rgb(209, 205, 205);
+                        }
+                    }
+
+                    input{
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        width: 20%;
+                        padding: 15px;
+                        border-radius: 5px;
+                        background-color: nth($colores, 1);
+                        color: white;
+                        font-size: nth($font-size, 7);
+                        box-shadow: 0.1em 0.1em 0.2em rgb(51, 51, 51);
+                        transition: all 0.4s ease;
+                        &:hover{
+                            background-color: nth($colores, 9);
+                            transform: scale(1.1);                    
+                        }
+                    }
+                }
             }
         }
     }
 }
 
+
                                 /*!BLOG*/
 
-.blog{
+body main .blog{
     @extend %sections;
     padding: 20px 0;
 
@@ -1266,9 +2506,63 @@ main .modal__section .m-o > #close{
     }
 }
 
+//*------------------ DARK MODE BLOG ------------*//
+.dark main .blog{
+    @extend %sections;
+    padding: 20px 0;
+
+    h2{
+        font-size: 35px;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        color: nth($colores, 1);
+        margin-bottom: 40px;    
+    }
+
+    .grid-blog{
+        @include grid (grid, repeat(auto-fill, minmax(300px, 1fr)), 20px);
+        grid-auto-rows: minmax(200px, auto);
+        padding: 20px;
+    
+        .grid-items{            
+            .flex-blog{
+                @include flex (flex, column, center);
+                justify-content: center;
+                box-shadow: 2px 2px 5px black;
+                position: relative;
+                border-radius: 10px;            
+                filter: grayscale(70%);
+                &:hover{
+                    filter: opacity(1);
+                    transform: scale(1.04);                
+                }
+            
+                img{
+                    @include img (100%, 200px, cover);
+                    position: relative;
+                    border-radius: 10px;                
+                }
+
+                a{
+                    @include titulos (center, 20px, 700);
+                    position: absolute;
+                    text-decoration: none;
+                    bottom: 0;
+                    width: 100%;
+                    line-height: 20px;
+                    color: #fff;
+                    background: rgba(0, 0, 0, 0.5);
+                    margin-bottom: 12px;                
+                }
+            }
+        }
+    }
+}
+
+
 /*-------------------------- LOGIN ----------------------------*/
 
-.main-login{
+body .main-login{
     background: hsl(313, 35%, 69%);
     background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
     background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
@@ -1277,14 +2571,14 @@ main .modal__section .m-o > #close{
     background-position: center;
     background-attachment: fixed;
 }
-.main-login section{
+body .main-login section{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
 }
-.main-login section .form-box{
+body .main-login section .form-box{
     position: relative;
     height: 450px;
     width: 400px;
@@ -1295,20 +2589,20 @@ main .modal__section .m-o > #close{
     justify-content: center;
     align-items: center;
 }
-.main-login section .form-box .form-values #login_js h2{
+body .main-login section .form-box .form-values #login_js h2{
     text-align: center;
     font-size: 35px;
     color: #fff;
     font-weight: 700;
     text-shadow: 0.1em 0.1em 0.2em black            
 }
-.main-login section .form-box .form-values #login_js .container__login{
+body .main-login section .form-box .form-values #login_js .container__login{
     position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid #fff;
 }
-.main-login section .form-box .form-values #login_js .container__login label{
+body .main-login section .form-box .form-values #login_js .container__login label{
     position: absolute;
     top: 50%;
     left: 5px;
@@ -1317,7 +2611,7 @@ main .modal__section .m-o > #close{
     font-size: 15px;
     transition: .5s;
 }
-.main-login section .form-box .form-values #login_js .container__login input{
+body .main-login section .form-box .form-values #login_js .container__login input{
     width: 100%;
     height: 50px;
     background-color: hsla(288, 29%, 37%, 0.582);
@@ -1328,20 +2622,20 @@ main .modal__section .m-o > #close{
     padding: 0 35px 0 5px;
     color: #fff;
 }
-.main-login section .form-box .form-values #login_js .container__login input:hover{
+body .main-login section .form-box .form-values #login_js .container__login input:hover{
     box-shadow: 5px 5px 4px rgba(190, 179, 192, 0.699);
 }
-.main-login section .form-box .form-values #login_js .container__login input::placeholder{
+body .main-login section .form-box .form-values #login_js .container__login input::placeholder{
     color: rgb(209, 205, 205);
 }
-.main-login section .form-box .form-values #login_js .container__login ion-icon{
+body .main-login section .form-box .form-values #login_js .container__login ion-icon{
     position: absolute;
     right: 8px;
     color:  #fff;
     font-size: 18px;
     top: 20px;
 }
-.main-login section .form-box .form-values #login_js .button{
+body .main-login section .form-box .form-values #login_js .button{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1357,16 +2651,16 @@ main .modal__section .m-o > #close{
     cursor: pointer;
     font-weight: 600;    
 }
-.main-login section .form-box .form-values #login_js .button:hover{
+body .main-login section .form-box .form-values #login_js .button:hover{
     background-color: nth($colores, 9);
     transform: scale(1.1);                
 }
-.main-login section .form-box .form-values #login_js .register{
+body .main-login section .form-box .form-values #login_js .register{
     padding-top: 30px;
     font-size: 18px;
 }
 
-.main-login section .form-box .form-values #login_js #error-login{
+body .main-login section .form-box .form-values #login_js #error-login{
     display: none;
     background-color: rgba(53, 52, 52, 0.733);
     margin-bottom: 10px;
@@ -1375,11 +2669,11 @@ main .modal__section .m-o > #close{
     width: 100%;
     border-radius: 5px;
 }
-.main-login section .form-box .form-values #login_js #error-login p{
+body .main-login section .form-box .form-values #login_js #error-login p{
     padding-top: 5px;
     color: #fff;
 }
-.main-login section .form-box .form-values #login_js #error-login p span{
+body .main-login section .form-box .form-values #login_js #error-login p span{
     background-color: crimson;
     color: white;
     border-radius: 50%;
@@ -1392,9 +2686,135 @@ main .modal__section .m-o > #close{
     margin-right: 5px;       
 }
 
+//*------------------------DARK MODE LOGIN ------*//
+.dark .main-login{
+    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/section-1-img.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.dark .main-login section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.dark .main-login section .form-box{
+    position: relative;
+    height: 450px;
+    width: 400px;
+    background-color: hsla(288, 29%, 37%, 0.418);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark .main-login section .form-box .form-values #login_js h2{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.2em black            
+}
+.dark .main-login section .form-box .form-values #login_js .container__login{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.dark .main-login section .form-box .form-values #login_js .container__login label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform:  translateY(-50%);
+    color: #fff;
+    font-size: 15px;
+    transition: .5s;
+}
+.dark .main-login section .form-box .form-values #login_js .container__login input{
+    width: 100%;
+    height: 50px;
+    background-color: hsla(288, 29%, 37%, 0.582);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.dark .main-login section .form-box .form-values #login_js .container__login input:hover{
+    box-shadow: 5px 5px 4px rgba(190, 179, 192, 0.699);
+}
+.dark .main-login section .form-box .form-values #login_js .container__login input::placeholder{
+    color: rgb(209, 205, 205);
+}
+.dark .main-login section .form-box .form-values #login_js .container__login ion-icon{
+    position: absolute;
+    right: 8px;
+    color:  #fff;
+    font-size: 18px;
+    top: 20px;
+}
+.dark .main-login section .form-box .form-values #login_js .button{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: nth($colores, 7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: nth($font-size, 5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-weight: 600;    
+}
+.dark .main-login section .form-box .form-values #login_js .button:hover{
+    background-color: nth($colores, 9);
+    transform: scale(1.1);                
+}
+.dark .main-login section .form-box .form-values #login_js .register{
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.dark .main-login section .form-box .form-values #login_js #error-login{
+    display: none;
+    background-color: rgba(53, 52, 52, 0.733);
+    margin-bottom: 10px;
+    padding: 3px 3px;
+    height: 35%;
+    width: 100%;
+    border-radius: 5px;
+}
+.dark .main-login section .form-box .form-values #login_js #error-login p{
+    padding-top: 5px;
+    color: #fff;
+}
+.dark .main-login section .form-box .form-values #login_js #error-login p span{
+    background-color: crimson;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;       
+}
+
+
 /*------------------------- REGISTRO ----------------------------------*/
 
-.main-register{
+body .main-register{
     background: hsl(313, 35%, 69%);
     background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
     background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
@@ -1403,14 +2823,14 @@ main .modal__section .m-o > #close{
     background-position: center;
     background-attachment: fixed;
 }
-.main-register section{
+body .main-register section{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
 }
-.main-register section .register-box{
+body .main-register section .register-box{
     position: relative;
     height: 650px;
     width: 400px;
@@ -1421,20 +2841,20 @@ main .modal__section .m-o > #close{
     justify-content: center;
     align-items: center;
 }
-.main-register section .register-box .register-values #register_js h2{
+body .main-register section .register-box .register-values #register_js h2{
     text-align: center;
     font-size: 35px;
     color: #fff;
     font-weight: 700;
     text-shadow: 0.1em 0.1em 0.2em black            
 }
-.main-register section .register-box .register-values #register_js .container__register{
+body .main-register section .register-box .register-values #register_js .container__register{
     position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid #fff;
 }
-.main-register section .register-box .register-values #register_js .container__register label{
+body .main-register section .register-box .register-values #register_js .container__register label{
     position: absolute;
     top: 50%;
     left: 5px;
@@ -1443,7 +2863,7 @@ main .modal__section .m-o > #close{
     font-size: 15px;
     transition: .5s;
 }
-.main-register section .register-box .register-values #register_js .container__register input{
+body .main-register section .register-box .register-values #register_js .container__register input{
     width: 100%;
     height: 50px;
     background-color: hsla(288, 29%, 37%, 0.582);
@@ -1454,20 +2874,20 @@ main .modal__section .m-o > #close{
     padding: 0 35px 0 5px;
     color: #fff;
 }
-.main-register section .register-box .register-values #register_js .container__register input:hover{
+body .main-register section .register-box .register-values #register_js .container__register input:hover{
     box-shadow: 5px 5px 4px rgba(190, 179, 192, 0.699);
 }
-.main-register section .register-box .register-values #register_js .container__register input::placeholder{
+body .main-register section .register-box .register-values #register_js .container__register input::placeholder{
     color: rgb(209, 205, 205);
 }
-.main-register section .register-box .register-values #register_js .container__register ion-icon{
+body .main-register section .register-box .register-values #register_js .container__register ion-icon{
     position: absolute;
     right: 8px;
     color:  #fff;
     font-size: 18px;
     top: 20px;
 }
-.main-register section .register-box .register-values #register_js .boton-reg{
+body .main-register section .register-box .register-values #register_js .boton-reg{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1483,14 +2903,14 @@ main .modal__section .m-o > #close{
     cursor: pointer;
     font-weight: 600;    
 }
-.main-register section .register-box .register-values #register_js .boton-reg:hover{
+body .main-register section .register-box .register-values #register_js .boton-reg:hover{
     background-color: nth($colores, 9);
     transform: scale(1.1);                
 }
-.main-register section .register-box .register-values #register_js .option-login{
+body .main-register section .register-box .register-values #register_js .option-login{
     padding-top: 30px;
 }
-.main-register section .register-box .register-values #register_js #error-mail-reg{
+body .main-register section .register-box .register-values #register_js #error-mail-reg{
     display: none;
     background-color: rgba(53, 52, 52, 0.733);
     margin-bottom: 10px;
@@ -1500,11 +2920,11 @@ main .modal__section .m-o > #close{
     border-radius: 5px;
 
 }
-.main-register section .register-box .register-values #register_js #error-mail-reg p{
+body .main-register section .register-box .register-values #register_js #error-mail-reg p{
     padding-top: 5px;
     color: #fff;
 }
-.main-register section .register-box .register-values #register_js #error-mail-reg p span{
+body .main-register section .register-box .register-values #register_js #error-mail-reg p span{
     background-color: crimson;
     color: white;
     border-radius: 50%;
@@ -1516,21 +2936,291 @@ main .modal__section .m-o > #close{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
     margin-right: 5px;       
 }
-.main-register section .register-box .register-values #register_js .option-login{
+body .main-register section .register-box .register-values #register_js .option-login{
     font-size: 18px;
 }
 
-/*----------------------MOSTRAR TURNO ---------------------------*/
-
-.main-mt{
-    background: hsl(313, 35%, 69%);
-    background: -webkit-linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.651));
-    background: linear-gradient(to right, hsla(213, 49%, 65%, 0.651), hsla(48, 36%, 78%, 0.651), hsla(313, 35%, 69%, 0.658)), url(../img/section-1-img.webp);
+//*----------------------DARK MODE REGISTRO ----------*//
+.dark .main-register{
+    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/section-1-img.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
+.dark .main-register section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.dark .main-register section .register-box{
+    position: relative;
+    height: 650px;
+    width: 400px;
+    background-color: hsla(288, 29%, 37%, 0.418);
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dark .main-register section .register-box .register-values #register_js h2{
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0.1em 0.1em 0.2em black            
+}
+.dark .main-register section .register-box .register-values #register_js .container__register{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.dark .main-register section .register-box .register-values #register_js .container__register label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform:  translateY(-50%);
+    color: #fff;
+    font-size: 15px;
+    transition: .5s;
+}
+.dark .main-register section .register-box .register-values #register_js .container__register input{
+    width: 100%;
+    height: 50px;
+    background-color: hsla(288, 29%, 37%, 0.582);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.dark .main-register section .register-box .register-values #register_js .container__register input:hover{
+    box-shadow: 5px 5px 4px rgba(190, 179, 192, 0.699);
+}
+.dark .main-register section .register-box .register-values #register_js .container__register input::placeholder{
+    color: rgb(209, 205, 205);
+}
+.dark .main-register section .register-box .register-values #register_js .container__register ion-icon{
+    position: absolute;
+    right: 8px;
+    color:  #fff;
+    font-size: 18px;
+    top: 20px;
+}
+.dark .main-register section .register-box .register-values #register_js .boton-reg{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: nth($colores, 7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    font-size: nth($font-size, 5);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    font-weight: 600;    
+}
+.dark .main-register section .register-box .register-values #register_js .boton-reg:hover{
+    background-color: nth($colores, 9);
+    transform: scale(1.1);                
+}
+.dark .main-register section .register-box .register-values #register_js .option-login{
+    padding-top: 30px;
+}
+.dark .main-register section .register-box .register-values #register_js #error-mail-reg{
+    display: none;
+    background-color: rgba(53, 52, 52, 0.733);
+    margin-bottom: 10px;
+    padding: 3px 3px;
+    height: 35%;
+    width: 100%;
+    border-radius: 5px;
+
+}
+.dark .main-register section .register-box .register-values #register_js #error-mail-reg p{
+    padding-top: 5px;
+    color: #fff;
+}
+.dark .main-register section .register-box .register-values #register_js #error-mail-reg p span{
+    background-color: crimson;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    margin-right: 5px;       
+}
+.dark .main-register section .register-box .register-values #register_js .option-login{
+    font-size: 18px;
+}
+
+/*------------------------- ADMINISTRADOR ----------------------------------*/
+
+body main section{
+    @extend %sections;
+    padding: 10px 0;
+}
+body main section .container-table{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+body main section .container-table .mt-5 .table{
+    backdrop-filter: blur(15px);
+}
+body main section .container-table .mt-5 .table thead tr th{
+    font-size: 20px;
+}
+body main section .container-table .mt-5 .table tbody tr td{
+    font-weight: 600;
+}
+    //-----------Loader---------//
+body main .container-loader{
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes ldio-59e5hvslhm {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(360deg) }
+  }
+  .ldio-59e5hvslhm div {
+    display: flex;
+    position: absolute;
+    animation: ldio-59e5hvslhm 1s linear infinite;
+    width: 177.23999999999998px;
+    height: 177.23999999999998px;
+    top: 16.88px;
+    left: 16.88px;
+    border-radius: 50%;
+    box-shadow: 0 5.908px 0 0 #c25be1;
+    transform-origin: 88.61999999999999px 91.574px;
+  }
+  .loadingio-spinner-eclipse-f3oaniwh1ew {
+    width: 211px;
+    height: 211px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+  }
+  .ldio-59e5hvslhm {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-59e5hvslhm div { box-sizing: content-box; }
+
+body main .container-loader .txt-load{
+    color: #c25be1;
+    font-weight: 600;
+}
+
+//*---------------DARK MODE ADMINISTRADOR------------*//
+
+.dark main section{
+    @extend %sections;
+    padding: 10px 0;
+}
+.dark main section .container-table{
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+.dark main section .container-table .mt-5 .table{
+    backdrop-filter: blur(15px);
+}
+.dark main section .container-table .mt-5 .table thead tr th{
+    font-size: 20px;
+}
+.dark main section .container-table .mt-5 .table tbody tr td{
+    font-weight: 600;
+}
+    //-----------Loader---------//
+.dark main .container-loader{
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes ldio-59e5hvslhm {
+    0% { transform: rotate(0deg) }
+    50% { transform: rotate(180deg) }
+    100% { transform: rotate(360deg) }
+  }
+  .ldio-59e5hvslhm div {
+    display: flex;
+    position: absolute;
+    animation: ldio-59e5hvslhm 1s linear infinite;
+    width: 177.23999999999998px;
+    height: 177.23999999999998px;
+    top: 16.88px;
+    left: 16.88px;
+    border-radius: 50%;
+    box-shadow: 0 5.908px 0 0 #c25be1;
+    transform-origin: 88.61999999999999px 91.574px;
+  }
+  .loadingio-spinner-eclipse-f3oaniwh1ew {
+    width: 211px;
+    height: 211px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+  }
+  .ldio-59e5hvslhm {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+  }
+  .ldio-59e5hvslhm div { box-sizing: content-box; }
+
+.dark main .container-loader .txt-load{
+    color: #c25be1;
+    font-weight: 600;
+}
+
 
 
 
@@ -1558,15 +3248,7 @@ main .modal__section .m-o > #close{
 
 
 /*-------------------------- DARK MODE ----------------------------*/
-.dark-mode{
-    background: hsla(0, 0%, 0%, 0.801);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(0, 0%, 0%, 0.801), hsla(0, 0%, 0%, 0.801)), url(../img/section-1-img.webp); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+
 
 
 
