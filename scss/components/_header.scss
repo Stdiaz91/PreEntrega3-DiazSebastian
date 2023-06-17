@@ -1,4 +1,4 @@
-/*-----------HEADER-------------*/
+/*-----------HEADER DARK-------------*/
 
 .dark .encabezado{
     position: sticky;
@@ -7,8 +7,6 @@
     left: 0;
     height: 64.5px;
     background-color: rgb(1, 1, 1);
-
-    // background-color: rgb(204, 201, 201);
     padding: 0px 10%;
     display: flex;
     align-items: center;
@@ -32,7 +30,6 @@
 
         h1{
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
-            // color: rgb(14, 14, 14);
             color: #fff;
             font-size: nth($font-size, 2);
             margin-bottom: 0px;
@@ -74,7 +71,6 @@
                     font-family: 'Source Sans Pro', sans-serif !important;
                     font-size: nth($font-size, 7);
                     color: #fff;
-                    // color: rgb(14, 14, 14);
                     text-decoration: none;
                     padding: 20px;
                     display: block;
@@ -88,7 +84,6 @@
                     text-decoration: underline;
                     &:hover{
                         color: #fff;
-                        // color: rgb(14, 14, 14);
                     }
                 }
 
@@ -98,7 +93,6 @@
                     width: 300px;
                     padding-left: 0px;
                     background-color: rgba(1, 1, 1, 0.781);
-                    // background-color: rgb(219, 216, 216);
                     display: none;            
 
                     li{
@@ -117,7 +111,7 @@
 
 
 
-/*---------- DARK MODE --------------------*/
+/*---------- HEADER--------------------*/
 
 body .encabezado{
     position: sticky;
@@ -125,7 +119,7 @@ body .encabezado{
     right: 0;
     left: 0;
     height: 64.5px;
-    background-color: rgb(204, 201, 201);
+    background-color: #eaf1f6;
     padding: 0px 10%;
     display: flex;
     align-items: center;
@@ -210,7 +204,7 @@ body .encabezado{
                     right: 0;
                     width: 300px;
                     padding-left: 0px;
-                    background-color: rgb(219, 216, 216);
+                    background-color: #eaf1f6;
                     display: none;            
 
                     li{

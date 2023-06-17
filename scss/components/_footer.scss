@@ -1,7 +1,9 @@
 /*-----------FOOTER---------------*/
 
 body footer{
-    background-color: nth($colores, 4);
+    // background-color: nth($colores, 4);
+    background-color: hsl(288, 29%, 33%);
+
     height: 110px;
     overflow: hidden;
 
@@ -66,7 +68,7 @@ body footer{
 
 //-----------DARK MODE
 .dark footer{
-    background-color: nth($colores, 4);
+    background-color: rgb(1, 1, 1);
     height: 110px;
     overflow: hidden;
 

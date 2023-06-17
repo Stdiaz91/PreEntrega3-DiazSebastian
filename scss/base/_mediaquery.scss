@@ -4,7 +4,7 @@
 
         /*!--------------------INDEX-----------------------*/
     
-                /*HEADER*/
+                /*HEADER DARK*/
         .dark .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -19,10 +19,9 @@
         .dark .encabezado #toggle:checked ~ .navigation{
             display: block;
             background-color: rgba(0, 0, 0, 0.856);
-                        // background-color: rgba(204, 201, 201, 0.863);
         }
 
-        //*------DARK MODE HEADER -------*//
+        //*------HEADER -------*//
         body .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -36,8 +35,7 @@
         }
         body .encabezado #toggle:checked ~ .navigation{
             display: block;
-            background-color: rgba(0, 0, 0, 0.856);
-                        // background-color: rgba(204, 201, 201, 0.863);
+            background-color: #eaf1f6;
         }
         
                 /*BANNER 1*/
@@ -58,10 +56,6 @@
             font-size: 22px;
             margin-top: 10px;
         }
-        body main .section-1 .contenedor-section-1 .titulo1-dm{ // DARK MODE
-            font-size: 22px;
-            margin-top: 10px;
-        }
         body main .section-1 .contenedor-section-1 .bloque-1{
             flex-direction: column;
             align-items: center;
@@ -72,15 +66,7 @@
         body main .section-1 .contenedor-section-1 .bloque-1 div .p-block1-light{
             font-size: 18px;
         }
-        body main .section-1 .contenedor-section-1 .bloque-1 div .p-block1-dm{ // DARK MODE
-            font-size: 18px;
-        }
         body main .section-1 .contenedor-section-1 .bloque-1 div .img-block1-light{
-            width: 60vw;
-            height: 60vw;
-            padding-bottom: 15px;
-        }
-        body main .section-1 .contenedor-section-1 .bloque-1 div .img-block1-dm{ // DARK MODE
             width: 60vw;
             height: 60vw;
             padding-bottom: 15px;
@@ -139,8 +125,89 @@
             font-size: 25px;
         }
 
-                /*SECTION 2*/
+        //*------------DARK MODE SECTION 1 ----*//
+                        /*SECTION 1*/
 
+        .dark main .section-1 .contenedor-section-1 .titulo1{
+            color: #a581b1;
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1{
+            flex-direction: column;
+            align-items: center;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1 div{
+            padding: 5px 0px 20px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1 div .p-block1-light{
+            color: #c9c6c6;
+            font-size: 18px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1 div .img-block1-light{
+            width: 60vw;
+            height: 60vw;
+            padding-bottom: 15px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2{
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia{
+            background-color: hsla(288, 29%, 37%, 0.658);
+            width: 100%;
+            
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia p{
+            text-align: justify-all;
+            color: white;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
+            width: 70vw;
+            height: 30vh;
+            object-fit: cover;
+            margin: 0 auto;       
+            margin-bottom: 10px;
+            border: 3px solid #642a73;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc{
+            background-color: hsla(288, 29%, 37%, 0.658);
+            width: 100%;
+            margin-top: 10px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc p{
+            text-align: justify-all;
+            color: white;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc img{
+            width: 70vw;
+            height: 30vh;
+            object-fit: cover;
+            margin: 0 auto;       
+            margin-bottom: 10px;
+            border: 3px solid #642a73;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc a{
+            text-align: center;
+            color: white;
+            font-size: 25px;
+        }
+
+
+                /*SECTION 2*/
+        body main .section-2 .contenedor-section-2{
+            padding: 10px 0;
+        }
         body main .section-2 .contenedor-section-2 .titulo2{
             text-align: center;
             font-size: 25px;
@@ -150,17 +217,30 @@
             font-size: 20px;
             text-align: center;
         }
-        body main .section-2 .contenedor-section-2 .ilustracion-textos .h3-bl2-dm{ // DARK MODE
-            font-size: 20px;
-            text-align: center;
-        }
         body main .section-2 .contenedor-section-2 .ilustracion-textos .p-bl2{
             font-size: 18px;
             text-align: center;
         }
-        body main .section-2 .contenedor-section-2 .ilustracion-textos .p-bl2-dm{ // DARK MODE
+                //*------------DARK MODE SECTION 2 ----*//
+
+        .dark main .section-2 .contenedor-section-2{
+            padding: 10px 0;
+        }
+        .dark main .section-2 .contenedor-section-2 .titulo2{
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 30px;
+            color: #a581b1;
+        }
+        .dark main .section-2 .contenedor-section-2 .ilustracion-textos .h3-bl2{
+            font-size: 20px;
+            text-align: center;
+            color: #c9c6c6;
+        }
+        .dark main .section-2 .contenedor-section-2 .ilustracion-textos .p-bl2{
             font-size: 18px;
             text-align: center;
+            color: #c9c6c6;
         }
 
                 /*GALERIA*/
@@ -200,6 +280,43 @@
             font-size: 18px;
             text-align: center;
         }
+
+                //*------------DARK MODE GALERIA ----*//
+
+        .dark main .galeria{
+            padding-top: 5px;
+        }
+        .dark main .galeria .h2-gallery{
+            padding: 10px;
+            font-size: 30px;
+            color: #a581b1;
+        }
+        .dark main .galeria .grid-galeria{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,1fr);
+        }
+        .dark main .galeria .grid-galeria .grid-item{
+            margin: 0 auto;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item{
+            width: 300px;
+            height: 370px;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item img{
+            width: 270px;
+            height: 220px;
+            object-fit: cover;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item h3{
+            font-size: 23px;
+            padding-top: 10px;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item p{
+            font-size: 18px;
+            text-align: center;
+        }
+
+
                 /*Section 3*/
 
         body main .section-3 .bg-section-3{
@@ -232,6 +349,39 @@
             height: 40px;
         }
         
+                //*------------DARK MODE SECTION 3 ----*//
+
+        .dark main .section-3 .bg-section-3{
+            height: 100%;
+        }
+        .dark main .section-3 .bg-section-3 h2{
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex{
+            flex-direction: column;
+            padding-top: 15px;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div{
+            justify-content: center;
+            width: 250px;
+            height: 200px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div h3{
+            font-size: 20px;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div p{
+            font-size: 18px;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div img{
+            width: 40px;
+            height: 40px;
+        }
+
+
                 /*SECTION 4*/
 
         body main .section-4 .contenedor-section-4{
@@ -239,13 +389,13 @@
             margin: 0 auto;
         }
         body main .section-4 .contenedor-section-4 .contenedor4-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
             width: 100%;
         }
         body main .section-4 .contenedor-section-4 .contenedor4-1 .h3-bl4{
-            font-size: 30px;
-            text-align: center;
-        }
-        body main .section-4 .contenedor-section-4 .contenedor4-1 .h3-bl4-dm{ // DARK MODE
             font-size: 30px;
             text-align: center;
         }
@@ -253,12 +403,7 @@
             text-align: center;
             font-size: 20px;
         }
-        body main .section-4 .contenedor-section-4 .contenedor4-1 .p-bl4-dm{ // DARK MODE
-            text-align: center;
-            font-size: 20px;
-        }
         body main .section-4 .contenedor-section-4 .contenedor4-1 a{
-            margin-left: 25vw;
             padding: 3vh 5vw;
         }
         body main .section-4 .contenedor-section-4 .contenedor4-2{
@@ -285,12 +430,82 @@
             margin: 0 auto;
             width: 250px;
         }
+                //*------------DARK MODE SECTION 4 ----*//
+
+        .dark main .section-4 .contenedor-section-4{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            width: 100%;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1 .h3-bl4{
+            color: #a581b1;
+            font-size: 30px;
+            text-align: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1 .p-bl4{
+            text-align: center;
+            font-size: 20px;
+            color: #c9c6c6;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1 a{
+            // margin-left: 25vw;
+            padding: 3vh 5vw;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2{
+            width: 100%;
+            margin-top: 35px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h3{
+            text-align: center;
+            font-size: 20px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h4{
+            text-align: center;
+            font-size: 20px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 p{
+            text-align: center;
+            font-size: 18px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 img{
+            margin: 0 auto;
+            width: 250px;
+        }
 
                 /*BOTON LOGOUT*/
 
         body main .logout_ img{
             width: 50px;
             filter: opacity(0.5);
+        }
+
+                /*BOTON LOGOUT DARK*/
+
+        .dark main .logout_ img{
+            width: 50px;
+            filter: opacity(0.5);
+        }
+
+        /*-----------------BOTON DARK/LIGHT THEME ----------*/
+
+        body main .container-button-theme .button-theme{
+            padding: 10px 10px;
+            font-size: 15px;
+        }
+        /*-----------------BOTON DARK/LIGHT DARK ----------*/
+        .dark main .container-button-theme .button-theme{
+            padding: 10px 10px;
+            font-size: 15px;
         }
 
                 /*FOOTER*/
@@ -310,6 +525,25 @@
         body footer .leyenda p{
             font-size: 15px;
         }
+
+                        /*FOOTER DARK*/
+
+        .dark footer .pie-pagina .logo-pie img{
+            width: 60px;
+        }
+        .dark footer .pie-pagina .logo-pie h2{
+            display: none;
+        }
+        .dark footer .pie-pagina .redes{
+            display: flex;
+        }
+        .dark footer .pie-pagina .redes a img{
+            width: 50px;
+        }
+        .dark footer .leyenda p{
+            font-size: 15px;
+        }
+
 
         /*!--------------------CONOCEME-----------------------*/
 
@@ -337,6 +571,32 @@
             filter: none;
         }
 
+                        /*CONTENIDO CONOCEME DARK*/
+
+        .dark main .conoceme .contenedor-conoceme{
+            flex-direction: column-reverse;
+        }
+        .dark main .conoceme .contenedor-conoceme .contenido-conoceme{
+            width: 100%;
+        }
+        .dark main .contenedor-conoceme .contenido-conoceme p{
+            font-size: 20px;
+            width: 100%;
+            color: #c9c6c6;
+        }
+        .dark main .conoceme .contenedor-conoceme img{
+            width: 250px;
+            height: 250px;
+            margin-bottom: 20px;
+            filter: none;
+        }
+        .dark main .conoceme .contenedor-conoceme img:hover{
+            transform: none;
+            filter: none;
+        }
+
+        
+
         /*!--------------------PSICOONCOLOGIA-----------------------*/
 
                 /*CONTENIDO PSICOONCOLOGIA*/
@@ -357,6 +617,26 @@
             flex-direction: column;
             width: 100%;
         }
+
+                        /*CONTENIDO PSICOONCOLOGIA DARK*/
+
+        .dark .psicooncologia-main .servicio-psicooncologia{
+            padding: 15px 0px;
+        }
+        .dark .psicooncologia-main .servicio-psicooncologia .parte1-onco{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .psicooncologia-main .servicio-psicooncologia .parte1-onco img{
+            width: 80vw;
+            height: 25vh;
+            object-fit: cover;
+        }
+        .dark .psicooncologia-main .servicio-psicooncologia .parte4-onco ul li .subparte4{
+            flex-direction: column;
+            width: 100%;
+        }
+
 
         /*!--------------------TCC INDIVIDUAL-----------------------*/
 
@@ -403,6 +683,50 @@
             height: 25vh;
         }
 
+                        /*CONTENIDO TCC DARK*/
+        
+        .dark .tcc-main .servicio-tcc{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            padding: 15px 0px;
+        }
+        .dark .tcc-main .servicio-tcc .parte1-tcc{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte1-tcc img{
+            width: 80vw;
+            height: 25vh;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .dark .tcc-main .servicio-tcc .parte2-tcc .txt-img-tcc2{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte2-tcc .img-tcc2 img{
+            width: 80vw;
+            height: 25vh;
+        }
+        .dark .tcc-main .servicio-tcc .parte3-tcc .txt-img-tcc3{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte3-tcc .img-tcc img{
+            width: 80vw;
+            height: 25vh;
+        }
+        .dark .tcc-main .servicio-tcc .parte4-tcc .txt-img-tcc4{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte4-tcc .img-tcc4 img{
+            width: 80vw;
+            height: 25vh;
+        }
+
+
         /*!--------------------SOLICITAR TURNO-----------------------*/
 
         body main .turnos #form_js .contenedor-turnos .solicitar-turno{
@@ -417,6 +741,22 @@
         body main .turnos #form_js .contenedor-turnos .solicitar-turno .agrega-comentarios{
             font-size: 18px;
         }
+
+                /*!--------------------SOLICITAR TURNO DARK-----------------------*/
+
+        .dark main .turnos #form_js .contenedor-turnos .solicitar-turno{
+            width: 100%;
+        }
+        .dark main .turnos #form_js .contenedor-turnos .solicitar-turno h2{
+            font-size: 28px;
+        }
+        .dark main .turnos #form_js .contenedor-turnos .solicitar-turno h3, .terminos-condiciones{
+            font-size: 20px;
+        }
+        .dark main .turnos #form_js .contenedor-turnos .solicitar-turno .agrega-comentarios{
+            font-size: 18px;
+        }
+
 
         /*!--------------------CONTACTO-----------------------*/
         
@@ -451,11 +791,51 @@
             width: 70%;
         }
 
+                /*!--------------------CONTACTO DARK-----------------------*/
+        
+        .dark main .pagina-contacto .contenedor-contacto{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo h3{
+            text-align: center;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo h3 span{
+            display: block;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo h3 span a{
+            color: #642a73;
+            font-size: 21px;
+            font-weight: 700;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-campos .campos{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje textarea{
+            width: 100%;
+            padding: 15px;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje input{
+            width: 70%;
+        }
+
         /*!--------------------BLOG-----------------------*/
 
         body main .blog .grid-blog{
             padding: 5px;
         }
+
+                /*!--------------------BLOG DARK-----------------------*/
+
+        .dark main .blog .grid-blog{
+            padding: 5px;
+        }
+
 
         /*!--------------------MODAL-----------------------*/
 
@@ -464,6 +844,13 @@
             height: 70%;
         }
         
+                /*!--------------------MODAL DARK-----------------------*/
+
+        .dark main .modal__section .m-o{
+            width: 90%;
+            height: 70%;
+        }
+
         /*!------------------ADMINISTRADOR --------*/
         body main section .container-table{
             padding: 0px 0px;
@@ -483,15 +870,32 @@
             font-weight: 600;
             font-size: 25px;
         }
-                
+                /*!------------------ADMINISTRADOR DARK--------*/
+        .dark main section .container-table{
+            padding: 0px 0px;
+        }
+        .dark main section .container-table .mt-5 .table thead tr th{
+            font-size: 13px;
+        }
+        .dark main section .container-table .mt-5 .table tbody tr td{
+            font-size: 13px;
+        }
+        .dark main .container-loader{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark main .container-loader .txt-load{
+            color: #c25be1;
+            font-weight: 600;
+            font-size: 25px;
+        }        
     }
-
 
     @media(max-width:767px) and (min-width:471px){
 
         /*!--------------------INDEX-----------------------*/
 
-                /*HEADER*/
+                /*HEADER DARK*/
         .dark .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -502,10 +906,9 @@
         }
         .dark .encabezado #toggle:checked ~ .navigation{
             background-color: rgba(0, 0, 0, 0.856);
-            // background-color: rgba(204, 201, 201, 0.863);
         }
 
-        //*------DARK MODE HEADER ------*//
+        //*------HEADER ------*//
         body .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -515,8 +918,7 @@
             width: 64px;
         }
         body .encabezado #toggle:checked ~ .navigation{
-            background-color: rgba(0, 0, 0, 0.856);
-            // background-color: rgba(204, 201, 201, 0.863);
+            background-color: #eaf1f6;
         }
 
                 /*BANNER 1*/
@@ -619,6 +1021,95 @@
             font-size: 30px;
         }
 
+                        /*SECTION 1 DARK*/
+
+        .dark main .section-1 .contenedor-section-1 .titulo1{
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        .dark main .section-1 .contenedor-section-1 .titulo1-dm{ // DARK MODE
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1{
+            flex-direction: column;
+            align-items: center;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1 .bloque-1 div{
+            padding: 5px 0px 20px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1 div .p-block1-light{
+            font-size: 21px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1 div .p-block1-dm{ // DARK MODE
+            font-size: 21px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1 div .img-block1-light{
+            width: 250px;
+            height: 250px;
+            padding-bottom: 15px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-1 div .img-block1-dm{ // DARK MODE
+            width: 250px;
+            height: 250px;
+            padding-bottom: 15px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2{
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia{
+            background-color: hsla(288, 29%, 37%, 0.658);
+            width: 75%;
+            margin: 0 auto;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia p{
+            text-align: justify-all;
+            color: white;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+            margin: 0 auto;       
+            margin-bottom: 10px;
+            border: 3px solid #642a73;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia a{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc{
+            background-color: hsla(288, 29%, 37%, 0.658);
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc p{
+            text-align: justify-all;
+            color: white;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc img{
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+            margin: 0 auto;       
+            margin-bottom: 10px;
+            border: 3px solid #642a73;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc a{
+            text-align: center;
+            color: white;
+            font-size: 30px;
+        }
+
+
                 /*SECTION 2*/
 
         body main .section-2 .contenedor-section-2 .titulo2{
@@ -643,6 +1134,32 @@
         body main .section-2 .contenedor-section-2 .ilustracion-textos .p-bl2-dm{ // DARK MODE
             text-align: center;
         }
+
+                        /*SECTION 2 DARK*/
+
+        .dark main .section-2 .contenedor-section-2 .titulo2{
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        .dark main .section-2 .contenedor-section-2 .titulo2-dm{ // DARK MODE
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        .dark main .section-2 .contenedor-section-2 .ilustracion-textos .h3-bl2{
+            text-align: center;
+        }
+        .dark main .section-2 .contenedor-section-2 .ilustracion-textos .h3-bl2-dm{ // DARK MODE
+            text-align: center;
+        }
+        .dark main .section-2 .contenedor-section-2 .ilustracion-textos .p-bl2{
+            text-align: center;
+        }
+        .dark main .section-2 .contenedor-section-2 .ilustracion-textos .p-bl2-dm{ // DARK MODE
+            text-align: center;
+        }
+
                 /*GALERIA*/
         
         body main .galeria{
@@ -681,6 +1198,46 @@
         body main .galeria .grid-galeria .grid-item .flex-item p{
             font-size: 16px;
         }
+
+                        /*GALERIA DARK*/
+        
+        .dark main .galeria{
+            padding-top: 5px;
+        }
+        .dark main .galeria .h2-gallery{
+            padding: 10px;
+            font-size: 30px;
+        }
+        .dark main .galeria .h2-gallery-dm{ // DARK MODE
+            padding: 10px;
+            font-size: 30px;
+        }
+        .dark main .galeria .grid-galeria{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 5px;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item{
+            width: 90%;
+            height: 88%;
+            margin-bottom: 8px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            align-content: center;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item img{
+            width: 90%;
+            height: 20vh;
+            object-fit: cover;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item h3{
+            font-size: 18px;
+            padding: 7px;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item p{
+            font-size: 16px;
+        }
+
                 /*SECTION 3*/
 
         body main .section-3 .bg-section-3{
@@ -708,6 +1265,36 @@
         body main .section-3 .bg-section-3 .contenedor-flex .flex-div p{
             font-size: 3vw;
         }
+
+                        /*SECTION 3 DARK*/
+
+        .dark main .section-3 .bg-section-3{
+            height: 100%;
+        }
+        .dark main .section-3 .bg-section-3 h2{
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex{
+            flex-direction: row;
+            padding-top: 15px;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div{
+            width: 85vw;
+            height: 48vh;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            margin-right: 10px;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div h3{
+            font-size: 3vw;
+        }
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div p{
+            font-size: 3vw;
+        }
+
+        
                 /*SECTION 4*/
 
         body main .section-4 .contenedor-section-4{
@@ -760,6 +1347,73 @@
             margin: 0 auto;
             width: 250px;
         }
+
+                        /*SECTION 4 DARK*/
+
+        .dark main .section-4 .contenedor-section-4{
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1{
+            width: 100%;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1 .h3-bl4{
+            font-size: 30px;
+            text-align: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1 .h3-bl4-dm{ // DARK MODE
+            font-size: 30px;
+            text-align: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1 .p-bl4{
+            text-align: center;
+            font-size: 22px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1 .p-bl4-dm{ // DARK MODE
+            text-align: center;
+            font-size: 22px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1 a{
+            margin-left: 25vw;
+            padding: 3vh 5vw;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2{
+            width: 70%;
+            margin-top: 35px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h3{
+            text-align: center;
+            font-size: 20px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h4{
+            text-align: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 img{
+            margin: 0 auto;
+            width: 250px;
+        }
+
+        /*-----------------BOTON DARK/LIGHT THEME ----------*/
+
+        body main .container-button-theme .button-theme{
+            padding: 15px 15px;
+            font-size: 17px;
+        }
+        /*-----------------BOTON DARK/LIGHT DARK ----------*/
+        .dark main .container-button-theme .button-theme{
+            padding: 15px 15px;
+            font-size: 17px;
+        }
+
+
                 /*FOOTER*/
 
         body footer{
@@ -780,6 +1434,28 @@
         body footer .leyenda p{
             font-size: 16px;
         }
+
+                        /*FOOTER DARK*/
+
+        .dark footer{
+            height: 130px;
+        }
+        .dark footer .pie-pagina .logo-pie img{
+            width: 65px;
+        }
+        .dark footer .pie-pagina .logo-pie h2{
+            font-size: 25px;
+        }
+        .dark footer .pie-pagina .redes{
+            display: flex;
+        }
+        .dark footer .pie-pagina .redes a img{
+            width: 50px;
+        }
+        .dark footer .leyenda p{
+            font-size: 16px;
+        }
+
 
         /*!--------------------CONOCEME-----------------------*/
 
@@ -807,6 +1483,30 @@
             filter: none;
         }
 
+                        /*CONTENIDO CONOCEME DARK*/
+
+        .dark main .conoceme .contenedor-conoceme{
+            padding: 50px 0px;
+            flex-direction: column-reverse;
+        }
+        .dark main .conoceme .contenedor-conoceme .contenido-conoceme{
+            width: 100%;
+        }
+        .dark main .contenedor-conoceme .contenido-conoceme p{
+            font-size: 20px;
+            width: 100%;
+        }
+        .dark main .conoceme .contenedor-conoceme img{
+            width: 250px;
+            height: 250px;
+            margin-bottom: 20px;
+            filter: none;
+        }
+        .dark main .conoceme .contenedor-conoceme img:hover{
+            transform: none;
+            filter: none;
+        }
+
         /*!--------------------PSICOONCOLOGIA-----------------------*/
 
 
@@ -829,6 +1529,27 @@
             align-items: flex-start;
             width: 100%;
         }
+
+                        /*CONTENIDO PSICOONCOLOGIA DARK*/
+
+        .dark .psicooncologia-main .servicio-psicooncologia{
+            padding: 15px 0px;
+        }
+        .dark .psicooncologia-main .servicio-psicooncologia .parte1-onco{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .psicooncologia-main .servicio-psicooncologia .parte1-onco img{
+            width: 60vw;
+            height: 45vh;
+            object-fit: cover;
+        }
+        .dark .psicooncologia-main .servicio-psicooncologia .parte4-onco ul li .subparte4{
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
 
         /*!--------------------TCC INDIVIDUAL-----------------------*/
 
@@ -876,6 +1597,49 @@
             height: 35vh;
         }
     
+                        /*CONTENIDO TCC DARK*/
+        
+        .dark .tcc-main .servicio-tcc{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            padding: 15px 0px;
+        }
+        .dark .tcc-main .servicio-tcc .parte1-tcc{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte1-tcc img{
+            width: 70vw;
+            height: 40vh;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .dark .tcc-main .servicio-tcc .parte2-tcc .txt-img-tcc2{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte2-tcc .img-tcc2 img{
+            width: 60vw;
+            height: 35vh;
+        }
+        .dark .tcc-main .servicio-tcc .parte3-tcc .txt-img-tcc3{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte3-tcc .img-tcc3 img{
+            width: 60vw;
+            height: 35vh;
+        }
+        .dark .tcc-main .servicio-tcc .parte4-tcc .txt-img-tcc4{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte4-tcc .img-tcc4 img{
+            width: 60vw;
+            height: 35vh;
+        }
+
         /*!--------------------SOLICITAR TURNO-----------------------*/
 
         body main .turnos #form_js .contenedor-turnos .solicitar-turno{
@@ -890,6 +1654,22 @@
         body main .turnos #form_js .contenedor-turnos .solicitar-turno .agrega-comentarios{
             font-size: 18px;
         }
+
+                /*!--------------------SOLICITAR TURNO DARK-----------------------*/
+
+        .dark main .turnos #form_js .contenedor-turnos .solicitar-turno{
+            width: 80%;
+        }
+        .dark main .turnos #form_js .contenedor-turnos .solicitar-turno h2{
+            font-size: 28px;
+        }
+        .dark main .turnos #form_js .contenedor-turnos .solicitar-turno h3, .terminos-condiciones{
+            font-size: 20px;
+        }
+        .dark main .turnos #form_js .contenedor-turnos .solicitar-turno .agrega-comentarios{
+            font-size: 18px;
+        }
+
 
         /*!--------------------CONTACTO-----------------------*/
         
@@ -924,12 +1704,53 @@
             width: 40%;
         }
 
+                /*!--------------------CONTACTO DARK-----------------------*/
+        
+        .dark main .pagina-contacto .contenedor-contacto{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo h3{
+            text-align: center;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo h3 span{
+            display: block;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo h3 span a{
+            color: #642a73;
+            font-size: 21px;
+            font-weight: 700;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-campos .campos{
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje textarea{
+            width: 80%;
+            padding: 15px;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo #contact-js .container-mensaje input{
+            width: 40%;
+        }
+
+
         /*!--------------------MODAL-----------------------*/
 
         body main .modal__section .m-o{
             width: 70%;
             height: 70%;
         }
+                /*!--------------------MODAL DARK-----------------------*/
+
+        .dark main .modal__section .m-o{
+            width: 70%;
+            height: 70%;
+        }
+
 
     }
 
@@ -937,7 +1758,7 @@
 
         /*!--------------------INDEX----------------------*/
 
-                /*HEADER*/
+                //*------HEADER DARK-----*//
         .dark .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -946,7 +1767,7 @@
         .dark .encabezado .contenedorlogo-h1 img{
             width: 64px;
         }
-        //*------DARK MODE HEADER----*//
+        /*------HEADER----*/
         body .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -976,6 +1797,28 @@
             height: 250px;
             object-fit: cover;
         }
+
+                        /*SECTION 1 DARK*/
+        
+        .dark main .section-1 .contenedor-section-1 .bloque-2{
+            justify-content: space-evenly;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
+            margin-top: 15px;
+            margin-bottom: 10px;
+
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc img{
+            margin-top: 15px;
+            margin-bottom: 10px;
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+        }
+
 
                 /*GALERIA*/
         
@@ -1008,9 +1851,49 @@
             font-size: 18px;
         }
 
+                        /*GALERIA DARK*/
+        
+        .dark main .galeria{
+            padding-top: 5px;
+        }
+        .dark main .galeria .grid-galeria{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 5px;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item{
+            width: 42vw;
+            height: 90%;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item img{
+            width: 32vw;
+            height: 20vh;
+            object-fit: cover;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item h3{
+            font-size: 20px;
+            padding: 15px;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item p{
+            font-size: 18px;
+        }
+
+
                 /*SECTION 3*/
         
         body main .section-3 .bg-section-3 .contenedor-flex .flex-div{
+            margin: 0 auto;
+            width: 220px;
+            height: 250px;
+        }
+
+                        /*SECTION 3 DARK  */
+        
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div{
             margin: 0 auto;
             width: 220px;
             height: 250px;
@@ -1037,11 +1920,39 @@
             padding: 0px 3px;
         }
 
+                        /*SECTION 4 DARK*/
+        
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1{
+            margin-right: 20px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 div h3{
+            text-align: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 div h4{
+            text-align: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 div p{
+            text-align: center;
+            padding: 0px 3px;
+        }
+
                 /*FOOTER*/
         
         body footer{
             height: 100px;
         }
+
+                        /*FOOTER DARK*/
+        
+        .dark footer{
+            height: 100px;
+        }
+
 
         /*!--------------------CONOCEME-----------------------*/
     
@@ -1065,6 +1976,26 @@
             filter: none;
         }
         
+                        /*CONTENIDO CONOCEME DARK*/
+
+        .dark main .conoceme .contenedor-conoceme{
+            padding: 50px 0px;
+        }
+        .dark main .conoceme .contenedor-conoceme .contenido-conoceme{
+            width: 50%;
+        }
+        .dark main .conoceme .contenedor-conoceme .contenido-conoceme p{
+            font-size: 20px;
+            width: 100%;
+        }
+        .dark main .conoceme .contenedor-conoceme img{
+            filter: none;
+        }
+        .dark main .conoceme .contenedor-conoceme img:hover{
+            transform: none;
+            filter: none;
+        }
+
         /*!--------------------PSICOONCOLOGIA-----------------------*/
 
                 /*CONTENIDO PSICOONCOLOGIA*/
@@ -1072,6 +2003,13 @@
         body .psicooncologia-main .servicio-psicooncologia{
             padding: 15px 0px;
         }
+
+                        /*CONTENIDO PSICOONCOLOGIA DARK*/
+
+        .dark .psicooncologia-main .servicio-psicooncologia{
+            padding: 15px 0px;
+        }
+
 
         /*!--------------------TCC INDIVIDUAL-----------------------*/
 
@@ -1082,6 +2020,19 @@
             flex-direction: column;
         }
         body .tcc-main .servicio-tcc .parte1-tcc img{
+            width: 60vw;
+            height: 40vh;
+            object-fit: cover;
+            margin: 20px 0px;
+        }
+
+                        /*CONTENIDO TCC DARK*/
+        
+        .dark .tcc-main .servicio-tcc .parte1-tcc{
+            display: flex;
+            flex-direction: column;
+        }
+        .dark .tcc-main .servicio-tcc .parte1-tcc img{
             width: 60vw;
             height: 40vh;
             object-fit: cover;
@@ -1099,13 +2050,25 @@
             color: #642a73;
             font-weight: 700;
         }
+                /*!------------------CONTACTO DARK----------------------*/
+
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo h3 span{
+            display: block;
+            text-align: center;
+            background: none;
+        }
+        .dark main .pagina-contacto .contenedor-contacto .enviar-correo h3 span a{
+            color: #642a73;
+            font-weight: 700;
+        }
+
     }
 
     @media(max-width:1100px) and (min-width:851px){
 
         /*!---------------------------INDEX--------------------------*/
 
-                /*HEADER*/
+                //*---HEADER DARK----*//
         .dark .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -1114,7 +2077,7 @@
         .dark .encabezado .contenedorlogo-h1 img{
             width: 64px;
         }
-        //*-----DARK MODE HEADER-----*//
+        /*-----HEADER-----*/
         body .encabezado{
             justify-content: space-between;
             padding-left: 15px;
@@ -1134,11 +2097,34 @@
             align-items: center;
         }
         body main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
+            margin-top: 0;
             width: 80%;
             height: 250px;
             object-fit: cover;
         }
         body main .section-1 .contenedor-section-1 .bloque-2 .tcc img{
+            margin-top: 0;
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+                        /*SECTION 1 DARK*/
+        
+        .dark main .section-1 .contenedor-section-1 .bloque-2{
+            justify-content: space-evenly;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia, .tcc{
+            align-items: center;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .psicooncologia img{
+            margin-top: 0;
+            width: 80%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .dark main .section-1 .contenedor-section-1 .bloque-2 .tcc img{
+            margin-top: 0;
             width: 80%;
             height: 250px;
             object-fit: cover;
@@ -1176,9 +2162,48 @@
             font-size: 18px;
         }
 
+                        /*GALERIA DARK*/
+
+        .dark main .galeria{
+            padding-top: 5px;
+        }
+        .dark main .galeria .grid-galeria{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 15px;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item{
+            width: 42vw;
+            height: 100%;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item img{
+            width: 90%;
+            height: 30vh;
+            object-fit: cover;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item h3{
+            font-size: 25px;
+            padding: 15px;
+        }
+        .dark main .galeria .grid-galeria .grid-item .flex-item p{
+            font-size: 18px;
+        }
+
+
                 /*SECTION 3*/
         
         body main .section-3 .bg-section-3 .contenedor-flex .flex-div{
+            margin: 0 auto;
+            width: 220px;
+            height: 250px;
+        }
+                        /*SECTION 3*/
+        
+        .dark main .section-3 .bg-section-3 .contenedor-flex .flex-div{
             margin: 0 auto;
             width: 220px;
             height: 250px;
@@ -1205,6 +2230,27 @@
             padding: 0px 3px;
         }
 
+                        /*SECTION 4*/
+        
+        .dark main .section-4 .contenedor-section-4 .contenedor4-1{
+            margin-right: 20px;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h3{
+            text-align: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 h4{
+            text-align: center;
+        }
+        .dark main .section-4 .contenedor-section-4 .contenedor4-2 .contenedor4-2-1, .contenedor4-2-2 p{
+            text-align: center;
+            padding: 0px 3px;
+        }
+
         
         /*!-----------CONOCEME------------------*/
 
@@ -1222,13 +2268,25 @@
             filter: none;
         }
 
+                        /*CONTENIDO CONOCEME DARK*/
+
+        .dark main .conoceme .contenedor-conoceme .contenido-conoceme{
+            width: 50%;
+        }
+        .dark main .conoceme .contenedor-conoceme img{
+            filter: none;
+        }
+        .dark main .conoceme .contenedor-conoceme img:hover{
+            transform: none;
+            filter: none;
+        }
     }
 
     @media(max-width:1135px){
 
         /*!------------------INDEX----------------*/
 
-                /*HEADER*/
+                /*HEADER DARK MODE*/
 
         .dark .encabezado label{
             display: initial;
@@ -1242,8 +2300,6 @@
             left: 0;
             right: 0;
             background-color: rgba(0, 0, 0, 0.856);
-            // background-color: rgba(204, 201, 201, 0.863);
-
             display: none;
         }
         .dark .encabezado .navigation ul li{
@@ -1259,7 +2315,6 @@
         }
         .dark .encabezado .navigation ul li ul li{
             background-color: rgba(1, 1, 1, 0.7);
-            // background-color: rgba(204, 201, 201, 0.774);
         }
         .dark .encabezado .navigation ul li ul li ul{
             position: relative;
@@ -1270,7 +2325,7 @@
             display: block;
         }
 
-        //----DARK MODE
+        //----HEADER
         body .encabezado label{
             display: initial;
         }
@@ -1282,9 +2337,7 @@
             top: 100%;
             left: 0;
             right: 0;
-            // background-color: rgba(0, 0, 0, 0.856);
-            background-color: rgba(204, 201, 201, 0.863);
-
+            background-color: #eaf1f6;
             display: none;
         }
         body .encabezado .navigation ul li{
@@ -1299,8 +2352,7 @@
             left: 0;
         }
         body .encabezado .navigation ul li ul li{
-            // background-color: rgba(1, 1, 1, 0.7);
-            background-color: rgba(204, 201, 201, 0.774);
+            background-color: #eaf1f6;
         }
         body .encabezado .navigation ul li ul li ul{
             position: relative;
